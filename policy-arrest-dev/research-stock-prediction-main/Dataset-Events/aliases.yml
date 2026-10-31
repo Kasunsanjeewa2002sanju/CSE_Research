@@ -1,0 +1,85 @@
+# Aliases and entity resolutions for PolitiTrade LK
+
+entities:
+  # Political Figures
+  "Mahinda Rajapaksa":
+    aliases: ["Mahinda", "MR", "President Rajapaksa", "Prime Minister Mahinda Rajapaksa"]
+    party: "Sri Lanka Podujana Peramuna (SLPP)"
+    role_history: ["President", "Prime Minister", "Finance Minister", "Leader of Opposition"]
+  "Gotabaya Rajapaksa":
+    aliases: ["Gotabaya", "Gota", "GR", "President Gotabaya Rajapaksa"]
+    party: "Sri Lanka Podujana Peramuna (SLPP)"
+    role_history: ["President", "Defence Secretary"]
+  "Ranil Wickremesinghe":
+    aliases: ["Ranil", "RW", "President Ranil Wickremesinghe", "Prime Minister Ranil Wickremesinghe"]
+    party: "United National Party (UNP)"
+    role_history: ["President", "Prime Minister", "Finance Minister"]
+  "Anura Kumara Dissanayake":
+    aliases: ["Anura Kumara", "AKD", "Anura Dissanayake", "President AKD"]
+    party: "National People's Power (NPP) / JVP"
+    role_history: ["President", "Cabinet Minister", "Opposition MP"]
+  "Maithripala Sirisena":
+    aliases: ["Sirisena", "MS", "President Sirisena"]
+    party: "Sri Lanka Freedom Party (SLFP)"
+    role_history: ["President", "Cabinet Minister"]
+  "Sajith Premadasa":
+    aliases: ["Sajith", "SP", "Leader of the Opposition"]
+    party: "Samagi Jana Balawegaya (SJB)"
+    role_history: ["Leader of Opposition", "Cabinet Minister"]
+  "Basil Rajapaksa":
+    aliases: ["Basil", "Finance Minister Basil Rajapaksa"]
+    party: "Sri Lanka Podujana Peramuna (SLPP)"
+    role_history: ["Finance Minister", "Economic Development Minister"]
+  "Sarath Fonseka":
+    aliases: ["General Sarath Fonseka", "Field Marshal Sarath Fonseka", "Fonseka"]
+    party: "Democratic National Alliance / SJB / Independent"
+    role_history: ["Army Commander", "Chief of Defence Staff", "Member of Parliament", "Opposition Candidate"]
+  "S.B. Dissanayake":
+    aliases: ["S.B.", "SB Dissanayake", "Disanayake S.B."]
+    party: "United National Party (UNP) / SLFP / SLPP"
+    role_history: ["Cabinet Minister", "National Organizer"]
+  "Ajith Nivard Cabraal":
+    aliases: ["Nivard Cabraal", "Governor Cabraal", "Cabraal"]
+    party: "Government / Appointee"
+    role_history: ["CBSL Governor", "State Minister of Money and Capital Markets"]
+  "W.D. Lakshman":
+    aliases: ["Prof. W.D. Lakshman", "Governor Lakshman"]
+    party: "Government / Appointee"
+    role_history: ["CBSL Governor"]
+  "Nandalal Weerasinghe":
+    aliases: ["Dr. P. Nandalal Weerasinghe", "Governor Weerasinghe"]
+    party: "Independent / Technocrat"
+    role_history: ["CBSL Governor"]
+  "Ali Sabry":
+    aliases: ["M.U.M. Ali Sabry", "Minister Ali Sabry"]
+    party: "SLPP / Government"
+    role_history: ["Finance Minister", "Minister of Foreign Affairs", "Minister of Justice"]
+  "Sirisena Cooray":
+    aliases: ["Cooray", "Mayor Sirisena Cooray"]
+    party: "United National Party (UNP)"
+    role_history: ["Cabinet Minister", "UNP General Secretary", "Mayor of Colombo"]
+  "Anuruddha Ratwatte":
+    aliases: ["General Anuruddha Ratwatte", "Ratwatte"]
+    party: "People's Alliance (PA) / SLFP"
+    role_history: ["Deputy Minister of Defence", "Cabinet Minister of Power and Energy"]
+
+parties:
+  "UNP": "United National Party (UNP)"
+  "SLFP": "Sri Lanka Freedom Party (SLFP)"
+  "SLPP": "Sri Lanka Podujana Peramuna (SLPP)"
+  "SJB": "Samagi Jana Balawegaya (SJB)"
+  "JVP": "Janatha Vimukthi Peramuna (JVP)"
+  "NPP": "National People's Power (NPP)"
+  "ITAK": "Illankai Tamil Arasu Kachchi (ITAK)"
+  "TNA": "Tamil National Alliance (TNA)"
+
+institutions:
+  "CBSL": "Central Bank of Sri Lanka"
+  "MOF": "Ministry of Finance"
+  "CSE": "Colombo Stock Exchange"
+  "SEC": "Securities and Exchange Commission of Sri Lanka"
+  "CID": "Criminal Investigation Department"
+  "TID": "Terrorist Investigation Division"
+  "FCID": "Financial Crimes Investigation Division"
+  "AGD": "Attorney General's Department"
+  "IMF": "International Monetary Fund"
