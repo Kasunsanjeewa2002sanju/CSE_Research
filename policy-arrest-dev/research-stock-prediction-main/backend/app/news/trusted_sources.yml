@@ -1,0 +1,90 @@
+# Trusted Sources Registry for PolitiTrade LK
+# Categorized into Tier 1 (Official), Tier 2 (Established International), Tier 3 (Established Sri Lankan News)
+
+tiers:
+  tier_1:
+    description: "Official Sri Lankan Government, Regulatory, and Judicial Institutions"
+    weight: 1.0
+    sources:
+      - name: "Central Bank of Sri Lanka"
+        domains: ["cbsl.gov.lk"]
+        rss: "https://www.cbsl.gov.lk/en/rss.xml"
+        type: "official"
+      - name: "Ministry of Finance Sri Lanka"
+        domains: ["treasury.gov.lk", "mof.gov.lk"]
+        rss: null
+        type: "official"
+      - name: "Department of Government Information"
+        domains: ["dgi.gov.lk", "news.lk"]
+        rss: "https://news.lk/news?format=feed&type=rss"
+        type: "official"
+      - name: "Colombo Stock Exchange"
+        domains: ["cse.lk"]
+        rss: null
+        type: "official"
+      - name: "Parliament of Sri Lanka"
+        domains: ["parliament.lk"]
+        rss: null
+        type: "official"
+      - name: "Supreme Court of Sri Lanka"
+        domains: ["supremecourt.lk"]
+        rss: null
+        type: "official"
+      - name: "Sri Lanka Police"
+        domains: ["police.lk"]
+        rss: null
+        type: "official"
+
+  tier_2:
+    description: "Established International News Organizations"
+    weight: 0.85
+    sources:
+      - name: "Reuters"
+        domains: ["reuters.com"]
+        rss: "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best"
+        type: "international"
+      - name: "BBC News"
+        domains: ["bbc.com", "bbc.co.uk"]
+        rss: "http://feeds.bbci.co.uk/news/world/asia/rss.xml"
+        type: "international"
+      - name: "Associated Press"
+        domains: ["apnews.com"]
+        rss: null
+        type: "international"
+      - name: "Bloomberg"
+        domains: ["bloomberg.com"]
+        rss: null
+        type: "international"
+
+  tier_3:
+    description: "Established Sri Lankan National Publications & Broadcasters"
+    weight: 0.70
+    sources:
+      - name: "Daily FT"
+        domains: ["ft.lk"]
+        rss: "https://www.ft.lk/rss"
+        type: "national_business"
+      - name: "Daily Mirror"
+        domains: ["dailymirror.lk"]
+        rss: "https://www.dailymirror.lk/rss"
+        type: "national"
+      - name: "EconomyNext"
+        domains: ["economynext.com"]
+        rss: "https://economynext.com/feed/"
+        type: "national_economy"
+      - name: "Ada Derana"
+        domains: ["adaderana.lk"]
+        rss: "http://www.adaderana.lk/rss.php"
+        type: "national_broadcast"
+      - name: "Newsfirst"
+        domains: ["newsfirst.lk"]
+        rss: "https://www.newsfirst.lk/feed/"
+        type: "national_broadcast"
+      - name: "The Island"
+        domains: ["island.lk"]
+        rss: "https://island.lk/feed/"
+        type: "national"
+      - name: "Sunday Times"
+        domains: ["sundaytimes.lk"]
+        rss: "https://www.sundaytimes.lk/rss"
+        type: "national"

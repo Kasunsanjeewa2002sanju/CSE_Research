@@ -1,0 +1,195 @@
+# ==============================================================================
+# PolitiTrade LK - Git Ignore Configuration
+# Comprehensive ignore rules for Python/FastAPI backend & Vite/React frontend
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Environment Variables & Secrets
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.local
+
+# ------------------------------------------------------------------------------
+# Large Datasets & Raw Stock Files (~187MB)
+# ------------------------------------------------------------------------------
+# Exclude raw historical market Excel & CSV files from Colombo Stock Exchange
+Dataset-Stock/
+!Dataset-Stock/.gitkeep
+
+# Exclude generated / processed data pipelines
+data/processed/
+!data/processed/.gitkeep
+data_processed/
+
+# Excel spreadsheets & large data formats
+*.xls
+*.xlsx
+
+# Compressed archives & dataset dumps
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.bz2
+
+# ------------------------------------------------------------------------------
+# Machine Learning Model Weights, Parquet & Artifact Caches
+# ------------------------------------------------------------------------------
+*.parquet
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+*.bin
+
+artifacts/clean/
+!artifacts/clean/.gitkeep
+artifacts/event_study/
+!artifacts/event_study/.gitkeep
+artifacts/models/
+!artifacts/models/.gitkeep
+artifacts/reports/
+!artifacts/reports/.gitkeep
+artifacts/backtests/
+!artifacts/backtests/.gitkeep
+
+# Retain directory structure and curated small event definitions
+!Dataset-Events/
+!**/.gitkeep
+
+# ------------------------------------------------------------------------------
+# Python & Bytecode Cache
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Python Distribution / Packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ------------------------------------------------------------------------------
+# Testing, Coverage & Linters
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# Jupyter Notebooks & Data Science Checkpoints
+# ------------------------------------------------------------------------------
+.ipynb_checkpoints
+*-checkpoint.ipynb
+
+# ------------------------------------------------------------------------------
+# Database Files & SQLite
+# ------------------------------------------------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+data/*.db
+data/politi_trade.db
+
+# ------------------------------------------------------------------------------
+# Node.js & Frontend (Vite / React / TypeScript)
+# ------------------------------------------------------------------------------
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+frontend/dist-ssr/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Vite & build caches
+.vite/
+frontend/.vite/
+.eslintcache
+
+# ------------------------------------------------------------------------------
+# Operating System Files
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+
+# ------------------------------------------------------------------------------
+# IDEs and Editors
+# ------------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace

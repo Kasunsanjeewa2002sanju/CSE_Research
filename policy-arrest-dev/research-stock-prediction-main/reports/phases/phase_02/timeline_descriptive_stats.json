@@ -1,0 +1,14 @@
+{
+  "timeline_scope": "2020-2025 Primary Evaluation Horizon",
+  "total_trading_days": 1400,
+  "starting_close": 6108.53,
+  "ending_close": 22624.31,
+  "period_net_return_pct": 270.37,
+  "period_high": 23659.7,
+  "period_low": 4247.95,
+  "annualized_volatility": 20.97,
+  "policy_count_focus": 18,
+  "mean_immediate_1d_reaction_pct": -0.23,
+  "mean_3d_reaction_pct": -0.28,
+  "mean_5d_reaction_pct": -0.46
+}
