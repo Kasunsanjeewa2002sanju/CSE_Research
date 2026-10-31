@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-10-22 16:19:43",
+  "total_charts": 210,
+  "total_time_seconds": 27.31,
+  "overall_status": "ALL PASSED",
+  "stages": [
+    {
+      "stage": "stage1",
+      "charts": 26,
+      "status": "PASS",
+      "key_metric": "h=1: mean=-0.36%, std=0.91%, n=501",
+      "elapsed_sec": 5.79,
+      "error": null
+    },
+    {
+      "stage": "stage2",
+      "charts": 20,
+      "status": "PASS",
+      "key_metric": "avg top1 sim=0.68, same_cat=0.22, diff_cat=0.11",
+      "elapsed_sec": 8.88,
+      "error": null
+    },
+    {
+      "stage": "stage3",
+      "charts": 28,
+      "status": "PASS",
+      "key_metric": "h=5 fallback=8%, IC=0.12; h=10 fallback=5%, IC=0.18",
+      "elapsed_sec": 2.33,
+      "error": null
+    },
+    {
+      "stage": "stage4",
+      "charts": 24,
+      "status": "PASS",
+      "key_metric": "median days_to_next=45; 12% news in 0-7 window",
+      "elapsed_sec": 2.36,
+      "error": null
+    },
+    {
+      "stage": "stage5",
+      "charts": 32,
+      "status": "PASS",
+      "key_metric": "avg confidence=0.72, 23% multilabel, novelty mean=0.85",
+      "elapsed_sec": 2.05,
+      "error": null
+    },
+    {
+      "stage": "stage6",
+      "charts": 24,
+      "status": "PASS",
+      "key_metric": "shape=58/58 OK, 12 event features differ between cut/hike",
+      "elapsed_sec": 2.1,
+      "error": null
+    },
+    {
+      "stage": "stage7",
+      "charts": 32,
+      "status": "PASS",
+      "key_metric": "dir_acc=57.3%, IC=0.09, Sharpe=0.42, std=0.31%, fallback=6%",
+      "elapsed_sec": 2.33,
+      "error": null
+    },
+    {
+      "stage": "stage8",
+      "charts": 24,
+      "status": "PASS",
+      "key_metric": "Candidate evaluated: MAE=+7.1% (PASS), event_imp=0.53% (FAIL -> REJECT)",
+      "elapsed_sec": 1.47,
+      "error": null
+    }
+  ]
+}

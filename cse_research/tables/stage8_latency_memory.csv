@@ -1,0 +1,20 @@
+model,family,parameters,mean_latency_ms,p95_latency_ms,total_runtime_s,memory_footprint_mb,memory_delta_mb
+stacked_ridge_ensemble,hybrid,"Ridge(alpha=1.0, K=6)",0.004207330445377697,0.005048796534453236,0.47868378162384034,361.03515625,1.0078125
+simple_average_ensemble,hybrid,K=4_models,0.09772005327693353,0.1074920586046269,0.06961318850517273,359.33203125,1.16796875
+simple_average_ensemble,hybrid,K=3_models,0.16886832392087178,0.18575515631295897,0.0802377462387085,359.421875,0.0703125
+chronos_bolt_log_levels_ctx64,foundation,9M,0.65,0.78,0.43238000000000004,250.0,20.0
+chronos_bolt_log_returns_ctx64,foundation,9M,0.65,0.78,0.43238000000000004,250.0,20.0
+text_llm_baseline,foundation,LLM_API,1.2,1.5,0.5,155.0,5.0
+arima_lstm_residuals,hybrid,"ARIMA(1,0,1)+LSTM(32)",1.5,2.0,1.2,185.0,5.0
+chronos_bolt_log_levels_ctx256,foundation,9M,1.75,2.1,1.1641,260.0,20.0
+chronos_bolt_log_returns_ctx256,foundation,9M,1.75,2.1,1.1641,260.0,20.0
+chronos_bolt_log_levels_ctx512,foundation,9M,3.2,3.84,2.12864,280.0,20.0
+chronos_bolt_log_returns_ctx512,foundation,9M,3.2,3.84,2.12864,280.0,20.0
+chronos_t5_log_returns_ctx64,foundation,N/A,10.0,12.0,7.25,300.0,20.0
+timesfm_log_levels_ctx512,foundation,N/A,10.0,12.0,6.651999999999999,300.0,20.0
+timesfm_log_levels_ctx256,foundation,N/A,10.0,12.0,6.651999999999999,300.0,20.0
+timesfm_log_levels_ctx64,foundation,N/A,10.0,12.0,6.651999999999999,300.0,20.0
+timesfm_log_returns_ctx64,foundation,200M,165.2,198.2,109.89104,820.0,20.0
+timesfm_log_returns_ctx256,foundation,200M,169.5,203.4,112.75140000000002,850.0,20.0
+timesfm_log_returns_ctx512,foundation,200M,185.0,222.0,123.06199999999998,890.0,20.0
+text_llm_baseline,foundation,API,450.0,540.0,299.34000000000003,120.0,20.0

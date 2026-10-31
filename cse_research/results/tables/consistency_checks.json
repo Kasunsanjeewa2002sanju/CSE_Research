@@ -1,0 +1,11 @@
+{
+  "invalid_aspi_count": 0,
+  "invalid_sp20_count": 0,
+  "invalid_turnover_negative": 0,
+  "invalid_shares_negative": 0,
+  "turnover_shares_log_level_correlation": 0.9491,
+  "turnover_shares_daily_change_correlation": 0.6841,
+  "turnover_shares_sign_concordance_pct": 74.42,
+  "turnover_robust_outliers_count": 662,
+  "shares_robust_outliers_count": 747
+}

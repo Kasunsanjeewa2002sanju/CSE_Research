@@ -1,0 +1,204 @@
+{
+  "candidate_model_name": "candidate_20261022.cbm",
+  "created_at": "2026-10-22T15:49:02.093653",
+  "n_features": 60,
+  "feature_columns": [
+    "ret_1d",
+    "ret_2d",
+    "ret_3d",
+    "ret_5d",
+    "ret_10d",
+    "ret_20d",
+    "ret_lag_1",
+    "ret_lag_2",
+    "ret_lag_3",
+    "ret_lag_5",
+    "ret_lag_10",
+    "ret_lag_20",
+    "ret_mean_5d",
+    "ret_mean_10d",
+    "ret_mean_20d",
+    "ret_vol_5d",
+    "ret_vol_10d",
+    "ret_vol_20d",
+    "rsi_14",
+    "macd_line",
+    "macd_signal",
+    "macd_hist",
+    "dist_from_sma_20",
+    "dist_from_sma_50",
+    "sp20_log_return",
+    "aspi_sp20_spread",
+    "has_sp20",
+    "log_turnover",
+    "log_shares",
+    "turnover_log_change_1d",
+    "shares_log_change_1d",
+    "turnover_zscore_60d",
+    "shares_zscore_60d",
+    "turnover_to_5d_ratio",
+    "cal_day_of_week",
+    "cal_month",
+    "cal_session_gap_days",
+    "stage_none",
+    "stage_announcement",
+    "stage_nomination_start",
+    "stage_nomination_end",
+    "stage_polling",
+    "stage_result",
+    "stage_government_formation",
+    "type_none",
+    "type_presidential",
+    "type_parliamentary",
+    "type_provincial_council",
+    "days_to_next_known_event",
+    "days_since_last_stage",
+    "in_window_0_2",
+    "in_window_0_7",
+    "in_window_0_15",
+    "in_window_0_30",
+    "prior_mean_car",
+    "prior_median_car",
+    "prior_n",
+    "sentiment_positive",
+    "sentiment_negative",
+    "sentiment_neutral"
+  ],
+  "hyperparameters": {
+    "iterations": 80,
+    "learning_rate": 0.05,
+    "depth": 4,
+    "random_seed": 42,
+    "loss_function": "RMSE",
+    "verbose": 0,
+    "train_dir": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\data\\cache\\catboost_info"
+  },
+  "walk_forward_metrics": {
+    "folds": [
+      {
+        "fold_name": "Fold 1",
+        "train_years": "2022-2022",
+        "val_year": "2023",
+        "n_train": 15,
+        "n_val": 26,
+        "mae": 0.02087,
+        "rmse": 0.02375,
+        "ic": 0.4051,
+        "directional_accuracy": 0.5385
+      },
+      {
+        "fold_name": "Fold 2",
+        "train_years": "2022-2023",
+        "val_year": "2024",
+        "n_train": 41,
+        "n_val": 206,
+        "mae": 0.02506,
+        "rmse": 0.03163,
+        "ic": 0.4935,
+        "directional_accuracy": 0.5485
+      },
+      {
+        "fold_name": "Fold 3",
+        "train_years": "2022-2024",
+        "val_year": "2025",
+        "n_train": 247,
+        "n_val": 102,
+        "mae": 0.02235,
+        "rmse": 0.02944,
+        "ic": 0.0247,
+        "directional_accuracy": 0.549
+      }
+    ],
+    "mean_mae": 0.02276,
+    "mean_rmse": 0.02827,
+    "mean_ic": 0.3078,
+    "mean_directional_accuracy": 0.5453
+  },
+  "shap_summary": {
+    "event_feature_importance_pct": 0.53,
+    "sentiment_feature_importance_pct": 0.53,
+    "market_feature_importance_pct": 99.47,
+    "top_10_features": [
+      {
+        "feature": "shares_zscore_60d",
+        "mean_abs_shap": 0.000623,
+        "importance_pct": 30.571,
+        "is_event": false,
+        "is_sentiment": false,
+        "category": "technical_market"
+      },
+      {
+        "feature": "cal_month",
+        "mean_abs_shap": 0.000591,
+        "importance_pct": 29.046,
+        "is_event": false,
+        "is_sentiment": false,
+        "category": "technical_market"
+      },
+      {
+        "feature": "ret_2d",
+        "mean_abs_shap": 0.000353,
+        "importance_pct": 17.32,
+        "is_event": false,
+        "is_sentiment": false,
+        "category": "technical_market"
+      },
+      {
+        "feature": "ret_mean_20d",
+        "mean_abs_shap": 0.000249,
+        "importance_pct": 12.215,
+        "is_event": false,
+        "is_sentiment": false,
+        "category": "technical_market"
+      },
+      {
+        "feature": "ret_lag_2",
+        "mean_abs_shap": 0.000112,
+        "importance_pct": 5.478,
+        "is_event": false,
+        "is_sentiment": false,
+        "category": "technical_market"
+      },
+      {
+        "feature": "turnover_log_change_1d",
+        "mean_abs_shap": 5.2e-05,
+        "importance_pct": 2.556,
+        "is_event": false,
+        "is_sentiment": false,
+        "category": "technical_market"
+      },
+      {
+        "feature": "ret_lag_5",
+        "mean_abs_shap": 4.6e-05,
+        "importance_pct": 2.283,
+        "is_event": false,
+        "is_sentiment": false,
+        "category": "technical_market"
+      },
+      {
+        "feature": "sentiment_positive",
+        "mean_abs_shap": 1.1e-05,
+        "importance_pct": 0.53,
+        "is_event": true,
+        "is_sentiment": true,
+        "category": "sentiment"
+      },
+      {
+        "feature": "ret_1d",
+        "mean_abs_shap": 0.0,
+        "importance_pct": 0.0,
+        "is_event": false,
+        "is_sentiment": false,
+        "category": "technical_market"
+      },
+      {
+        "feature": "ret_3d",
+        "mean_abs_shap": 0.0,
+        "importance_pct": 0.0,
+        "is_event": false,
+        "is_sentiment": false,
+        "category": "technical_market"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "stage": "STAGE_11",
+  "description": "Multi-horizon scenario forecasting models and conformal residuals",
+  "horizons": [
+    1,
+    2,
+    5,
+    10
+  ],
+  "n_samples": 7635,
+  "n_features": 57,
+  "data_range": [
+    "1994-01-03",
+    "2025-12-31"
+  ],
+  "frozen_timestamp": "2026-10-13T11:40:01Z",
+  "model_type": "CatBoost (Regressor + Calibrated Classifier)",
+  "hyperparameters": {
+    "iterations": 80,
+    "learning_rate": 0.05,
+    "depth": 4,
+    "random_seed": 42,
+    "verbose": 0
+  },
+  "elapsed_seconds": 10.62
+}

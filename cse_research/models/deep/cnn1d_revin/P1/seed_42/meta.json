@@ -1,0 +1,29 @@
+{
+  "parameters": 6142,
+  "best_epoch": 11,
+  "best_val_loss": 0.2625603978633881,
+  "total_epochs": 12,
+  "seed": 42,
+  "hardware": {
+    "device": "cpu",
+    "cuda_available": false,
+    "cpu_threads": 4
+  },
+  "model_type": "cnn1d",
+  "model_tag": "cnn1d_revin",
+  "feature_set": "B",
+  "horizon": 5,
+  "lookback": 20,
+  "use_revin": true,
+  "fit_summary": {
+    "total_epochs": 12,
+    "best_epoch": 11,
+    "best_val_loss": 0.2625603978633881,
+    "runtime_seconds": 4.833550930023193
+  },
+  "diagnostics": {
+    "pred_ret_std": 0.025230204474157115,
+    "pred_dir_mean": 0.6855524079320113,
+    "is_collapsed": false
+  }
+}

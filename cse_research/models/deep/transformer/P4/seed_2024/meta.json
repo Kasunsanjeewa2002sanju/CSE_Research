@@ -1,0 +1,29 @@
+{
+  "parameters": 6362,
+  "best_epoch": 1,
+  "best_val_loss": 0.33447794102715134,
+  "total_epochs": 1,
+  "seed": 2024,
+  "hardware": {
+    "device": "cpu",
+    "cuda_available": false,
+    "cpu_threads": 4
+  },
+  "model_type": "transformer",
+  "model_tag": "transformer",
+  "feature_set": "C",
+  "horizon": 5,
+  "lookback": 20,
+  "use_revin": false,
+  "fit_summary": {
+    "total_epochs": 1,
+    "best_epoch": 1,
+    "best_val_loss": 0.33447794102715134,
+    "runtime_seconds": 6.018512487411499
+  },
+  "diagnostics": {
+    "pred_ret_std": 0.13147762134871752,
+    "pred_dir_mean": 0.38328530259365995,
+    "is_collapsed": false
+  }
+}

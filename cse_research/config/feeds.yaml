@@ -1,0 +1,130 @@
+# Configuration of Sri Lankan News Sources for Stage 12 Pipeline (Rule R11)
+# Verified live via HTTP probe on October 13, 2026.
+# Never hard-code an unverified URL without explicit verification status.
+
+ingestion:
+  timeout_sec: 8.0
+  max_retries: 3
+  timezone: "Asia/Colombo"
+  dedup_similarity_threshold: 0.85
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 CSE-Research-Bot/1.0"
+
+# Verified active RSS feeds (Status 200 and parsed > 0 entries)
+verified_active_feeds:
+  - name: "Ada Derana"
+    id: "ada_derana"
+    url: "http://www.adaderana.lk/rss.php"
+    feed_type: "rss"
+    language: "en"
+    verified_entries: 25
+    notes: "PubDate missing in feed; normaliser defaults to fetch time"
+
+  - name: "The Island - Main"
+    id: "the_island_main"
+    url: "https://island.lk/feed/"
+    feed_type: "rss"
+    language: "en"
+    verified_entries: 10
+    notes: "PubDate in UTC; normalises to Asia/Colombo"
+
+  - name: "The Island - News"
+    id: "the_island_news"
+    url: "https://island.lk/category/news/feed/"
+    feed_type: "rss"
+    language: "en"
+    verified_entries: 10
+    notes: "Category feed for general national political news"
+
+  - name: "The Island - Business"
+    id: "the_island_business"
+    url: "https://island.lk/category/business/feed/"
+    feed_type: "rss"
+    language: "en"
+    verified_entries: 10
+    notes: "Category feed for CBSL, banking, and commercial news"
+
+  - name: "NewsWire"
+    id: "newswire"
+    url: "https://www.newswire.lk/feed/"
+    feed_type: "rss"
+    language: "en"
+    verified_entries: 20
+    notes: "Verified active WordPress RSS feed"
+
+  - name: "Sunday Observer"
+    id: "sunday_observer"
+    url: "https://www.sundayobserver.lk/feed/"
+    feed_type: "rss"
+    language: "en"
+    verified_entries: 10
+    notes: "State-owned broadsheet English RSS feed"
+
+# Google News query feeds for Sri Lanka politics and economy
+query_feeds:
+  - name: "Google News - Sri Lanka Politics"
+    id: "google_news_politics"
+    url: "https://news.google.com/rss/search?q=Sri+Lanka+politics&hl=en-LK&gl=LK&ceid=LK:en"
+    feed_type: "query_rss"
+    language: "en"
+    verified_entries: 100
+    notes: "High-volume aggregation of national political headlines"
+
+  - name: "Google News - Sri Lanka Economy & CSE"
+    id: "google_news_economy"
+    url: "https://news.google.com/rss/search?q=Sri+Lanka+economy+OR+CSE+OR+ASPI&hl=en-LK&gl=LK&ceid=LK:en"
+    feed_type: "query_rss"
+    language: "en"
+    verified_entries: 100
+    notes: "High-volume aggregation of macroeconomic and capital market items"
+
+# Candidate feeds tested but INACTIVE / BLOCKED (Rule R11 empirical audit)
+inactive_candidate_feeds:
+  - name: "Daily Mirror"
+    id: "daily_mirror"
+    url: "https://www.dailymirror.lk/rss/breaking-news"
+    feed_type: "rss"
+    is_active: false
+    reason: "HTTP 200 returned HTML webpage; 0 valid RSS XML entries parsed"
+
+  - name: "Newsfirst"
+    id: "newsfirst"
+    url: "https://www.newsfirst.lk/feed/"
+    feed_type: "rss"
+    is_active: false
+    reason: "HTTP 403 / 429 Cloudflare bot-protection blocks automated requests"
+
+  - name: "EconomyNext"
+    id: "economynext"
+    url: "https://economynext.com/feed/"
+    feed_type: "rss"
+    is_active: false
+    reason: "HTTP 403 Cloudflare bot-protection blocks automated requests"
+
+  - name: "Daily FT"
+    id: "daily_ft"
+    url: "https://www.ft.lk/rss/all"
+    feed_type: "rss"
+    is_active: false
+    reason: "HTTP 404 Not Found on RSS endpoints"
+
+  - name: "Sunday Times"
+    id: "sunday_times"
+    url: "https://www.sundaytimes.lk/rss/news.xml"
+    feed_type: "rss"
+    is_active: false
+    reason: "HTTP 404 Not Found on RSS endpoints"
+
+  - name: "Colombo Gazette"
+    id: "colombo_gazette"
+    url: "https://colombogazette.com/feed/"
+    feed_type: "rss"
+    is_active: false
+    reason: "HTTP 200 returned empty feed with 0 entries"
+
+# External News API provider configuration
+news_api:
+  provider: "newsdata"  # Options: newsdata, gnews
+  env_var: "NEWSDATA_API_KEY"
+  rate_limit_min_interval_sec: 2.0
+  max_retries: 3
+  enabled: true

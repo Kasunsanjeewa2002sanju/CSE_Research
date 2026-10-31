@@ -1,0 +1,13 @@
+{
+  "decision": "rule_winner",
+  "chosen_model": "xgboost_clf",
+  "family": "shallow",
+  "horizon": 1,
+  "metric": "accuracy",
+  "beats": 5,
+  "n_phases": 5,
+  "mean_lift": 0.07359848418987118,
+  "reason": "beat majority baseline in 5/5 phases; mean lift = +0.0736",
+  "r3_status": "verified_no_leakage",
+  "rule_source": "Stage 3 pre-registered selection rule"
+}

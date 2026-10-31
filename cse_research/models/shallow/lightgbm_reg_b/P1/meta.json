@@ -1,0 +1,84 @@
+{
+  "model": "lightgbm_reg_b",
+  "family": "shallow",
+  "phase": "P1",
+  "horizon": 5,
+  "seed": 42,
+  "train_date_range": [
+    "1994-01-03",
+    "2011-12-15"
+  ],
+  "embargo_date_range": [
+    "embargo_10d",
+    "embargo_10d"
+  ],
+  "val_date_range": [
+    "2012-01-02",
+    "2014-12-31"
+  ],
+  "embargo_days": 10,
+  "feature_set": "B",
+  "hyperparameters": {},
+  "raw_data_hash": "a9965aea016faf7cdd5836ac440818f082550906714cb82034c7f661be202c74",
+  "library_versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "statsmodels": "0.15.0"
+  },
+  "runtime_seconds": 0.5006148815155029,
+  "hardware": {
+    "device_type": "cpu",
+    "device_name": "CPU (torch not installed)",
+    "is_cuda_available": false,
+    "cuda_device_count": 0,
+    "total_memory_mb": null,
+    "cuda_version": null
+  },
+  "prediction_file": "results/predictions/shallow/lightgbm_reg_b_s42_P1_h5.parquet",
+  "extra_meta": {
+    "best_params": {
+      "n_estimators": 80,
+      "learning_rate": 0.05,
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    "budget": 3,
+    "feature_importances": {
+      "ret_1d": 0.06343713956170696,
+      "ret_2d": 0.014994232987312554,
+      "ret_3d": 0.03575547866205302,
+      "ret_5d": 0.058823529411764636,
+      "ret_10d": 0.039215686274509755,
+      "ret_20d": 0.07266435986159162,
+      "ret_lag_1": 0.02076124567474046,
+      "ret_lag_2": 0.019607843137254877,
+      "ret_lag_3": 0.011534025374855811,
+      "ret_lag_5": 0.005767012687427906,
+      "ret_lag_10": 0.00922722029988465,
+      "ret_lag_20": 0.03229527104959627,
+      "ret_mean_5d": 0.0,
+      "ret_mean_10d": 0.0,
+      "ret_mean_20d": 0.0,
+      "ret_vol_5d": 0.0369088811995386,
+      "ret_vol_10d": 0.06805074971164929,
+      "ret_vol_20d": 0.09342560553633207,
+      "rsi_14": 0.040369088811995336,
+      "macd_line": 0.04498269896193766,
+      "macd_signal": 0.06805074971164929,
+      "macd_hist": 0.04844290657439441,
+      "dist_from_sma_20": 0.03575547866205302,
+      "dist_from_sma_50": 0.06920415224913487,
+      "sp20_log_return": 0.0,
+      "aspi_sp20_spread": 0.0,
+      "has_sp20": 0.0,
+      "log_turnover": 0.016147635524798136,
+      "log_shares": 0.023068050749711622,
+      "turnover_log_change_1d": 0.01038062283737023,
+      "shares_log_change_1d": 0.00922722029988465,
+      "turnover_zscore_60d": 0.008073817762399068,
+      "shares_zscore_60d": 0.0184544405997693,
+      "turnover_to_5d_ratio": 0.025374855824682786
+    }
+  }
+}

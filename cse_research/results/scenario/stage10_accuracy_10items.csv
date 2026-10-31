@@ -1,0 +1,11 @@
+id,headline,predicted_category,true_category,correct_category
+1,President announces snap presidential election,presidential_election,presidential_election,True
+2,Central Bank raises policy rates,central_bank_or_monetary_policy,central_bank_or_monetary_policy,True
+3,IMF approves $2.9B bailout,debt_restructuring_or_IMF,debt_restructuring_or_IMF,True
+4,Sri Lanka cricket team wins Asia Cup,not_relevant,not_relevant,True
+5,Parliament dissolved ahead of general election,parliamentary_election,parliamentary_election,True
+6,Petrol prices reduced by Rs 20,not_relevant,government_policy_or_budget_or_tax,False
+7,Former minister arrested on corruption,cabinet_or_ministry_change,political_arrest_or_imprisonment,False
+8,Nationwide protests over fuel prices,protest_or_unrest,protest_or_unrest,True
+9,New cabinet ministers sworn in,cabinet_or_ministry_change,cabinet_or_ministry_change,True
+10,Tourism arrivals hit record high,political_arrest_or_imprisonment,not_relevant,False

@@ -1,0 +1,73 @@
+{
+  "model": "catboost_reg_a",
+  "family": "shallow",
+  "phase": "P3",
+  "horizon": 5,
+  "seed": 42,
+  "train_date_range": [
+    "1994-01-03",
+    "2017-12-14"
+  ],
+  "embargo_date_range": [
+    "embargo_10d",
+    "embargo_10d"
+  ],
+  "val_date_range": [
+    "2018-01-02",
+    "2020-12-31"
+  ],
+  "embargo_days": 10,
+  "feature_set": "A",
+  "hyperparameters": {},
+  "raw_data_hash": "a9965aea016faf7cdd5836ac440818f082550906714cb82034c7f661be202c74",
+  "library_versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "statsmodels": "0.15.0"
+  },
+  "runtime_seconds": 1.2083237171173096,
+  "hardware": {
+    "device_type": "cpu",
+    "device_name": "CPU (torch not installed)",
+    "is_cuda_available": false,
+    "cuda_device_count": 0,
+    "total_memory_mb": null,
+    "cuda_version": null
+  },
+  "prediction_file": "results/predictions/shallow/catboost_reg_a_s42_P3_h5.parquet",
+  "extra_meta": {
+    "best_params": {
+      "iterations": 40,
+      "learning_rate": 0.03,
+      "depth": 3
+    },
+    "budget": 3,
+    "feature_importances": {
+      "ret_1d": 0.1454662166598083,
+      "ret_2d": 0.1255096074309198,
+      "ret_3d": 0.10947852279413144,
+      "ret_5d": 0.0674164657039566,
+      "ret_10d": 0.01930975889521325,
+      "ret_20d": 0.025791152569991847,
+      "ret_lag_1": 0.0037051467569414764,
+      "ret_lag_2": 0.0,
+      "ret_lag_3": 0.001839761436148577,
+      "ret_lag_5": 0.0,
+      "ret_lag_10": 0.0,
+      "ret_lag_20": 0.0,
+      "ret_mean_5d": 0.11125915891548904,
+      "ret_mean_10d": 0.0353831107266506,
+      "ret_mean_20d": 0.02334429382908513,
+      "ret_vol_5d": 0.015869159582503935,
+      "ret_vol_10d": 0.030857708730042406,
+      "ret_vol_20d": 0.04418245206093366,
+      "rsi_14": 0.07662610217158437,
+      "macd_line": 0.006576154313346479,
+      "macd_signal": 0.006699858375466368,
+      "macd_hist": 0.030811608832923124,
+      "dist_from_sma_20": 0.0994764182960287,
+      "dist_from_sma_50": 0.020397341918824998
+    }
+  }
+}

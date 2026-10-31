@@ -1,0 +1,191 @@
+{
+  "0431ead8df0835eaad381918ccab5ff141cc256a04205c58a34f4b1ca044466e": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "direction_reason": "Pre-election stages introduce elevated policy and outcome uncertainty among investors.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Diversified Holdings",
+      "Manufacturing & Exports"
+    ],
+    "event_date_mentioned": "2000-08-18",
+    "entities": {},
+    "confidence": 0.95,
+    "language": "en",
+    "extraction_method": "offline_fallback"
+  },
+  "a72ce29d3362d9feab1f25eeac086febcbcc73dd3dd8b92accf34341502b8da8": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "nomination",
+    "expected_direction": "uncertain",
+    "direction_reason": "Pre-election stages introduce elevated policy and outcome uncertainty among investors.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Diversified Holdings",
+      "Manufacturing & Exports"
+    ],
+    "event_date_mentioned": "2000-09-04",
+    "entities": {},
+    "confidence": 0.95,
+    "language": "en",
+    "extraction_method": "offline_fallback"
+  },
+  "d338e4d5b99ef0e369d80e1a4e8138de329f1fe8b5573ad31061c533bff0ea68": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "campaign",
+    "expected_direction": "uncertain",
+    "direction_reason": "Pre-election stages introduce elevated policy and outcome uncertainty among investors.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Diversified Holdings",
+      "Manufacturing & Exports"
+    ],
+    "event_date_mentioned": "2000-10-07",
+    "entities": {},
+    "confidence": 0.95,
+    "language": "en",
+    "extraction_method": "offline_fallback"
+  },
+  "11a813931b0daecfee6494d9f5b17fe30e989734a4d9014b25c5a92f236d3b54": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "polling",
+    "expected_direction": "neutral",
+    "direction_reason": "Market participants adopt a wait-and-see stance on polling day prior to result releases.",
+    "affected_sectors": [
+      "Food, Beverage & Tobacco"
+    ],
+    "event_date_mentioned": "2000-10-10",
+    "entities": {},
+    "confidence": 0.95,
+    "language": "en",
+    "extraction_method": "offline_fallback"
+  },
+  "2d0e6a1b5851bde5921dc748c699d30b1d2b4dba1333776a88d8ac4ebe321bf3": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "result",
+    "expected_direction": "uncertain",
+    "direction_reason": "Election outcome results in divided parliament or uncertain coalition dynamics.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Diversified Holdings",
+      "Manufacturing & Exports"
+    ],
+    "event_date_mentioned": "2000-10-11",
+    "entities": {},
+    "confidence": 0.95,
+    "language": "en",
+    "extraction_method": "offline_fallback"
+  },
+  "16ba07bc562109bd7302917dcbc2da79a7c91dc9029a0124e0d25d85dd7c9e60": {
+    "is_relevant": true,
+    "event_category": "other_political",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "direction_reason": "Political news is evaluated as having modest or balanced immediate market impact.",
+    "affected_sectors": [
+      "Diversified Holdings"
+    ],
+    "event_date_mentioned": "2000-10-18",
+    "entities": {
+      "parties": [
+        "TNA"
+      ]
+    },
+    "confidence": 0.511,
+    "language": "en",
+    "extraction_method": "offline_fallback"
+  },
+  "d0384b30824fd608f61ae7cecb059e63504730e86a6953e830ce619101212f06": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "direction_reason": "Pre-election stages introduce elevated policy and outcome uncertainty among investors.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Diversified Holdings",
+      "Manufacturing & Exports"
+    ],
+    "event_date_mentioned": "2001-10-10",
+    "entities": {},
+    "confidence": 0.95,
+    "language": "en",
+    "extraction_method": "offline_fallback"
+  },
+  "a7ed94bd2c9c65b42e1334103bec7ae5651f34ebe5ed18ccc55bc1304ecf4b75": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "nomination",
+    "expected_direction": "uncertain",
+    "direction_reason": "Pre-election stages introduce elevated policy and outcome uncertainty among investors.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Diversified Holdings",
+      "Manufacturing & Exports"
+    ],
+    "event_date_mentioned": "2001-10-27",
+    "entities": {},
+    "confidence": 0.604,
+    "language": "en",
+    "extraction_method": "offline_fallback"
+  },
+  "64fff5ba0ab7b2f07f95acb1b89accf8b08656581b22503bba4f01e2f31f48be": {
+    "is_relevant": true,
+    "event_category": "other_political",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "direction_reason": "Political news is evaluated as having modest or balanced immediate market impact.",
+    "affected_sectors": [
+      "Diversified Holdings"
+    ],
+    "event_date_mentioned": "2001-12-02",
+    "entities": {
+      "parties": [
+        "UNP"
+      ]
+    },
+    "confidence": 0.5,
+    "language": "en",
+    "extraction_method": "offline_fallback"
+  },
+  "f55a9e2c30dec06559faa26ddff6352ae8af5b645b352882a07e6a9aee16b428": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "polling",
+    "expected_direction": "neutral",
+    "direction_reason": "Market participants adopt a wait-and-see stance on polling day prior to result releases.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Diversified Holdings",
+      "Manufacturing & Exports"
+    ],
+    "event_date_mentioned": "2001-12-05",
+    "entities": {},
+    "confidence": 0.95,
+    "language": "en",
+    "extraction_method": "offline_fallback"
+  },
+  "791d830e423030d0d69fc605672e44e3359ce2c210d72aae758d077f0c8da585": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "direction_reason": "Pre-election stages introduce elevated policy and outcome uncertainty among investors.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Diversified Holdings",
+      "Manufacturing & Exports"
+    ],
+    "event_date_mentioned": "2024-08-01",
+    "entities": {},
+    "confidence": 0.95,
+    "language": "en",
+    "extraction_method": "offline_fallback"
+  }
+}

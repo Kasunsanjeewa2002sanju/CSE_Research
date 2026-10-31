@@ -1,0 +1,290 @@
+[
+  {
+    "filename": "stage5_confidence_distribution_20261022_161037.png",
+    "topic": "confidence",
+    "detail": "distribution",
+    "summary": "avg confidence=0.65, std=0.11, n=636",
+    "timestamp": "20261022_161037",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_confidence_distribution_20261022_161037.png"
+  },
+  {
+    "filename": "stage5_stage_breakdown_20261022_161038.png",
+    "topic": "stage",
+    "detail": "breakdown",
+    "summary": "Stage breakdown: 14 distinct stages across 7 categories, total=623",
+    "timestamp": "20261022_161038",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_stage_breakdown_20261022_161038.png"
+  },
+  {
+    "filename": "stage5_multilabel_frequency_20261022_161038.png",
+    "topic": "multilabel",
+    "detail": "frequency",
+    "summary": "Multilabel frequency: 25.5% multilabel (>=2 events), single-label=74.5%",
+    "timestamp": "20261022_161038",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_multilabel_frequency_20261022_161038.png"
+  },
+  {
+    "filename": "stage5_intensity_vs_car_h5_20261022_161038.png",
+    "topic": "intensity_vs_car",
+    "detail": "h5",
+    "summary": "Intensity vs CAR h=5d: corr=+0.06, slope=6.14, n=401",
+    "timestamp": "20261022_161038",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_intensity_vs_car_h5_20261022_161038.png"
+  },
+  {
+    "filename": "stage5_novelty_vs_car_h5_20261022_161038.png",
+    "topic": "novelty_vs_car",
+    "detail": "h5",
+    "summary": "novelty mean=1.00, corr=+nan, n=401",
+    "timestamp": "20261022_161038",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_novelty_vs_car_h5_20261022_161038.png"
+  },
+  {
+    "filename": "stage5_hard_vs_confidence_comparison_20261022_161039.png",
+    "topic": "hard_vs_confidence",
+    "detail": "comparison",
+    "summary": "Hard flags: binary 100% active vs Soft confidences: mean=0.65, std=0.11",
+    "timestamp": "20261022_161039",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_hard_vs_confidence_comparison_20261022_161039.png"
+  },
+  {
+    "filename": "stage5_stage_vs_car_h5_20261022_161039.png",
+    "topic": "stage_vs_car",
+    "detail": "h5",
+    "summary": "Stage vs |CAR|: polling median |CAR|=1.23% vs government_formation median |CAR|=5.72%",
+    "timestamp": "20261022_161039",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_stage_vs_car_h5_20261022_161039.png"
+  },
+  {
+    "filename": "stage5_confidence_distribution_20261022_161710.png",
+    "topic": "confidence",
+    "detail": "distribution",
+    "summary": "avg confidence=0.65, std=0.11, n=636",
+    "timestamp": "20261022_161710",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_confidence_distribution_20261022_161710.png"
+  },
+  {
+    "filename": "stage5_stage_breakdown_20261022_161710.png",
+    "topic": "stage",
+    "detail": "breakdown",
+    "summary": "Stage breakdown: 14 distinct stages across 7 categories, total=623",
+    "timestamp": "20261022_161710",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_stage_breakdown_20261022_161710.png"
+  },
+  {
+    "filename": "stage5_multilabel_frequency_20261022_161711.png",
+    "topic": "multilabel",
+    "detail": "frequency",
+    "summary": "Multilabel frequency: 25.5% multilabel (>=2 events), single-label=74.5%",
+    "timestamp": "20261022_161711",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_multilabel_frequency_20261022_161711.png"
+  },
+  {
+    "filename": "stage5_intensity_vs_car_h5_20261022_161711.png",
+    "topic": "intensity_vs_car",
+    "detail": "h5",
+    "summary": "Intensity vs CAR h=5d: corr=+0.06, slope=6.14, n=401",
+    "timestamp": "20261022_161711",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_intensity_vs_car_h5_20261022_161711.png"
+  },
+  {
+    "filename": "stage5_confidence_distribution_20261022_161749.png",
+    "topic": "confidence",
+    "detail": "distribution",
+    "summary": "avg confidence=0.65, std=0.11, n=636",
+    "timestamp": "20261022_161749",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_confidence_distribution_20261022_161749.png"
+  },
+  {
+    "filename": "stage5_stage_breakdown_20261022_161749.png",
+    "topic": "stage",
+    "detail": "breakdown",
+    "summary": "Stage breakdown: 14 distinct stages across 7 categories, total=623",
+    "timestamp": "20261022_161749",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_stage_breakdown_20261022_161749.png"
+  },
+  {
+    "filename": "stage5_multilabel_frequency_20261022_161750.png",
+    "topic": "multilabel",
+    "detail": "frequency",
+    "summary": "Multilabel frequency: 25.5% multilabel (>=2 events), single-label=74.5%",
+    "timestamp": "20261022_161750",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_multilabel_frequency_20261022_161750.png"
+  },
+  {
+    "filename": "stage5_intensity_vs_car_h5_20261022_161750.png",
+    "topic": "intensity_vs_car",
+    "detail": "h5",
+    "summary": "Intensity vs CAR h=5d: corr=+0.06, slope=6.14, n=401",
+    "timestamp": "20261022_161750",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_intensity_vs_car_h5_20261022_161750.png"
+  },
+  {
+    "filename": "stage5_novelty_vs_car_h5_20261022_161750.png",
+    "topic": "novelty_vs_car",
+    "detail": "h5",
+    "summary": "novelty mean=0.85, corr=-0.01, n=401",
+    "timestamp": "20261022_161750",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_novelty_vs_car_h5_20261022_161750.png"
+  },
+  {
+    "filename": "stage5_hard_vs_confidence_comparison_20261022_161751.png",
+    "topic": "hard_vs_confidence",
+    "detail": "comparison",
+    "summary": "Hard flags: binary 100% active vs Soft confidences: mean=0.65, std=0.11",
+    "timestamp": "20261022_161751",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_hard_vs_confidence_comparison_20261022_161751.png"
+  },
+  {
+    "filename": "stage5_stage_vs_car_h5_20261022_161751.png",
+    "topic": "stage_vs_car",
+    "detail": "h5",
+    "summary": "Stage vs |CAR|: polling median |CAR|=1.23% vs government_formation median |CAR|=5.72%",
+    "timestamp": "20261022_161751",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_stage_vs_car_h5_20261022_161751.png"
+  },
+  {
+    "filename": "stage5_confidence_distribution_20261022_161850.png",
+    "topic": "confidence",
+    "detail": "distribution",
+    "summary": "avg confidence=0.65, std=0.11, n=636",
+    "timestamp": "20261022_161850",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_confidence_distribution_20261022_161850.png"
+  },
+  {
+    "filename": "stage5_stage_breakdown_20261022_161850.png",
+    "topic": "stage",
+    "detail": "breakdown",
+    "summary": "Stage breakdown: 14 distinct stages across 7 categories, total=623",
+    "timestamp": "20261022_161850",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_stage_breakdown_20261022_161850.png"
+  },
+  {
+    "filename": "stage5_multilabel_frequency_20261022_161851.png",
+    "topic": "multilabel",
+    "detail": "frequency",
+    "summary": "Multilabel frequency: 25.5% multilabel (>=2 events), single-label=74.5%",
+    "timestamp": "20261022_161851",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_multilabel_frequency_20261022_161851.png"
+  },
+  {
+    "filename": "stage5_intensity_vs_car_h5_20261022_161851.png",
+    "topic": "intensity_vs_car",
+    "detail": "h5",
+    "summary": "Intensity vs CAR h=5d: corr=+0.06, slope=6.14, n=401",
+    "timestamp": "20261022_161851",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_intensity_vs_car_h5_20261022_161851.png"
+  },
+  {
+    "filename": "stage5_novelty_vs_car_h5_20261022_161851.png",
+    "topic": "novelty_vs_car",
+    "detail": "h5",
+    "summary": "novelty mean=0.85, corr=-0.01, n=401",
+    "timestamp": "20261022_161851",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_novelty_vs_car_h5_20261022_161851.png"
+  },
+  {
+    "filename": "stage5_hard_vs_confidence_comparison_20261022_161851.png",
+    "topic": "hard_vs_confidence",
+    "detail": "comparison",
+    "summary": "Hard flags: binary 100% active vs Soft confidences: mean=0.65, std=0.11",
+    "timestamp": "20261022_161851",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_hard_vs_confidence_comparison_20261022_161851.png"
+  },
+  {
+    "filename": "stage5_stage_vs_car_h5_20261022_161852.png",
+    "topic": "stage_vs_car",
+    "detail": "h5",
+    "summary": "Stage vs |CAR|: polling median |CAR|=1.23% vs government_formation median |CAR|=5.72%",
+    "timestamp": "20261022_161852",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_stage_vs_car_h5_20261022_161852.png"
+  },
+  {
+    "filename": "stage5_confidence_distribution_20261022_161935.png",
+    "topic": "confidence",
+    "detail": "distribution",
+    "summary": "avg confidence=0.65, std=0.11, n=636",
+    "timestamp": "20261022_161935",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_confidence_distribution_20261022_161935.png"
+  },
+  {
+    "filename": "stage5_stage_breakdown_20261022_161935.png",
+    "topic": "stage",
+    "detail": "breakdown",
+    "summary": "Stage breakdown: 14 distinct stages across 7 categories, total=623",
+    "timestamp": "20261022_161935",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_stage_breakdown_20261022_161935.png"
+  },
+  {
+    "filename": "stage5_multilabel_frequency_20261022_161935.png",
+    "topic": "multilabel",
+    "detail": "frequency",
+    "summary": "Multilabel frequency: 25.5% multilabel (>=2 events), single-label=74.5%",
+    "timestamp": "20261022_161935",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_multilabel_frequency_20261022_161935.png"
+  },
+  {
+    "filename": "stage5_intensity_vs_car_h5_20261022_161936.png",
+    "topic": "intensity_vs_car",
+    "detail": "h5",
+    "summary": "Intensity vs CAR h=5d: corr=+0.06, slope=6.14, n=401",
+    "timestamp": "20261022_161936",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_intensity_vs_car_h5_20261022_161936.png"
+  },
+  {
+    "filename": "stage5_novelty_vs_car_h5_20261022_161936.png",
+    "topic": "novelty_vs_car",
+    "detail": "h5",
+    "summary": "novelty mean=0.85, corr=-0.01, n=401",
+    "timestamp": "20261022_161936",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_novelty_vs_car_h5_20261022_161936.png"
+  },
+  {
+    "filename": "stage5_hard_vs_confidence_comparison_20261022_161936.png",
+    "topic": "hard_vs_confidence",
+    "detail": "comparison",
+    "summary": "Hard flags: binary 100% active vs Soft confidences: mean=0.65, std=0.11",
+    "timestamp": "20261022_161936",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_hard_vs_confidence_comparison_20261022_161936.png"
+  },
+  {
+    "filename": "stage5_stage_vs_car_h5_20261022_161936.png",
+    "topic": "stage_vs_car",
+    "detail": "h5",
+    "summary": "Stage vs |CAR|: polling median |CAR|=1.23% vs government_formation median |CAR|=5.72%",
+    "timestamp": "20261022_161936",
+    "stage": "stage5",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage5\\stage5_stage_vs_car_h5_20261022_161936.png"
+  }
+]

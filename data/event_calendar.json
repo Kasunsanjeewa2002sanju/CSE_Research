@@ -1,0 +1,443 @@
+[
+  {
+    "date": "2025-01-23",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: January 2025"
+  },
+  {
+    "date": "2025-02-15",
+    "type": "earnings_season",
+    "category": "corporate",
+    "importance": 0.7,
+    "title": "CSE Q4 / FY2024 Earnings Season Reporting Climax"
+  },
+  {
+    "date": "2025-02-27",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.8,
+    "title": "CBSL Monetary Policy Review: February 2025"
+  },
+  {
+    "date": "2025-03-20",
+    "type": "imf_review",
+    "category": "imf",
+    "importance": 0.9,
+    "title": "IMF EFF Third Review Board Approval & Tranche Release"
+  },
+  {
+    "date": "2025-03-27",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: March 2025"
+  },
+  {
+    "date": "2025-04-24",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.8,
+    "title": "CBSL Monetary Policy Review: April 2025"
+  },
+  {
+    "date": "2025-05-15",
+    "type": "earnings_season",
+    "category": "corporate",
+    "importance": 0.7,
+    "title": "CSE Q1 2025 Interim Earnings Reporting Deadline"
+  },
+  {
+    "date": "2025-05-29",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: May 2025"
+  },
+  {
+    "date": "2025-06-21",
+    "type": "provincial_councils",
+    "category": "election",
+    "importance": 0.85,
+    "title": "Provincial Council Elections 2025 Phase I"
+  },
+  {
+    "date": "2025-06-26",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.8,
+    "title": "CBSL Monetary Policy Review: June 2025"
+  },
+  {
+    "date": "2025-07-24",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: July 2025"
+  },
+  {
+    "date": "2025-08-15",
+    "type": "earnings_season",
+    "category": "corporate",
+    "importance": 0.7,
+    "title": "CSE Q2 2025 Interim Earnings Reporting Deadline"
+  },
+  {
+    "date": "2025-08-28",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: August 2025"
+  },
+  {
+    "date": "2025-09-25",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.8,
+    "title": "CBSL Monetary Policy Review: September 2025"
+  },
+  {
+    "date": "2025-10-02",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: October 2025"
+  },
+  {
+    "date": "2025-10-16",
+    "type": "imf_review",
+    "category": "imf",
+    "importance": 0.9,
+    "title": "IMF EFF Fourth Review Staff-Level Mission"
+  },
+  {
+    "date": "2025-11-14",
+    "type": "budget",
+    "category": "fiscal",
+    "importance": 0.9,
+    "title": "National Budget 2026 Presentation"
+  },
+  {
+    "date": "2025-11-15",
+    "type": "earnings_season",
+    "category": "corporate",
+    "importance": 0.7,
+    "title": "CSE Q3 2025 Interim Earnings Reporting Deadline"
+  },
+  {
+    "date": "2025-11-27",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: November 2025"
+  },
+  {
+    "date": "2025-12-18",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: December 2025"
+  },
+  {
+    "date": "2026-01-22",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: January 2026"
+  },
+  {
+    "date": "2026-02-15",
+    "type": "earnings_season",
+    "category": "corporate",
+    "importance": 0.7,
+    "title": "CSE Q4 / FY2025 Earnings Season Reporting Climax"
+  },
+  {
+    "date": "2026-02-26",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.8,
+    "title": "CBSL Monetary Policy Review: February 2026"
+  },
+  {
+    "date": "2026-03-19",
+    "type": "imf_review",
+    "category": "imf",
+    "importance": 0.9,
+    "title": "IMF EFF Fifth Review Board Approval & Tranche Release"
+  },
+  {
+    "date": "2026-03-26",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: March 2026"
+  },
+  {
+    "date": "2026-04-23",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.8,
+    "title": "CBSL Monetary Policy Review: April 2026"
+  },
+  {
+    "date": "2026-05-15",
+    "type": "earnings_season",
+    "category": "corporate",
+    "importance": 0.7,
+    "title": "CSE Q1 2026 Interim Earnings Reporting Deadline"
+  },
+  {
+    "date": "2026-05-16",
+    "type": "local_government_election",
+    "category": "election",
+    "importance": 0.75,
+    "title": "Local Government Elections 2026"
+  },
+  {
+    "date": "2026-05-28",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: May 2026"
+  },
+  {
+    "date": "2026-06-25",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.8,
+    "title": "CBSL Monetary Policy Review: June 2026"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: July 2026"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "earnings_season",
+    "category": "corporate",
+    "importance": 0.7,
+    "title": "CSE Q2 2026 Interim Earnings Reporting Deadline"
+  },
+  {
+    "date": "2026-08-27",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: August 2026"
+  },
+  {
+    "date": "2026-09-24",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.8,
+    "title": "CBSL Monetary Policy Review: September 2026"
+  },
+  {
+    "date": "2026-10-01",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: October 2026"
+  },
+  {
+    "date": "2026-10-15",
+    "type": "imf_review",
+    "category": "imf",
+    "importance": 0.9,
+    "title": "IMF EFF Sixth Review Staff-Level Mission"
+  },
+  {
+    "date": "2026-11-15",
+    "type": "election",
+    "category": "election",
+    "importance": 1.0,
+    "title": "Provincial Council Elections 2026 Polling Day"
+  },
+  {
+    "date": "2026-11-15",
+    "type": "budget",
+    "category": "fiscal",
+    "importance": 0.9,
+    "title": "National Budget 2027 Presentation"
+  },
+  {
+    "date": "2026-11-15",
+    "type": "earnings_season",
+    "category": "corporate",
+    "importance": 0.7,
+    "title": "CSE Q3 2026 Interim Earnings Reporting Deadline"
+  },
+  {
+    "date": "2026-11-26",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: November 2026"
+  },
+  {
+    "date": "2026-12-17",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: December 2026"
+  },
+  {
+    "date": "2027-01-21",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: January 2027"
+  },
+  {
+    "date": "2027-02-15",
+    "type": "earnings_season",
+    "category": "corporate",
+    "importance": 0.7,
+    "title": "CSE Q4 / FY2026 Earnings Season Reporting Climax"
+  },
+  {
+    "date": "2027-02-25",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.8,
+    "title": "CBSL Monetary Policy Review: February 2027"
+  },
+  {
+    "date": "2027-03-18",
+    "type": "imf_review",
+    "category": "imf",
+    "importance": 0.9,
+    "title": "IMF EFF Seventh Review & Final Tranche Release"
+  },
+  {
+    "date": "2027-03-25",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: March 2027"
+  },
+  {
+    "date": "2027-04-22",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.8,
+    "title": "CBSL Monetary Policy Review: April 2027"
+  },
+  {
+    "date": "2027-05-15",
+    "type": "earnings_season",
+    "category": "corporate",
+    "importance": 0.7,
+    "title": "CSE Q1 2027 Interim Earnings Reporting Deadline"
+  },
+  {
+    "date": "2027-05-27",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: May 2027"
+  },
+  {
+    "date": "2027-06-24",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.8,
+    "title": "CBSL Monetary Policy Review: June 2027"
+  },
+  {
+    "date": "2027-07-22",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: July 2027"
+  },
+  {
+    "date": "2027-08-15",
+    "type": "earnings_season",
+    "category": "corporate",
+    "importance": 0.7,
+    "title": "CSE Q2 2027 Interim Earnings Reporting Deadline"
+  },
+  {
+    "date": "2027-08-26",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: August 2027"
+  },
+  {
+    "date": "2027-09-18",
+    "type": "provincial_councils",
+    "category": "election",
+    "importance": 0.8,
+    "title": "Provincial Council Elections 2027 Phase II"
+  },
+  {
+    "date": "2027-09-23",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.8,
+    "title": "CBSL Monetary Policy Review: September 2027"
+  },
+  {
+    "date": "2027-10-07",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: October 2027"
+  },
+  {
+    "date": "2027-10-14",
+    "type": "imf_review",
+    "category": "imf",
+    "importance": 0.85,
+    "title": "IMF Post-Program Monitoring Consultation"
+  },
+  {
+    "date": "2027-11-12",
+    "type": "budget",
+    "category": "fiscal",
+    "importance": 0.9,
+    "title": "National Budget 2028 Presentation"
+  },
+  {
+    "date": "2027-11-15",
+    "type": "earnings_season",
+    "category": "corporate",
+    "importance": 0.7,
+    "title": "CSE Q3 2027 Interim Earnings Reporting Deadline"
+  },
+  {
+    "date": "2027-11-25",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: November 2027"
+  },
+  {
+    "date": "2027-12-16",
+    "type": "monetary_policy",
+    "category": "monetary",
+    "importance": 0.85,
+    "title": "CBSL Monetary Policy Review: December 2027"
+  },
+  {
+    "date": "2029-09-22",
+    "type": "presidential_election",
+    "category": "election",
+    "importance": 1.0,
+    "title": "Sri Lanka Presidential Election 2029"
+  },
+  {
+    "date": "2029-11-14",
+    "type": "parliamentary_election",
+    "category": "election",
+    "importance": 0.95,
+    "title": "Sri Lanka Parliamentary General Election 2029"
+  }
+]

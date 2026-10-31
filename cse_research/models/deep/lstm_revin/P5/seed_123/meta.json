@@ -1,0 +1,29 @@
+{
+  "parameters": 5926,
+  "best_epoch": 5,
+  "best_val_loss": 0.3172651121192961,
+  "total_epochs": 5,
+  "seed": 123,
+  "hardware": {
+    "device": "cpu",
+    "cuda_available": false,
+    "cpu_threads": 4
+  },
+  "model_type": "lstm",
+  "model_tag": "lstm_revin",
+  "feature_set": "B",
+  "horizon": 5,
+  "lookback": 20,
+  "use_revin": true,
+  "fit_summary": {
+    "total_epochs": 5,
+    "best_epoch": 5,
+    "best_val_loss": 0.3172651121192961,
+    "runtime_seconds": 5.605240821838379
+  },
+  "diagnostics": {
+    "pred_ret_std": 0.011206568987812315,
+    "pred_dir_mean": 0.5352422907488987,
+    "is_collapsed": false
+  }
+}

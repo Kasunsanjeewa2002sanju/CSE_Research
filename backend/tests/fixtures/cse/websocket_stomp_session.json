@@ -1,0 +1,32 @@
+{
+  "aspi": {
+    "id": 37198943,
+    "value": 20059.42,
+    "lowValue": 20059.42,
+    "highValue": 20059.42,
+    "change": 0.0,
+    "percentage": 0.0,
+    "sectorId": 1.0,
+    "timestamp": 1792464360914
+  },
+  "snp": {
+    "id": null,
+    "value": null,
+    "lowValue": null,
+    "highValue": null,
+    "change": null,
+    "percentage": null,
+    "sectorId": null,
+    "timestamp": null
+  },
+  "summary": {
+    "id": null,
+    "tradeVolume": null,
+    "shareVolume": null,
+    "tradeDate": null,
+    "trades": null
+  },
+  "status": {
+    "status": "Opening Auction Call"
+  }
+}

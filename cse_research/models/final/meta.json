@@ -1,0 +1,134 @@
+{
+  "model_name": "catboost_reg_c",
+  "family": "shallow",
+  "target": "y_ret_5d",
+  "horizon": 5,
+  "training_data_range": [
+    "1994-01-03",
+    "2025-12-23"
+  ],
+  "n_training_samples": 7630,
+  "n_features": 57,
+  "feature_names": [
+    "ret_1d",
+    "ret_2d",
+    "ret_3d",
+    "ret_5d",
+    "ret_10d",
+    "ret_20d",
+    "ret_lag_1",
+    "ret_lag_2",
+    "ret_lag_3",
+    "ret_lag_5",
+    "ret_lag_10",
+    "ret_lag_20",
+    "ret_mean_5d",
+    "ret_mean_10d",
+    "ret_mean_20d",
+    "ret_vol_5d",
+    "ret_vol_10d",
+    "ret_vol_20d",
+    "rsi_14",
+    "macd_line",
+    "macd_signal",
+    "macd_hist",
+    "dist_from_sma_20",
+    "dist_from_sma_50",
+    "sp20_log_return",
+    "aspi_sp20_spread",
+    "has_sp20",
+    "log_turnover",
+    "log_shares",
+    "turnover_log_change_1d",
+    "shares_log_change_1d",
+    "turnover_zscore_60d",
+    "shares_zscore_60d",
+    "turnover_to_5d_ratio",
+    "cal_day_of_week",
+    "cal_month",
+    "cal_session_gap_days",
+    "stage_none",
+    "stage_announcement",
+    "stage_nomination_start",
+    "stage_nomination_end",
+    "stage_polling",
+    "stage_result",
+    "stage_government_formation",
+    "type_none",
+    "type_presidential",
+    "type_parliamentary",
+    "type_provincial_council",
+    "days_to_next_known_event",
+    "days_since_last_stage",
+    "in_window_0_2",
+    "in_window_0_7",
+    "in_window_0_15",
+    "in_window_0_30",
+    "prior_mean_car",
+    "prior_median_car",
+    "prior_n"
+  ],
+  "hyperparameters": {
+    "iterations": 80,
+    "learning_rate": 0.05,
+    "depth": 4,
+    "random_seed": 42,
+    "verbose": 0,
+    "loss_function": "RMSE",
+    "train_dir": "d:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\.cache\\catboost_info"
+  },
+  "fit_duration_seconds": 1.243955135345459,
+  "library_version": "catboost 1.2.7",
+  "out_of_sample_metrics_pooled": {
+    "h5_mean_oos_r2": 0.0548,
+    "h5_pooled_accuracy": 0.6079,
+    "h5_pesaran_timmermann_stat": 12.15,
+    "h5_pesaran_timmermann_pval": 0.0,
+    "h1_mean_oos_r2": 0.0897,
+    "h1_pooled_accuracy": 0.6129,
+    "h1_dm_vs_rw_tstat": -5.78,
+    "h1_dm_vs_rw_pval": 8.38e-09
+  },
+  "top_10_features": [
+    [
+      "ret_vol_20d",
+      10.359655196336009
+    ],
+    [
+      "ret_1d",
+      9.724611216089276
+    ],
+    [
+      "ret_mean_20d",
+      6.749583215614544
+    ],
+    [
+      "rsi_14",
+      5.551645985402279
+    ],
+    [
+      "ret_2d",
+      5.30503697537773
+    ],
+    [
+      "days_to_next_known_event",
+      4.967143898052682
+    ],
+    [
+      "dist_from_sma_20",
+      4.862538946857066
+    ],
+    [
+      "ret_3d",
+      4.781099455226113
+    ],
+    [
+      "ret_5d",
+      4.177451567511085
+    ],
+    [
+      "ret_mean_10d",
+      3.801776383582727
+    ]
+  ]
+}

@@ -1,0 +1,7 @@
+,CatBoost (Set C),CatBoost (Set A),Extra Trees (Set A),Random Forest (Set A),TimesFM (ctx64),Chronos-Bolt (ctx64)
+CatBoost (Set C),1.0,1.0,1.0,1.0,1.0,1.0
+CatBoost (Set A),1.0,1.0,1.0,1.0,1.0,1.0
+Extra Trees (Set A),1.0,1.0,1.0,1.0,1.0,1.0
+Random Forest (Set A),1.0,1.0,1.0,1.0,1.0,1.0
+TimesFM (ctx64),1.0,1.0,1.0,1.0,1.0,1.0
+Chronos-Bolt (ctx64),1.0,1.0,1.0,1.0,1.0,1.0

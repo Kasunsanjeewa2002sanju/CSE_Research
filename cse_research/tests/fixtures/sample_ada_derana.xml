@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Ada Derana English - Featured News</title>
+    <link>http://www.adaderana.lk/</link>
+    <description>Sri Lanka news, Latest News, Sri Lanka, Sinhala News</description>
+    <item>
+      <title>Supreme Court delivers landmark verdict on executive debt proclamation</title>
+      <link>http://www.adaderana.lk/news/sample_sc_verdict</link>
+      <description>The Supreme Court five-judge bench has delivered its determination regarding the presidential debt decree.</description>
+    </item>
+    <item>
+      <title>Heavy rain warning issued for five provinces</title>
+      <link>http://www.adaderana.lk/news/sample_heavy_rain</link>
+      <description>Department of Meteorology issues red alert for southwestern districts.</description>
+    </item>
+  </channel>
+</rss>

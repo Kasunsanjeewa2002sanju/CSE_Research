@@ -1,0 +1,22 @@
+{
+  "https://island.lk/feed/": {
+    "etag": "W/\"bbb4c94151cfca37ce4cfb76a8a06740\"",
+    "last_modified": "Fri, 30 Oct 2026 02:11:36 GMT"
+  },
+  "https://island.lk/category/news/feed/": {
+    "etag": "W/\"bbb4c94151cfca37ce4cfb76a8a06740\"",
+    "last_modified": "Fri, 30 Oct 2026 02:11:36 GMT"
+  },
+  "https://island.lk/category/business/feed/": {
+    "etag": "W/\"bbb4c94151cfca37ce4cfb76a8a06740\"",
+    "last_modified": "Fri, 30 Oct 2026 02:11:36 GMT"
+  },
+  "https://www.newswire.lk/feed/": {
+    "etag": "W/\"d320ac3925d72661ae571c4c3348f7e0\"",
+    "last_modified": "Fri, 30 Oct 2026 05:19:15 GMT"
+  },
+  "https://www.sundayobserver.lk/feed/": {
+    "etag": "W/\"be30523218d3fbcd6d8aa9080d3cd5cb\"",
+    "last_modified": "Mon, 26 Oct 2026 09:06:58 GMT"
+  }
+}

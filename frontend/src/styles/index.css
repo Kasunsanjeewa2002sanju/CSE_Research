@@ -1,0 +1,179 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+
+@import '@fontsource/manrope/500.css';
+@import '@fontsource/manrope/600.css';
+@import '@fontsource/manrope/700.css';
+@import '@fontsource/manrope/800.css';
+
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+@import '@fontsource/jetbrains-mono/600.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 60% Neutrals */
+    --surface-white: #ffffff;
+    --background: #f6f8fc;
+    --surface-card: #ffffff;
+    --surface-card-subtle: #eef3fa;
+    --border: #e1e8f2;
+    --border-strong: #cad5e2;
+    --text-primary: #0b1b33;
+    --text-muted: #53627a;
+    --text-subtle: #7987a0;
+
+    /* 30% Blues */
+    --blue-navy: #0a2a66;
+    --blue-cobalt: #1246b3;
+    --blue-vibrant: #1b5cd6;
+    --blue-soft: #c9dbfa;
+    --blue-ice: #eef4ff;
+
+    /* 10% Cyan Accent */
+    --accent: #00b8d9;
+    --accent-hover: #0095b3;
+    --accent-subtle: #e0f8fc;
+    --accent-foreground: #0b1b33;
+
+    /* Semantic Data Tokens (Used strictly for econometric meaning) */
+    --data-up: #0f9d6b;
+    --data-up-subtle: #e6f7f0;
+    --data-down: #d93a3a;
+    --data-down-subtle: #fdecec;
+    --data-warning: #e39b0b;
+    --data-warning-subtle: #fef6e7;
+    --data-neutral: #53627a;
+    --data-ci-band: rgba(27, 92, 214, 0.12);
+
+    /* Radii & Shadows */
+    --radius-card: 12px;
+    --radius-button: 8px;
+    --radius-chip: 9999px;
+
+    /* Elevation */
+    --shadow-soft: 0 1px 3px rgba(11, 27, 51, 0.04), 0 4px 12px rgba(11, 27, 51, 0.03);
+    --shadow-card: 0 2px 8px rgba(11, 27, 51, 0.04), 0 12px 24px -4px rgba(11, 27, 51, 0.06);
+    --shadow-elevated: 0 4px 16px rgba(11, 27, 51, 0.08), 0 20px 32px -8px rgba(11, 27, 51, 0.1);
+  }
+
+  .dark {
+    /* Dark Mode Counterparts */
+    --surface-white: #0e1a2e;
+    --background: #070f1e;
+    --surface-card: #0d1b33;
+    --surface-card-subtle: #122444;
+    --border: #1e3456;
+    --border-strong: #2a4875;
+    --text-primary: #f3f6fb;
+    --text-muted: #95a7c4;
+    --text-subtle: #6d82a2;
+
+    --blue-navy: #1b5cd6;
+    --blue-cobalt: #2d6fe8;
+    --blue-vibrant: #4d8bff;
+    --blue-soft: #1e3456;
+    --blue-ice: #0f2342;
+
+    --accent: #00d0f5;
+    --accent-hover: #00b8d9;
+    --accent-subtle: #083344;
+    --accent-foreground: #070f1e;
+
+    --data-up: #10b981;
+    --data-up-subtle: #064e3b;
+    --data-down: #ef4444;
+    --data-down-subtle: #7f1d1d;
+    --data-warning: #f59e0b;
+    --data-warning-subtle: #78350f;
+    --data-neutral: #95a7c4;
+    --data-ci-band: rgba(77, 139, 255, 0.16);
+
+    --shadow-soft: 0 1px 3px rgba(0, 0, 0, 0.2);
+    --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.35);
+    --shadow-elevated: 0 8px 30px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family:
+      'Inter',
+      -apple-system,
+      BlinkMacSystemFont,
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Headings use Manrope */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family:
+      'Manrope',
+      -apple-system,
+      BlinkMacSystemFont,
+      sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+
+  /* Tabular Numerals for Financial Data & Statistical Precision */
+  .tabular-nums,
+  .font-mono {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Accessible animations: 150-200ms transitions */
+@layer utilities {
+  .transition-standard {
+    transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 180ms;
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+}
+
+/* Reduced motion accessibility (Rule FR6) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

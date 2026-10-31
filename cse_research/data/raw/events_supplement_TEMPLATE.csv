@@ -1,0 +1,13 @@
+# Events Supplement Template (Rule R1, R11)
+# Use this file to supply verified, sourced events mentioned in the research proposal that are missing from Elections.csv.
+# Once filled with real sourced data, save as 'data/raw/events_supplement.csv'.
+# The pipeline loader will automatically merge rows from 'data/raw/events_supplement.csv' and tag them with added_by_researcher=True.
+#
+# Valid stages: announcement, nomination_start, nomination_end, polling, result, government_formation, policy_announcement, cabinet_reshuffle
+# Date format: YYYY-MM-DD or M/D/YYYY
+#
+event_id,election_type,stage,event_date,event_significance,relevant_context,candidate_party_info,source_of_information,source_url,notes
+# EXAMPLE ROW 1 (Local Government Election 2025 announcement):
+# LG_2025_01,Local Government,announcement,2025-03-03,Announcement of local government election dates,Triggered market volatility and panic selling in March 2025,N/A,Election Commission of Sri Lanka / The Island,https://island.lk/local-government-poll-announcement,Verified from news archives
+# EXAMPLE ROW 2 (Cabinet Reshuffle October 2025):
+# CAB_2025_10,Cabinet Transition,cabinet_reshuffle,2025-10-15,Cabinet reshuffle reorganizing the Lanka Electricity Company,SOE reform policy impacting energy sector,N/A,Official Gazette / Department of Government Information,https://documents.gov.lk,Gazette notification

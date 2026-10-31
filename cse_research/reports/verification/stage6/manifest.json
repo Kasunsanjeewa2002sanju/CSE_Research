@@ -1,0 +1,218 @@
+[
+  {
+    "filename": "stage6_feature_heatmap_samples_20261022_161230.png",
+    "topic": "feature_heatmap",
+    "detail": "samples",
+    "summary": "10 headlines x 57 features: normalized matrix generated with 20 event features boxed",
+    "timestamp": "20261022_161230",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_feature_heatmap_samples_20261022_161230.png"
+  },
+  {
+    "filename": "stage6_feature_diff_similar_headlines_20261022_161230.png",
+    "topic": "feature_diff",
+    "detail": "similar_headlines",
+    "summary": "2 event features differ between cut and hike (max diff=0.0047)",
+    "timestamp": "20261022_161230",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_feature_diff_similar_headlines_20261022_161230.png"
+  },
+  {
+    "filename": "stage6_feature_diff_election_proximity_20261022_161231.png",
+    "topic": "feature_diff",
+    "detail": "election_proximity",
+    "summary": "5 features differ across proximity windows (days_to_next diff=42)",
+    "timestamp": "20261022_161231",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_feature_diff_election_proximity_20261022_161231.png"
+  },
+  {
+    "filename": "stage6_shape_validation_features_20261022_161231.png",
+    "topic": "shape_validation",
+    "detail": "features",
+    "summary": "shape=57/57 OK (PASS)",
+    "timestamp": "20261022_161231",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_shape_validation_features_20261022_161231.png"
+  },
+  {
+    "filename": "stage6_column_order_diff_20261022_161231.png",
+    "topic": "column_order",
+    "detail": "diff",
+    "summary": "Column order verification: 0 mismatches out of 57 columns (PASS)",
+    "timestamp": "20261022_161231",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_column_order_diff_20261022_161231.png"
+  },
+  {
+    "filename": "stage6_baseline_vs_enhanced_feature_vectors_20261022_161231.png",
+    "topic": "baseline_vs_enhanced",
+    "detail": "feature_vectors",
+    "summary": "Radar comparison: 6 key event dimensions diverge clearly between cut and hike",
+    "timestamp": "20261022_161231",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_baseline_vs_enhanced_feature_vectors_20261022_161231.png"
+  },
+  {
+    "filename": "stage6_feature_heatmap_samples_20261022_161712.png",
+    "topic": "feature_heatmap",
+    "detail": "samples",
+    "summary": "10 headlines x 57 features: normalized matrix generated with 20 event features boxed",
+    "timestamp": "20261022_161712",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_feature_heatmap_samples_20261022_161712.png"
+  },
+  {
+    "filename": "stage6_feature_diff_similar_headlines_20261022_161712.png",
+    "topic": "feature_diff",
+    "detail": "similar_headlines",
+    "summary": "2 event features differ between cut and hike (max diff=0.0047)",
+    "timestamp": "20261022_161712",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_feature_diff_similar_headlines_20261022_161712.png"
+  },
+  {
+    "filename": "stage6_feature_diff_election_proximity_20261022_161713.png",
+    "topic": "feature_diff",
+    "detail": "election_proximity",
+    "summary": "5 features differ across proximity windows (days_to_next diff=42)",
+    "timestamp": "20261022_161713",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_feature_diff_election_proximity_20261022_161713.png"
+  },
+  {
+    "filename": "stage6_shape_validation_features_20261022_161713.png",
+    "topic": "shape_validation",
+    "detail": "features",
+    "summary": "shape=57/57 OK (PASS)",
+    "timestamp": "20261022_161713",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_shape_validation_features_20261022_161713.png"
+  },
+  {
+    "filename": "stage6_column_order_diff_20261022_161713.png",
+    "topic": "column_order",
+    "detail": "diff",
+    "summary": "Column order verification: 0 mismatches out of 57 columns (PASS)",
+    "timestamp": "20261022_161713",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_column_order_diff_20261022_161713.png"
+  },
+  {
+    "filename": "stage6_baseline_vs_enhanced_feature_vectors_20261022_161713.png",
+    "topic": "baseline_vs_enhanced",
+    "detail": "feature_vectors",
+    "summary": "Radar comparison: 6 key event dimensions diverge clearly between cut and hike",
+    "timestamp": "20261022_161713",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_baseline_vs_enhanced_feature_vectors_20261022_161713.png"
+  },
+  {
+    "filename": "stage6_feature_heatmap_samples_20261022_161852.png",
+    "topic": "feature_heatmap",
+    "detail": "samples",
+    "summary": "10 headlines x 57 features: normalized matrix generated with 20 event features boxed",
+    "timestamp": "20261022_161852",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_feature_heatmap_samples_20261022_161852.png"
+  },
+  {
+    "filename": "stage6_feature_diff_similar_headlines_20261022_161853.png",
+    "topic": "feature_diff",
+    "detail": "similar_headlines",
+    "summary": "2 event features differ between cut and hike (max diff=0.0047)",
+    "timestamp": "20261022_161853",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_feature_diff_similar_headlines_20261022_161853.png"
+  },
+  {
+    "filename": "stage6_feature_diff_election_proximity_20261022_161853.png",
+    "topic": "feature_diff",
+    "detail": "election_proximity",
+    "summary": "5 features differ across proximity windows (days_to_next diff=42)",
+    "timestamp": "20261022_161853",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_feature_diff_election_proximity_20261022_161853.png"
+  },
+  {
+    "filename": "stage6_shape_validation_features_20261022_161854.png",
+    "topic": "shape_validation",
+    "detail": "features",
+    "summary": "shape=57/57 OK (PASS)",
+    "timestamp": "20261022_161854",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_shape_validation_features_20261022_161854.png"
+  },
+  {
+    "filename": "stage6_column_order_diff_20261022_161854.png",
+    "topic": "column_order",
+    "detail": "diff",
+    "summary": "Column order verification: 0 mismatches out of 57 columns (PASS)",
+    "timestamp": "20261022_161854",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_column_order_diff_20261022_161854.png"
+  },
+  {
+    "filename": "stage6_baseline_vs_enhanced_feature_vectors_20261022_161854.png",
+    "topic": "baseline_vs_enhanced",
+    "detail": "feature_vectors",
+    "summary": "Radar comparison: 6 key event dimensions diverge clearly between cut and hike",
+    "timestamp": "20261022_161854",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_baseline_vs_enhanced_feature_vectors_20261022_161854.png"
+  },
+  {
+    "filename": "stage6_feature_heatmap_samples_20261022_161937.png",
+    "topic": "feature_heatmap",
+    "detail": "samples",
+    "summary": "10 headlines x 57 features: normalized matrix generated with 20 event features boxed",
+    "timestamp": "20261022_161937",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_feature_heatmap_samples_20261022_161937.png"
+  },
+  {
+    "filename": "stage6_feature_diff_similar_headlines_20261022_161938.png",
+    "topic": "feature_diff",
+    "detail": "similar_headlines",
+    "summary": "2 event features differ between cut and hike (max diff=0.0047)",
+    "timestamp": "20261022_161938",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_feature_diff_similar_headlines_20261022_161938.png"
+  },
+  {
+    "filename": "stage6_feature_diff_election_proximity_20261022_161938.png",
+    "topic": "feature_diff",
+    "detail": "election_proximity",
+    "summary": "5 features differ across proximity windows (days_to_next diff=42)",
+    "timestamp": "20261022_161938",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_feature_diff_election_proximity_20261022_161938.png"
+  },
+  {
+    "filename": "stage6_shape_validation_features_20261022_161938.png",
+    "topic": "shape_validation",
+    "detail": "features",
+    "summary": "shape=57/57 OK (PASS)",
+    "timestamp": "20261022_161938",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_shape_validation_features_20261022_161938.png"
+  },
+  {
+    "filename": "stage6_column_order_diff_20261022_161938.png",
+    "topic": "column_order",
+    "detail": "diff",
+    "summary": "Column order verification: 0 mismatches out of 57 columns (PASS)",
+    "timestamp": "20261022_161938",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_column_order_diff_20261022_161938.png"
+  },
+  {
+    "filename": "stage6_baseline_vs_enhanced_feature_vectors_20261022_161939.png",
+    "topic": "baseline_vs_enhanced",
+    "detail": "feature_vectors",
+    "summary": "Radar comparison: 6 key event dimensions diverge clearly between cut and hike",
+    "timestamp": "20261022_161939",
+    "stage": "stage6",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage6\\stage6_baseline_vs_enhanced_feature_vectors_20261022_161939.png"
+  }
+]

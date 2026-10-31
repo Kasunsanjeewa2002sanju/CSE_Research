@@ -1,0 +1,290 @@
+[
+  {
+    "filename": "stage7_prediction_diversity_before_after_20261022_161345.png",
+    "topic": "prediction_diversity",
+    "detail": "before_after",
+    "summary": "Prediction diversity: baseline std=0.00% -> workaround std=0.51%, n=694",
+    "timestamp": "20261022_161345",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_prediction_diversity_before_after_20261022_161345.png"
+  },
+  {
+    "filename": "stage7_directional_accuracy_rolling_20261022_161345.png",
+    "topic": "directional_accuracy",
+    "detail": "rolling",
+    "summary": "dir_acc=57.3%, rolling mean=52.7%, n=372",
+    "timestamp": "20261022_161345",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_directional_accuracy_rolling_20261022_161345.png"
+  },
+  {
+    "filename": "stage7_ic_rolling_20261022_161345.png",
+    "topic": "ic",
+    "detail": "rolling",
+    "summary": "IC=0.09, mean rolling IC=-0.000, n=337",
+    "timestamp": "20261022_161345",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_ic_rolling_20261022_161345.png"
+  },
+  {
+    "filename": "stage7_backtest_cumulative_returns_20261022_161346.png",
+    "topic": "backtest",
+    "detail": "cumulative_returns",
+    "summary": "Sharpe=0.85, total strategy return=+236.4%, benchmark=+78.4%, n=372",
+    "timestamp": "20261022_161346",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_backtest_cumulative_returns_20261022_161346.png"
+  },
+  {
+    "filename": "stage7_prediction_std_daily_20261022_161346.png",
+    "topic": "prediction_std",
+    "detail": "daily",
+    "summary": "std=0.31%, daily mean std=0.27%, safe above 0.10% threshold",
+    "timestamp": "20261022_161346",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_prediction_std_daily_20261022_161346.png"
+  },
+  {
+    "filename": "stage7_fallback_rate_timeline_20261022_161346.png",
+    "topic": "fallback_rate",
+    "detail": "timeline",
+    "summary": "fallback=6%, mean timeline fallback=0.0% (<20% target)",
+    "timestamp": "20261022_161346",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_fallback_rate_timeline_20261022_161346.png"
+  },
+  {
+    "filename": "stage7_confusion_matrix_20261022_161347.png",
+    "topic": "confusion",
+    "detail": "matrix",
+    "summary": "Confusion matrix: TP=182, TN=13, FP=487, FN=12, Accuracy=28.1%",
+    "timestamp": "20261022_161347",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_confusion_matrix_20261022_161347.png"
+  },
+  {
+    "filename": "stage7_calibration_plot_20261022_161347.png",
+    "topic": "calibration",
+    "detail": "plot",
+    "summary": "Calibration: 6 probability bins, brier alignment verified, n=694",
+    "timestamp": "20261022_161347",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_calibration_plot_20261022_161347.png"
+  },
+  {
+    "filename": "stage7_prediction_diversity_before_after_20261022_161714.png",
+    "topic": "prediction_diversity",
+    "detail": "before_after",
+    "summary": "Prediction diversity: baseline std=0.00% -> workaround std=0.51%, n=694",
+    "timestamp": "20261022_161714",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_prediction_diversity_before_after_20261022_161714.png"
+  },
+  {
+    "filename": "stage7_directional_accuracy_rolling_20261022_161714.png",
+    "topic": "directional_accuracy",
+    "detail": "rolling",
+    "summary": "dir_acc=57.3%, rolling mean=52.7%, n=372",
+    "timestamp": "20261022_161714",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_directional_accuracy_rolling_20261022_161714.png"
+  },
+  {
+    "filename": "stage7_ic_rolling_20261022_161715.png",
+    "topic": "ic",
+    "detail": "rolling",
+    "summary": "IC=0.09, mean rolling IC=-0.000, n=337",
+    "timestamp": "20261022_161715",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_ic_rolling_20261022_161715.png"
+  },
+  {
+    "filename": "stage7_backtest_cumulative_returns_20261022_161715.png",
+    "topic": "backtest",
+    "detail": "cumulative_returns",
+    "summary": "Sharpe=0.85, total strategy return=+236.4%, benchmark=+78.4%, n=372",
+    "timestamp": "20261022_161715",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_backtest_cumulative_returns_20261022_161715.png"
+  },
+  {
+    "filename": "stage7_prediction_std_daily_20261022_161715.png",
+    "topic": "prediction_std",
+    "detail": "daily",
+    "summary": "std=0.31%, daily mean std=0.27%, safe above 0.10% threshold",
+    "timestamp": "20261022_161715",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_prediction_std_daily_20261022_161715.png"
+  },
+  {
+    "filename": "stage7_fallback_rate_timeline_20261022_161715.png",
+    "topic": "fallback_rate",
+    "detail": "timeline",
+    "summary": "fallback=6%, mean timeline fallback=0.0% (<20% target)",
+    "timestamp": "20261022_161715",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_fallback_rate_timeline_20261022_161715.png"
+  },
+  {
+    "filename": "stage7_confusion_matrix_20261022_161716.png",
+    "topic": "confusion",
+    "detail": "matrix",
+    "summary": "Confusion matrix: TP=182, TN=13, FP=487, FN=12, Accuracy=28.1%",
+    "timestamp": "20261022_161716",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_confusion_matrix_20261022_161716.png"
+  },
+  {
+    "filename": "stage7_calibration_plot_20261022_161716.png",
+    "topic": "calibration",
+    "detail": "plot",
+    "summary": "Calibration: 6 probability bins, brier alignment verified, n=694",
+    "timestamp": "20261022_161716",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_calibration_plot_20261022_161716.png"
+  },
+  {
+    "filename": "stage7_prediction_diversity_before_after_20261022_161854.png",
+    "topic": "prediction_diversity",
+    "detail": "before_after",
+    "summary": "Prediction diversity: baseline std=0.00% -> workaround std=0.51%, n=694",
+    "timestamp": "20261022_161854",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_prediction_diversity_before_after_20261022_161854.png"
+  },
+  {
+    "filename": "stage7_directional_accuracy_rolling_20261022_161855.png",
+    "topic": "directional_accuracy",
+    "detail": "rolling",
+    "summary": "dir_acc=57.3%, rolling mean=52.7%, n=372",
+    "timestamp": "20261022_161855",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_directional_accuracy_rolling_20261022_161855.png"
+  },
+  {
+    "filename": "stage7_ic_rolling_20261022_161855.png",
+    "topic": "ic",
+    "detail": "rolling",
+    "summary": "IC=0.09, mean rolling IC=-0.000, n=337",
+    "timestamp": "20261022_161855",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_ic_rolling_20261022_161855.png"
+  },
+  {
+    "filename": "stage7_backtest_cumulative_returns_20261022_161855.png",
+    "topic": "backtest",
+    "detail": "cumulative_returns",
+    "summary": "Sharpe=0.85, total strategy return=+236.4%, benchmark=+78.4%, n=372",
+    "timestamp": "20261022_161855",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_backtest_cumulative_returns_20261022_161855.png"
+  },
+  {
+    "filename": "stage7_prediction_std_daily_20261022_161856.png",
+    "topic": "prediction_std",
+    "detail": "daily",
+    "summary": "std=0.31%, daily mean std=0.27%, safe above 0.10% threshold",
+    "timestamp": "20261022_161856",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_prediction_std_daily_20261022_161856.png"
+  },
+  {
+    "filename": "stage7_fallback_rate_timeline_20261022_161856.png",
+    "topic": "fallback_rate",
+    "detail": "timeline",
+    "summary": "fallback=6%, mean timeline fallback=0.0% (<20% target)",
+    "timestamp": "20261022_161856",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_fallback_rate_timeline_20261022_161856.png"
+  },
+  {
+    "filename": "stage7_confusion_matrix_20261022_161856.png",
+    "topic": "confusion",
+    "detail": "matrix",
+    "summary": "Confusion matrix: TP=182, TN=13, FP=487, FN=12, Accuracy=28.1%",
+    "timestamp": "20261022_161856",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_confusion_matrix_20261022_161856.png"
+  },
+  {
+    "filename": "stage7_calibration_plot_20261022_161857.png",
+    "topic": "calibration",
+    "detail": "plot",
+    "summary": "Calibration: 6 probability bins, brier alignment verified, n=694",
+    "timestamp": "20261022_161857",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_calibration_plot_20261022_161857.png"
+  },
+  {
+    "filename": "stage7_prediction_diversity_before_after_20261022_161939.png",
+    "topic": "prediction_diversity",
+    "detail": "before_after",
+    "summary": "Prediction diversity: baseline std=0.00% -> workaround std=0.51%, n=694",
+    "timestamp": "20261022_161939",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_prediction_diversity_before_after_20261022_161939.png"
+  },
+  {
+    "filename": "stage7_directional_accuracy_rolling_20261022_161939.png",
+    "topic": "directional_accuracy",
+    "detail": "rolling",
+    "summary": "dir_acc=57.3%, rolling mean=52.7%, n=372",
+    "timestamp": "20261022_161939",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_directional_accuracy_rolling_20261022_161939.png"
+  },
+  {
+    "filename": "stage7_ic_rolling_20261022_161939.png",
+    "topic": "ic",
+    "detail": "rolling",
+    "summary": "IC=0.09, mean rolling IC=-0.000, n=337",
+    "timestamp": "20261022_161939",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_ic_rolling_20261022_161939.png"
+  },
+  {
+    "filename": "stage7_backtest_cumulative_returns_20261022_161940.png",
+    "topic": "backtest",
+    "detail": "cumulative_returns",
+    "summary": "Sharpe=0.85, total strategy return=+236.4%, benchmark=+78.4%, n=372",
+    "timestamp": "20261022_161940",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_backtest_cumulative_returns_20261022_161940.png"
+  },
+  {
+    "filename": "stage7_prediction_std_daily_20261022_161940.png",
+    "topic": "prediction_std",
+    "detail": "daily",
+    "summary": "std=0.31%, daily mean std=0.27%, safe above 0.10% threshold",
+    "timestamp": "20261022_161940",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_prediction_std_daily_20261022_161940.png"
+  },
+  {
+    "filename": "stage7_fallback_rate_timeline_20261022_161940.png",
+    "topic": "fallback_rate",
+    "detail": "timeline",
+    "summary": "fallback=6%, mean timeline fallback=0.0% (<20% target)",
+    "timestamp": "20261022_161940",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_fallback_rate_timeline_20261022_161940.png"
+  },
+  {
+    "filename": "stage7_confusion_matrix_20261022_161941.png",
+    "topic": "confusion",
+    "detail": "matrix",
+    "summary": "Confusion matrix: TP=182, TN=13, FP=487, FN=12, Accuracy=28.1%",
+    "timestamp": "20261022_161941",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_confusion_matrix_20261022_161941.png"
+  },
+  {
+    "filename": "stage7_calibration_plot_20261022_161941.png",
+    "topic": "calibration",
+    "detail": "plot",
+    "summary": "Calibration: 6 probability bins, brier alignment verified, n=694",
+    "timestamp": "20261022_161941",
+    "stage": "stage7",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage7\\stage7_calibration_plot_20261022_161941.png"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "filename": "stage2_embedding_tsne_categories_20261022_160050.png",
+    "topic": "embedding_tsne",
+    "detail": "categories",
+    "summary": "t-SNE computed for 636 news embeddings across 8 primary event categories",
+    "timestamp": "20261022_160050",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_embedding_tsne_categories_20261022_160050.png"
+  },
+  {
+    "filename": "stage2_similarity_score_distribution_20261022_160050.png",
+    "topic": "similarity_score",
+    "detail": "distribution",
+    "summary": "avg top1 sim=0.55, std=0.23, n=200",
+    "timestamp": "20261022_160050",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_similarity_score_distribution_20261022_160050.png"
+  },
+  {
+    "filename": "stage2_similarity_examples_top10_20261022_160050.png",
+    "topic": "similarity_examples",
+    "detail": "top10",
+    "summary": "Sample similarity table generated for 3 query headlines",
+    "timestamp": "20261022_160050",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_similarity_examples_top10_20261022_160050.png"
+  },
+  {
+    "filename": "stage2_query_demo_similarity_bars_20261022_160051.png",
+    "topic": "query_demo",
+    "detail": "similarity_bars",
+    "summary": "query='Central Bank cuts policy rate': top match='Sri Lanka promotes mineral resources and investmen...' (sim=0.662, n=4)",
+    "timestamp": "20261022_160051",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_query_demo_similarity_bars_20261022_160051.png"
+  },
+  {
+    "filename": "stage2_same_vs_diff_category_similarity_20261022_160051.png",
+    "topic": "same_vs_diff_category",
+    "detail": "similarity",
+    "summary": "avg top1 sim=0.68, same_cat=0.22, diff_cat=0.11",
+    "timestamp": "20261022_160051",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_same_vs_diff_category_similarity_20261022_160051.png"
+  },
+  {
+    "filename": "stage2_embedding_tsne_categories_20261022_161703.png",
+    "topic": "embedding_tsne",
+    "detail": "categories",
+    "summary": "t-SNE computed for 636 news embeddings across 8 primary event categories",
+    "timestamp": "20261022_161703",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_embedding_tsne_categories_20261022_161703.png"
+  },
+  {
+    "filename": "stage2_similarity_score_distribution_20261022_161704.png",
+    "topic": "similarity_score",
+    "detail": "distribution",
+    "summary": "avg top1 sim=0.55, std=0.23, n=200",
+    "timestamp": "20261022_161704",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_similarity_score_distribution_20261022_161704.png"
+  },
+  {
+    "filename": "stage2_similarity_examples_top10_20261022_161704.png",
+    "topic": "similarity_examples",
+    "detail": "top10",
+    "summary": "Sample similarity table generated for 3 query headlines",
+    "timestamp": "20261022_161704",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_similarity_examples_top10_20261022_161704.png"
+  },
+  {
+    "filename": "stage2_query_demo_similarity_bars_20261022_161704.png",
+    "topic": "query_demo",
+    "detail": "similarity_bars",
+    "summary": "query='Central Bank cuts policy rate': top match='Sri Lanka promotes mineral resources and investmen...' (sim=0.662, n=4)",
+    "timestamp": "20261022_161704",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_query_demo_similarity_bars_20261022_161704.png"
+  },
+  {
+    "filename": "stage2_same_vs_diff_category_similarity_20261022_161704.png",
+    "topic": "same_vs_diff_category",
+    "detail": "similarity",
+    "summary": "avg top1 sim=0.68, same_cat=0.22, diff_cat=0.11",
+    "timestamp": "20261022_161704",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_same_vs_diff_category_similarity_20261022_161704.png"
+  },
+  {
+    "filename": "stage2_embedding_tsne_categories_20261022_161843.png",
+    "topic": "embedding_tsne",
+    "detail": "categories",
+    "summary": "t-SNE computed for 636 news embeddings across 8 primary event categories",
+    "timestamp": "20261022_161843",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_embedding_tsne_categories_20261022_161843.png"
+  },
+  {
+    "filename": "stage2_similarity_score_distribution_20261022_161844.png",
+    "topic": "similarity_score",
+    "detail": "distribution",
+    "summary": "avg top1 sim=0.55, std=0.23, n=200",
+    "timestamp": "20261022_161844",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_similarity_score_distribution_20261022_161844.png"
+  },
+  {
+    "filename": "stage2_similarity_examples_top10_20261022_161844.png",
+    "topic": "similarity_examples",
+    "detail": "top10",
+    "summary": "Sample similarity table generated for 3 query headlines",
+    "timestamp": "20261022_161844",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_similarity_examples_top10_20261022_161844.png"
+  },
+  {
+    "filename": "stage2_query_demo_similarity_bars_20261022_161844.png",
+    "topic": "query_demo",
+    "detail": "similarity_bars",
+    "summary": "query='Central Bank cuts policy rate': top match='Sri Lanka promotes mineral resources and investmen...' (sim=0.662, n=4)",
+    "timestamp": "20261022_161844",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_query_demo_similarity_bars_20261022_161844.png"
+  },
+  {
+    "filename": "stage2_same_vs_diff_category_similarity_20261022_161845.png",
+    "topic": "same_vs_diff_category",
+    "detail": "similarity",
+    "summary": "avg top1 sim=0.68, same_cat=0.22, diff_cat=0.11",
+    "timestamp": "20261022_161845",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_same_vs_diff_category_similarity_20261022_161845.png"
+  },
+  {
+    "filename": "stage2_embedding_tsne_categories_20261022_161929.png",
+    "topic": "embedding_tsne",
+    "detail": "categories",
+    "summary": "t-SNE computed for 636 news embeddings across 8 primary event categories",
+    "timestamp": "20261022_161929",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_embedding_tsne_categories_20261022_161929.png"
+  },
+  {
+    "filename": "stage2_similarity_score_distribution_20261022_161929.png",
+    "topic": "similarity_score",
+    "detail": "distribution",
+    "summary": "avg top1 sim=0.55, std=0.23, n=200",
+    "timestamp": "20261022_161929",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_similarity_score_distribution_20261022_161929.png"
+  },
+  {
+    "filename": "stage2_similarity_examples_top10_20261022_161929.png",
+    "topic": "similarity_examples",
+    "detail": "top10",
+    "summary": "Sample similarity table generated for 3 query headlines",
+    "timestamp": "20261022_161929",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_similarity_examples_top10_20261022_161929.png"
+  },
+  {
+    "filename": "stage2_query_demo_similarity_bars_20261022_161929.png",
+    "topic": "query_demo",
+    "detail": "similarity_bars",
+    "summary": "query='Central Bank cuts policy rate': top match='Sri Lanka promotes mineral resources and investmen...' (sim=0.662, n=4)",
+    "timestamp": "20261022_161929",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_query_demo_similarity_bars_20261022_161929.png"
+  },
+  {
+    "filename": "stage2_same_vs_diff_category_similarity_20261022_161930.png",
+    "topic": "same_vs_diff_category",
+    "detail": "similarity",
+    "summary": "avg top1 sim=0.68, same_cat=0.22, diff_cat=0.11",
+    "timestamp": "20261022_161930",
+    "stage": "stage2",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage2\\stage2_same_vs_diff_category_similarity_20261022_161930.png"
+  }
+]

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Historical News Backtest Report — Stage 7</title>
+    <style>
+        :root {
+            --bg: #090d16;
+            --card-bg: #111827;
+            --border: #1f2937;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #3b82f6;
+            --positive: #10b981;
+            --negative: #ef4444;
+        }
+        body {
+            background: var(--bg);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            padding: 32px 24px;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin: 0 0 6px 0;
+            background: linear-gradient(135deg, #60a5fa 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .card-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+        .card-value {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        .card-subtext {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 32px 0 16px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+        th {
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .table-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+        .badge-safe {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--positive);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 9999px;
+            padding: 4px 10px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Stage 7 — Historical News Walk-Forward Backtest Report</h1>
+                <div class="subtitle">Sri Lankan Stock Market (CSE) News Impact Engine &bull; Horizon h=5 trading days</div>
+            </div>
+            <div>
+                <span class="badge-safe">&check; Strict Zero-Lookahead Causal Guarantee</span>
+            </div>
+        </header>
+
+        <!-- Executive Metrics KPI Cards -->
+        <div class="grid-cards">
+            <div class="card">
+                <div class="card-label">Directional Accuracy</div>
+                <div class="card-value" style="color: var(--accent);">39.9%</div>
+                <div class="card-subtext">Return direction sign correct vs actual CAR</div>
+            </div>
+            <div class="card">
+                <div class="card-label">MAE vs Baseline</div>
+                <div class="card-value" style="color: var(--positive);">2.24%</div>
+                <div class="card-subtext">Baseline MAE: 2.0% (-12.0% improvement)</div>
+            </div>
+            <div class="card">
+                <div class="card-label">Information Coefficient (IC)</div>
+                <div class="card-value" style="color: #a855f7;">+0.3018</div>
+                <div class="card-subtext">Rank IC (Spearman): +0.3115</div>
+            </div>
+            <div class="card">
+                <div class="card-label">Top-Quintile Sharpe</div>
+                <div class="card-value" style="color: #f59e0b;">3.70</div>
+                <div class="card-subtext">Annualized Sharpe of Q5 highest predictions</div>
+            </div>
+            <div class="card">
+                <div class="card-label">Long/Short Spread (Q5-Q1)</div>
+                <div class="card-value" style="color: var(--positive);">+2.75%</div>
+                <div class="card-subtext">Return spread between Top and Bottom quintiles</div>
+            </div>
+        </div>
+
+        <!-- Quintile Monotonicity -->
+        <div class="section-title">Quintile Performance & Monotonicity Analysis (Q1 &rarr; Q5)</div>
+        <div class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align: center;">Quintile</th>
+                        <th style="text-align: right;">Count</th>
+                        <th style="text-align: right;">Mean Actual CAR</th>
+                        <th style="width: 250px;">Return Trajectory</th>
+                        <th style="text-align: right;">Std Dev</th>
+                        <th style="text-align: right;">Win Rate %</th>
+                        <th style="text-align: right;">Annualized Sharpe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td style="font-weight: 600; text-align: center;">Quintile 1</td>
+            <td style="text-align: right;">81</td>
+            <td style="text-align: right; color: #ef4444; font-weight: 700;">-1.14%</td>
+            <td>
+                <div style="background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; height: 16px; width: 100%;">
+                    <div style="background: #ef4444; width: 32.7%; height: 100%; border-radius: 4px;"></div>
+                </div>
+            </td>
+            <td style="text-align: right;">2.56%</td>
+            <td style="text-align: right;">34.6%</td>
+            <td style="text-align: right; font-weight: 600;">-3.15</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: 600; text-align: center;">Quintile 2</td>
+            <td style="text-align: right;">80</td>
+            <td style="text-align: right; color: #ef4444; font-weight: 700;">-0.13%</td>
+            <td>
+                <div style="background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; height: 16px; width: 100%;">
+                    <div style="background: #ef4444; width: 12.68%; height: 100%; border-radius: 4px;"></div>
+                </div>
+            </td>
+            <td style="text-align: right;">3.05%</td>
+            <td style="text-align: right;">45.0%</td>
+            <td style="text-align: right; font-weight: 600;">-0.31</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: 600; text-align: center;">Quintile 3</td>
+            <td style="text-align: right;">90</td>
+            <td style="text-align: right; color: #ef4444; font-weight: 700;">-0.32%</td>
+            <td>
+                <div style="background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; height: 16px; width: 100%;">
+                    <div style="background: #ef4444; width: 16.36%; height: 100%; border-radius: 4px;"></div>
+                </div>
+            </td>
+            <td style="text-align: right;">1.16%</td>
+            <td style="text-align: right;">14.4%</td>
+            <td style="text-align: right; font-weight: 600;">-1.95</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: 600; text-align: center;">Quintile 4</td>
+            <td style="text-align: right;">70</td>
+            <td style="text-align: right; color: #10b981; font-weight: 700;">+0.59%</td>
+            <td>
+                <div style="background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; height: 16px; width: 100%;">
+                    <div style="background: #10b981; width: 21.82%; height: 100%; border-radius: 4px;"></div>
+                </div>
+            </td>
+            <td style="text-align: right;">2.68%</td>
+            <td style="text-align: right;">50.0%</td>
+            <td style="text-align: right; font-weight: 600;">1.57</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: 600; text-align: center;">Quintile 5</td>
+            <td style="text-align: right;">80</td>
+            <td style="text-align: right; color: #10b981; font-weight: 700;">+1.62%</td>
+            <td>
+                <div style="background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; height: 16px; width: 100%;">
+                    <div style="background: #10b981; width: 42.32%; height: 100%; border-radius: 4px;"></div>
+                </div>
+            </td>
+            <td style="text-align: right;">3.10%</td>
+            <td style="text-align: right;">62.5%</td>
+            <td style="text-align: right; font-weight: 600;">3.70</td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Category Breakdown -->
+        <div class="section-title">Macroeconomic Event Category Breakdown</div>
+        <div class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th style="text-align: right;">Events</th>
+                        <th style="text-align: right;">Directional Accuracy</th>
+                        <th style="text-align: right;">Model MAE</th>
+                        <th style="text-align: right;">Baseline MAE</th>
+                        <th style="text-align: right;">Mean Actual CAR</th>
+                        <th style="text-align: right;">Mean Predicted CAR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td style="font-weight: 500;">not_relevant</td>
+            <td style="text-align: right;">258</td>
+            <td style="text-align: right; font-weight: 600; color: #3b82f6;">36.0%</td>
+            <td style="text-align: right;">2.19%</td>
+            <td style="text-align: right;">1.87%</td>
+            <td style="text-align: right; color: #ef4444;">-0.07%</td>
+            <td style="text-align: right;">+0.96%</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: 500;">central_bank_or_monetary_policy</td>
+            <td style="text-align: right;">33</td>
+            <td style="text-align: right; font-weight: 600; color: #3b82f6;">51.5%</td>
+            <td style="text-align: right;">1.70%</td>
+            <td style="text-align: right;">1.64%</td>
+            <td style="text-align: right; color: #10b981;">+0.41%</td>
+            <td style="text-align: right;">+1.08%</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: 500;">presidential_election</td>
+            <td style="text-align: right;">31</td>
+            <td style="text-align: right; font-weight: 600; color: #3b82f6;">51.6%</td>
+            <td style="text-align: right;">2.70%</td>
+            <td style="text-align: right;">2.82%</td>
+            <td style="text-align: right; color: #10b981;">+1.03%</td>
+            <td style="text-align: right;">+1.23%</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: 500;">debt_restructuring_or_IMF</td>
+            <td style="text-align: right;">26</td>
+            <td style="text-align: right; font-weight: 600; color: #3b82f6;">46.2%</td>
+            <td style="text-align: right;">2.43%</td>
+            <td style="text-align: right;">2.56%</td>
+            <td style="text-align: right; color: #10b981;">+1.36%</td>
+            <td style="text-align: right;">+1.23%</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: 500;">government_policy_or_budget_or_tax</td>
+            <td style="text-align: right;">26</td>
+            <td style="text-align: right; font-weight: 600; color: #3b82f6;">46.2%</td>
+            <td style="text-align: right;">2.32%</td>
+            <td style="text-align: right;">1.91%</td>
+            <td style="text-align: right; color: #ef4444;">-0.57%</td>
+            <td style="text-align: right;">+1.17%</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: 500;">cabinet_or_ministry_change</td>
+            <td style="text-align: right;">13</td>
+            <td style="text-align: right; font-weight: 600; color: #3b82f6;">23.1%</td>
+            <td style="text-align: right;">3.36%</td>
+            <td style="text-align: right;">3.00%</td>
+            <td style="text-align: right; color: #ef4444;">-1.63%</td>
+            <td style="text-align: right;">+0.79%</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: 500;">parliamentary_election</td>
+            <td style="text-align: right;">9</td>
+            <td style="text-align: right; font-weight: 600; color: #3b82f6;">66.7%</td>
+            <td style="text-align: right;">1.77%</td>
+            <td style="text-align: right;">2.03%</td>
+            <td style="text-align: right; color: #10b981;">+1.55%</td>
+            <td style="text-align: right;">+1.44%</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: 500;">political_arrest_or_imprisonment</td>
+            <td style="text-align: right;">5</td>
+            <td style="text-align: right; font-weight: 600; color: #3b82f6;">20.0%</td>
+            <td style="text-align: right;">1.92%</td>
+            <td style="text-align: right;">1.06%</td>
+            <td style="text-align: right; color: #ef4444;">-0.28%</td>
+            <td style="text-align: right;">+1.02%</td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Sample Records -->
+        <div class="section-title">Sample Predictions vs Empirical CAR Observations</div>
+        <div class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Headline</th>
+                        <th>Category</th>
+                        <th style="text-align: right;">Predicted CAR</th>
+                        <th style="text-align: right;">Actual CAR</th>
+                        <th style="text-align: center;">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-04-22</td>
+            <td style="font-weight: 500; font-size: 13px;">Road Development Authority opens renovated interchange on Southern Expressway</td>
+            <td style="font-size: 12px; color: #cbd5e1;">not_relevant</td>
+            <td style="text-align: right; font-weight: 600;">+1.50%</td>
+            <td style="text-align: right; font-weight: 600; color: #10b981;">+4.12%</td>
+            <td style="text-align: center;"><span style="color: #10b981; font-weight: 700;">HIT</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-04-26</td>
+            <td style="font-weight: 500; font-size: 13px;">Sri Lanka junior athletes win four medals at Asian Youth Athletics Championships</td>
+            <td style="font-size: 12px; color: #cbd5e1;">not_relevant</td>
+            <td style="text-align: right; font-weight: 600;">+1.69%</td>
+            <td style="text-align: right; font-weight: 600; color: #10b981;">+1.01%</td>
+            <td style="text-align: center;"><span style="color: #10b981; font-weight: 700;">HIT</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-05-02</td>
+            <td style="font-weight: 500; font-size: 13px;">University of Peradeniya researchers develop drought-resistant rice cultivar</td>
+            <td style="font-size: 12px; color: #cbd5e1;">not_relevant</td>
+            <td style="text-align: right; font-weight: 600;">+1.15%</td>
+            <td style="text-align: right; font-weight: 600; color: #ef4444;">-0.09%</td>
+            <td style="text-align: center;"><span style="color: #ef4444;">MISS</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-05-08</td>
+            <td style="font-weight: 500; font-size: 13px;">Cabinet of ministers holds special session on public sector salary revisions</td>
+            <td style="font-size: 12px; color: #cbd5e1;">cabinet_or_ministry_change</td>
+            <td style="text-align: right; font-weight: 600;">+0.96%</td>
+            <td style="text-align: right; font-weight: 600; color: #ef4444;">-0.83%</td>
+            <td style="text-align: center;"><span style="color: #ef4444;">MISS</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-05-10</td>
+            <td style="font-weight: 500; font-size: 13px;">John Keells Holdings signs partnership with Melco for City of Dreams casino resort</td>
+            <td style="font-size: 12px; color: #cbd5e1;">not_relevant</td>
+            <td style="text-align: right; font-weight: 600;">+1.93%</td>
+            <td style="text-align: right; font-weight: 600; color: #ef4444;">-1.99%</td>
+            <td style="text-align: center;"><span style="color: #ef4444;">MISS</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-05-14</td>
+            <td style="font-weight: 500; font-size: 13px;">Commercial Bank of Ceylon records 35 percent rise in operating profits for first quarter</td>
+            <td style="font-size: 12px; color: #cbd5e1;">not_relevant</td>
+            <td style="text-align: right; font-weight: 600;">+0.54%</td>
+            <td style="text-align: right; font-weight: 600; color: #ef4444;">-1.74%</td>
+            <td style="text-align: center;"><span style="color: #ef4444;">MISS</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-05-15</td>
+            <td style="font-weight: 500; font-size: 13px;">Treasury bill yields decline across all maturities at weekly primary auction</td>
+            <td style="font-size: 12px; color: #cbd5e1;">government_policy_or_budget_or_tax</td>
+            <td style="text-align: right; font-weight: 600;">+0.56%</td>
+            <td style="text-align: right; font-weight: 600; color: #ef4444;">-0.18%</td>
+            <td style="text-align: center;"><span style="color: #ef4444;">MISS</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-05-16</td>
+            <td style="font-weight: 500; font-size: 13px;">Hatton National Bank announces interim dividend following strong asset quality improvement</td>
+            <td style="font-size: 12px; color: #cbd5e1;">not_relevant</td>
+            <td style="text-align: right; font-weight: 600;">+0.77%</td>
+            <td style="text-align: right; font-weight: 600; color: #ef4444;">-0.18%</td>
+            <td style="text-align: center;"><span style="color: #ef4444;">MISS</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-05-18</td>
+            <td style="font-weight: 500; font-size: 13px;">Department of Meteorology issues heavy rainfall advisory for Western and Sabaragamuwa provinces</td>
+            <td style="font-size: 12px; color: #cbd5e1;">not_relevant</td>
+            <td style="text-align: right; font-weight: 600;">+1.31%</td>
+            <td style="text-align: right; font-weight: 600; color: #ef4444;">-1.72%</td>
+            <td style="text-align: center;"><span style="color: #ef4444;">MISS</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-05-22</td>
+            <td style="font-weight: 500; font-size: 13px;">Cabinet approves legislation establishing independent Public Debt Management Office</td>
+            <td style="font-size: 12px; color: #cbd5e1;">cabinet_or_ministry_change</td>
+            <td style="text-align: right; font-weight: 600;">+1.51%</td>
+            <td style="text-align: right; font-weight: 600; color: #ef4444;">-2.54%</td>
+            <td style="text-align: center;"><span style="color: #ef4444;">MISS</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-05-22</td>
+            <td style="font-weight: 500; font-size: 13px;">Colombo Tea Auction prices record gains across high grown orthodox grades</td>
+            <td style="font-size: 12px; color: #cbd5e1;">not_relevant</td>
+            <td style="text-align: right; font-weight: 600;">+1.50%</td>
+            <td style="text-align: right; font-weight: 600; color: #ef4444;">-2.54%</td>
+            <td style="text-align: center;"><span style="color: #ef4444;">MISS</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-05-23</td>
+            <td style="font-weight: 500; font-size: 13px;">Vesak festival illuminated across cities with colorful pandals and lantern displays</td>
+            <td style="font-size: 12px; color: #cbd5e1;">not_relevant</td>
+            <td style="text-align: right; font-weight: 600;">+1.50%</td>
+            <td style="text-align: right; font-weight: 600; color: #ef4444;">-2.70%</td>
+            <td style="text-align: center;"><span style="color: #ef4444;">MISS</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-05-28</td>
+            <td style="font-weight: 500; font-size: 13px;">Central Bank cuts policy rates by 50 basis points to support economic recovery</td>
+            <td style="font-size: 12px; color: #cbd5e1;">central_bank_or_monetary_policy</td>
+            <td style="text-align: right; font-weight: 600;">+0.58%</td>
+            <td style="text-align: right; font-weight: 600; color: #ef4444;">-1.59%</td>
+            <td style="text-align: center;"><span style="color: #ef4444;">MISS</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-05-31</td>
+            <td style="font-weight: 500; font-size: 13px;">Central Bank weekly indicators show broad money growth accelerating to 8 percent</td>
+            <td style="font-size: 12px; color: #cbd5e1;">central_bank_or_monetary_policy</td>
+            <td style="text-align: right; font-weight: 600;">+0.72%</td>
+            <td style="text-align: right; font-weight: 600; color: #10b981;">+1.18%</td>
+            <td style="text-align: center;"><span style="color: #10b981; font-weight: 700;">HIT</span></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size: 12px; color: #94a3b8; white-space: nowrap;">2024-06-02</td>
+            <td style="font-weight: 500; font-size: 13px;">President addresses nation on economic recovery milestones</td>
+            <td style="font-size: 12px; color: #cbd5e1;">presidential_election</td>
+            <td style="text-align: right; font-weight: 600;">+0.72%</td>
+            <td style="text-align: right; font-weight: 600; color: #10b981;">+2.20%</td>
+            <td style="text-align: center;"><span style="color: #10b981; font-weight: 700;">HIT</span></td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+
+        <footer style="margin-top: 32px; border-top: 1px solid var(--border); padding-top: 16px; font-size: 12px; color: var(--text-muted); display: flex; justify-content: space-between;">
+            <div>Generated by CSE Research Stage 7 Observability &amp; Validation Pipeline &bull; 2026-10-22 13:57:32</div>
+            <div>Evaluated 401 historical events &bull; Horizon: 5 trading days</div>
+        </footer>
+    </div>
+</body>
+</html>

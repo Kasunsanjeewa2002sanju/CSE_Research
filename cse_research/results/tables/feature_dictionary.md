@@ -1,0 +1,61 @@
+# Feature Dictionary (Stage 5)
+
+| feature_name | feature_set | category | dtype | description | lookahead_check |
+| --- | --- | --- | --- | --- | --- |
+| ret_1d | A, B, C | Price / Technical | float64 | 1-day ASPI log return: ln(ASPI[t] / ASPI[t-1]) | Strictly causal at t close (Rule R2) |
+| ret_2d | A, B, C | Price / Technical | float64 | 2-day cumulative ASPI log return: ln(ASPI[t] / ASPI[t-2]) | Strictly causal at t close (Rule R2) |
+| ret_3d | A, B, C | Price / Technical | float64 | 3-day cumulative ASPI log return: ln(ASPI[t] / ASPI[t-3]) | Strictly causal at t close (Rule R2) |
+| ret_5d | A, B, C | Price / Technical | float64 | 5-day cumulative ASPI log return: ln(ASPI[t] / ASPI[t-5]) | Strictly causal at t close (Rule R2) |
+| ret_10d | A, B, C | Price / Technical | float64 | 10-day cumulative ASPI log return: ln(ASPI[t] / ASPI[t-10]) | Strictly causal at t close (Rule R2) |
+| ret_20d | A, B, C | Price / Technical | float64 | 20-day cumulative ASPI log return: ln(ASPI[t] / ASPI[t-20]) | Strictly causal at t close (Rule R2) |
+| ret_lag_1 | A, B, C | Price / Technical | float64 | 1-day lagged daily log return: ret_1d[t-1] | Strictly causal at t close (Rule R2) |
+| ret_lag_2 | A, B, C | Price / Technical | float64 | 2-day lagged daily log return: ret_1d[t-2] | Strictly causal at t close (Rule R2) |
+| ret_lag_3 | A, B, C | Price / Technical | float64 | 3-day lagged daily log return: ret_1d[t-3] | Strictly causal at t close (Rule R2) |
+| ret_lag_5 | A, B, C | Price / Technical | float64 | 5-day lagged daily log return: ret_1d[t-5] | Strictly causal at t close (Rule R2) |
+| ret_lag_10 | A, B, C | Price / Technical | float64 | 10-day lagged daily log return: ret_1d[t-10] | Strictly causal at t close (Rule R2) |
+| ret_lag_20 | A, B, C | Price / Technical | float64 | 20-day lagged daily log return: ret_1d[t-20] | Strictly causal at t close (Rule R2) |
+| ret_mean_5d | A, B, C | Price / Technical | float64 | Trailing 5-day rolling mean of daily log returns | Strictly causal at t close (Rule R2) |
+| ret_mean_10d | A, B, C | Price / Technical | float64 | Trailing 10-day rolling mean of daily log returns | Strictly causal at t close (Rule R2) |
+| ret_mean_20d | A, B, C | Price / Technical | float64 | Trailing 20-day rolling mean of daily log returns | Strictly causal at t close (Rule R2) |
+| ret_vol_5d | A, B, C | Price / Technical | float64 | Trailing 5-day rolling standard deviation of daily log returns | Strictly causal at t close (Rule R2) |
+| ret_vol_10d | A, B, C | Price / Technical | float64 | Trailing 10-day rolling standard deviation of daily log returns | Strictly causal at t close (Rule R2) |
+| ret_vol_20d | A, B, C | Price / Technical | float64 | Trailing 20-day rolling standard deviation of daily log returns | Strictly causal at t close (Rule R2) |
+| rsi_14 | A, B, C | Price / Technical | float64 | 14-day Relative Strength Index (Wilder's exponential smoothing) | Strictly causal at t close (Rule R2) |
+| macd_line | A, B, C | Price / Technical | float64 | MACD line: EMA(12) - EMA(26) of ASPI closing level | Strictly causal at t close (Rule R2) |
+| macd_signal | A, B, C | Price / Technical | float64 | MACD signal line: EMA(9) of MACD line | Strictly causal at t close (Rule R2) |
+| macd_hist | A, B, C | Price / Technical | float64 | MACD histogram: macd_line - macd_signal | Strictly causal at t close (Rule R2) |
+| dist_from_sma_20 | A, B, C | Price / Technical | float64 | Fractional distance of ASPI closing level from 20-day SMA: (ASPI - SMA20)/SMA20 | Strictly causal at t close (Rule R2) |
+| dist_from_sma_50 | A, B, C | Price / Technical | float64 | Fractional distance of ASPI closing level from 50-day SMA: (ASPI - SMA50)/SMA50 | Strictly causal at t close (Rule R2) |
+| sp20_log_return | B, C | Market Activity / Liquidity | float64 | S&P SL 20 daily log return. Masked NaN prior to 2012-06-27 inception | Strictly causal at t close (Rule R2) |
+| aspi_sp20_spread | B, C | Market Activity / Liquidity | float64 | Return spread: aspi_log_return - sp20_log_return. Masked NaN before 2012-06-27 | Strictly causal at t close (Rule R2) |
+| has_sp20 | B, C | Market Activity / Liquidity | int64 | Binary indicator: 1 if S&P SL 20 is active and populated on date t, 0 prior to 2012 | Strictly causal at t close (Rule R2) |
+| log_turnover | B, C | Market Activity / Liquidity | float64 | Natural logarithm of daily equity turnover: ln(turnover_equity_mn) | Strictly causal at t close (Rule R2) |
+| log_shares | B, C | Market Activity / Liquidity | float64 | Natural logarithm of daily shares traded: ln(shares_traded_equity_k) | Strictly causal at t close (Rule R2) |
+| turnover_log_change_1d | B, C | Market Activity / Liquidity | float64 | 1-day change in log turnover: diff(1) of log_turnover | Strictly causal at t close (Rule R2) |
+| shares_log_change_1d | B, C | Market Activity / Liquidity | float64 | 1-day change in log shares traded: diff(1) of log_shares | Strictly causal at t close (Rule R2) |
+| turnover_zscore_60d | B, C | Market Activity / Liquidity | float64 | Trailing 60-day rolling z-score of log equity turnover | Strictly causal at t close (Rule R2) |
+| shares_zscore_60d | B, C | Market Activity / Liquidity | float64 | Trailing 60-day rolling z-score of log shares traded | Strictly causal at t close (Rule R2) |
+| turnover_to_5d_ratio | B, C | Market Activity / Liquidity | float64 | Ratio of daily equity turnover to trailing 5-day average turnover | Strictly causal at t close (Rule R2) |
+| cal_day_of_week | C | Calendar | int32 | Day of week integer (0=Monday, 1=Tuesday, ..., 4=Friday) | Strictly causal at t close (Rule R2) |
+| cal_month | C | Calendar | int32 | Calendar month integer (1=January, ..., 12=December) | Strictly causal at t close (Rule R2) |
+| cal_session_gap_days | C | Calendar | float64 | Calendar days elapsed since previous trading session (weekend/holiday gap) | Strictly causal at t close (Rule R2) |
+| stage_none | C | Electoral Cycle (Causal) | int64 | One-hot flag: 1 if no known election stage is active on date t | Strictly causal at t close (Rule R2) |
+| stage_announcement | C | Electoral Cycle (Causal) | int64 | One-hot flag: 1 if active stage is election announcement proclamation | Strictly causal at t close (Rule R2) |
+| stage_nomination_start | C | Electoral Cycle (Causal) | int64 | One-hot flag: 1 if active stage is candidate nomination window start | Strictly causal at t close (Rule R2) |
+| stage_nomination_end | C | Electoral Cycle (Causal) | int64 | One-hot flag: 1 if active stage is nomination deadline closing | Strictly causal at t close (Rule R2) |
+| stage_polling | C | Electoral Cycle (Causal) | int64 | One-hot flag: 1 if active stage is election polling day | Strictly causal at t close (Rule R2) |
+| stage_result | C | Electoral Cycle (Causal) | int64 | One-hot flag: 1 if active stage is official election results declaration | Strictly causal at t close (Rule R2) |
+| stage_government_formation | C | Electoral Cycle (Causal) | int64 | One-hot flag: 1 if active stage is government swearing-in / cabinet appointment | Strictly causal at t close (Rule R2) |
+| type_none | C | Electoral Cycle (Causal) | int64 | One-hot flag: 1 if no known election is active | Strictly causal at t close (Rule R2) |
+| type_presidential | C | Electoral Cycle (Causal) | int64 | One-hot flag: 1 if active election is Presidential election | Strictly causal at t close (Rule R2) |
+| type_parliamentary | C | Electoral Cycle (Causal) | int64 | One-hot flag: 1 if active election is Parliamentary general election | Strictly causal at t close (Rule R2) |
+| type_provincial_council | C | Electoral Cycle (Causal) | int64 | One-hot flag: 1 if active election is Provincial Council election | Strictly causal at t close (Rule R2) |
+| days_to_next_known_event | C | Electoral Cycle (Causal) | float64 | Trading days to next announced election stage (-1 if no stage is currently known) | Strictly causal at t close (Rule R2) |
+| days_since_last_stage | C | Electoral Cycle (Causal) | float64 | Trading days elapsed since most recent active election stage (-1 if no event active) | Strictly causal at t close (Rule R2) |
+| in_window_0_2 | C | Electoral Cycle (Causal) | int64 | Binary flag: 1 if date t falls within [0,+2] trading days of most recent stage | Strictly causal at t close (Rule R2) |
+| in_window_0_7 | C | Electoral Cycle (Causal) | int64 | Binary flag: 1 if date t falls within [0,+7] trading days of most recent stage | Strictly causal at t close (Rule R2) |
+| in_window_0_15 | C | Electoral Cycle (Causal) | int64 | Binary flag: 1 if date t falls within [0,+15] trading days of most recent stage | Strictly causal at t close (Rule R2) |
+| in_window_0_30 | C | Electoral Cycle (Causal) | int64 | Binary flag: 1 if date t falls within [0,+30] trading days of most recent stage | Strictly causal at t close (Rule R2) |
+| prior_mean_car | C | Historical Prior CAR (Causal) | float64 | Historical mean CAR from completed prior events for matching type, stage, and window | Strictly causal at t close (Rule R2) |
+| prior_median_car | C | Historical Prior CAR (Causal) | float64 | Historical median CAR from completed prior events for matching type, stage, and window | Strictly causal at t close (Rule R2) |
+| prior_n | C | Historical Prior CAR (Causal) | int64 | Count of prior completed events informing historical CAR statistics as of date t | Strictly causal at t close (Rule R2) |

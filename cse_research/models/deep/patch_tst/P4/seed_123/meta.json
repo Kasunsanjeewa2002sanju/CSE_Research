@@ -1,0 +1,29 @@
+{
+  "parameters": 5659,
+  "best_epoch": 1,
+  "best_val_loss": 0.34454928259768897,
+  "total_epochs": 2,
+  "seed": 123,
+  "hardware": {
+    "device": "cpu",
+    "cuda_available": false,
+    "cpu_threads": 4
+  },
+  "model_type": "patch_tst",
+  "model_tag": "patch_tst",
+  "feature_set": "C",
+  "horizon": 5,
+  "lookback": 20,
+  "use_revin": false,
+  "fit_summary": {
+    "total_epochs": 2,
+    "best_epoch": 1,
+    "best_val_loss": 0.34454928259768897,
+    "runtime_seconds": 8.203814506530762
+  },
+  "diagnostics": {
+    "pred_ret_std": 0.201601805284223,
+    "pred_dir_mean": 0.3515850144092219,
+    "is_collapsed": false
+  }
+}

@@ -1,0 +1,58 @@
+feature_name,feature_set,missing_count,missing_pct,rationale
+ret_1d,"A, B, C",1,0.01%,Warmup window (1 trading days).
+ret_2d,"A, B, C",2,0.03%,Warmup window (2 trading days).
+ret_3d,"A, B, C",3,0.04%,Warmup window (3 trading days).
+ret_5d,"A, B, C",5,0.07%,Warmup window (5 trading days).
+ret_10d,"A, B, C",10,0.13%,Warmup window (10 trading days).
+ret_20d,"A, B, C",20,0.26%,Warmup window (20 trading days).
+ret_lag_1,"A, B, C",2,0.03%,Warmup window (2 trading days).
+ret_lag_2,"A, B, C",3,0.04%,Warmup window (3 trading days).
+ret_lag_3,"A, B, C",4,0.05%,Warmup window (4 trading days).
+ret_lag_5,"A, B, C",6,0.08%,Warmup window (6 trading days).
+ret_lag_10,"A, B, C",11,0.14%,Warmup window (11 trading days).
+ret_lag_20,"A, B, C",21,0.28%,Warmup window (21 trading days).
+ret_mean_5d,"A, B, C",5,0.07%,Warmup window (5 trading days).
+ret_mean_10d,"A, B, C",10,0.13%,Warmup window (10 trading days).
+ret_mean_20d,"A, B, C",20,0.26%,Warmup window (20 trading days).
+ret_vol_5d,"A, B, C",5,0.07%,Warmup window (5 trading days).
+ret_vol_10d,"A, B, C",10,0.13%,Warmup window (10 trading days).
+ret_vol_20d,"A, B, C",20,0.26%,Warmup window (20 trading days).
+rsi_14,"A, B, C",14,0.18%,Warmup window (14 trading days).
+macd_line,"A, B, C",25,0.33%,Warmup window (25 trading days).
+macd_signal,"A, B, C",33,0.43%,Warmup window (33 trading days).
+macd_hist,"A, B, C",33,0.43%,Warmup window (33 trading days).
+dist_from_sma_20,"A, B, C",19,0.25%,Warmup window (19 trading days).
+dist_from_sma_50,"A, B, C",49,0.64%,Warmup window (first 50-60 trading days of series in 1994).
+sp20_log_return,"B, C",4426,57.97%,"Pre-inception period (1994-2012-06-26; 4,425 days). Strictly masked with has_sp20."
+aspi_sp20_spread,"B, C",4426,57.97%,"Pre-inception period (1994-2012-06-26; 4,425 days). Strictly masked with has_sp20."
+has_sp20,"B, C",0,0.00%,Complete (0 missing values).
+log_turnover,"B, C",0,0.00%,Complete (0 missing values).
+log_shares,"B, C",0,0.00%,Complete (0 missing values).
+turnover_log_change_1d,"B, C",1,0.01%,Warmup window (1 trading days).
+shares_log_change_1d,"B, C",1,0.01%,Warmup window (1 trading days).
+turnover_zscore_60d,"B, C",59,0.77%,Warmup window (first 50-60 trading days of series in 1994).
+shares_zscore_60d,"B, C",59,0.77%,Warmup window (first 50-60 trading days of series in 1994).
+turnover_to_5d_ratio,"B, C",4,0.05%,Warmup window (4 trading days).
+cal_day_of_week,C,0,0.00%,Complete (0 missing values).
+cal_month,C,0,0.00%,Complete (0 missing values).
+cal_session_gap_days,C,0,0.00%,Complete (0 missing values).
+stage_none,C,0,0.00%,Complete (0 missing values).
+stage_announcement,C,0,0.00%,Complete (0 missing values).
+stage_nomination_start,C,0,0.00%,Complete (0 missing values).
+stage_nomination_end,C,0,0.00%,Complete (0 missing values).
+stage_polling,C,0,0.00%,Complete (0 missing values).
+stage_result,C,0,0.00%,Complete (0 missing values).
+stage_government_formation,C,0,0.00%,Complete (0 missing values).
+type_none,C,0,0.00%,Complete (0 missing values).
+type_presidential,C,0,0.00%,Complete (0 missing values).
+type_parliamentary,C,0,0.00%,Complete (0 missing values).
+type_provincial_council,C,0,0.00%,Complete (0 missing values).
+days_to_next_known_event,C,0,0.00%,Complete (0 missing values).
+days_since_last_stage,C,0,0.00%,Complete (0 missing values).
+in_window_0_2,C,0,0.00%,Complete (0 missing values).
+in_window_0_7,C,0,0.00%,Complete (0 missing values).
+in_window_0_15,C,0,0.00%,Complete (0 missing values).
+in_window_0_30,C,0,0.00%,Complete (0 missing values).
+prior_mean_car,C,6150,80.55%,Non-event days (stage='none') or zero completed prior events (n=0).
+prior_median_car,C,6150,80.55%,Non-event days (stage='none') or zero completed prior events (n=0).
+prior_n,C,0,0.00%,Complete (0 missing values).

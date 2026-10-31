@@ -1,0 +1,29 @@
+{
+  "parameters": 9844,
+  "best_epoch": 5,
+  "best_val_loss": 0.28141852380219384,
+  "total_epochs": 5,
+  "seed": 999,
+  "hardware": {
+    "device": "cpu",
+    "cuda_available": false,
+    "cpu_threads": 4
+  },
+  "model_type": "bilstm",
+  "model_tag": "bilstm_revin",
+  "feature_set": "C",
+  "horizon": 5,
+  "lookback": 60,
+  "use_revin": true,
+  "fit_summary": {
+    "total_epochs": 5,
+    "best_epoch": 5,
+    "best_val_loss": 0.28141852380219384,
+    "runtime_seconds": 5.69304084777832
+  },
+  "diagnostics": {
+    "pred_ret_std": 0.054392241826795786,
+    "pred_dir_mean": 0.4689863842662632,
+    "is_collapsed": false
+  }
+}

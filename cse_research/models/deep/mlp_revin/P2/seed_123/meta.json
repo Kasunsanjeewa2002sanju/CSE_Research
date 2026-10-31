@@ -1,0 +1,29 @@
+{
+  "parameters": 131318,
+  "best_epoch": 8,
+  "best_val_loss": 0.12044938956901478,
+  "total_epochs": 9,
+  "seed": 123,
+  "hardware": {
+    "device": "cpu",
+    "cuda_available": false,
+    "cpu_threads": 4
+  },
+  "model_type": "mlp",
+  "model_tag": "mlp_revin",
+  "feature_set": "B",
+  "horizon": 5,
+  "lookback": 120,
+  "use_revin": true,
+  "fit_summary": {
+    "total_epochs": 9,
+    "best_epoch": 8,
+    "best_val_loss": 0.12044938956901478,
+    "runtime_seconds": 5.239244699478149
+  },
+  "diagnostics": {
+    "pred_ret_std": 0.014085389802908813,
+    "pred_dir_mean": 0.5640599001663894,
+    "is_collapsed": false
+  }
+}

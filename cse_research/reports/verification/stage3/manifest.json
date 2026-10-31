@@ -1,0 +1,254 @@
+[
+  {
+    "filename": "stage3_prior_distribution_h1_2_5_10_20261022_160721.png",
+    "topic": "prior_distribution",
+    "detail": "h1_2_5_10",
+    "summary": "h=1 mean=-0.09%; h=2 mean=-0.12%; h=5 mean=-0.20%; h=10 mean=-0.28%",
+    "timestamp": "20261022_160721",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_distribution_h1_2_5_10_20261022_160721.png"
+  },
+  {
+    "filename": "stage3_prior_vs_actual_h5_20261022_160722.png",
+    "topic": "prior_vs_actual",
+    "detail": "h5",
+    "summary": "IC=0.06, n=694, h=5d prior vs actual",
+    "timestamp": "20261022_160722",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_vs_actual_h5_20261022_160722.png"
+  },
+  {
+    "filename": "stage3_prior_vs_actual_h10_20261022_160722.png",
+    "topic": "prior_vs_actual",
+    "detail": "h10",
+    "summary": "IC=0.07, n=694, h=10d prior vs actual",
+    "timestamp": "20261022_160722",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_vs_actual_h10_20261022_160722.png"
+  },
+  {
+    "filename": "stage3_fallback_rate_by_category_20261022_160722.png",
+    "topic": "fallback_rate",
+    "detail": "by_category",
+    "summary": "h=5 fallback=0.0%, categories=9, max fallback=0.0%",
+    "timestamp": "20261022_160722",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_fallback_rate_by_category_20261022_160722.png"
+  },
+  {
+    "filename": "stage3_direction_accuracy_bar_20261022_160723.png",
+    "topic": "direction_accuracy",
+    "detail": "bar",
+    "summary": "Overall direction accuracy = 57.6% across 9 categories (vs 50% baseline)",
+    "timestamp": "20261022_160723",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_direction_accuracy_bar_20261022_160723.png"
+  },
+  {
+    "filename": "stage3_example_same_category_different_prior_20261022_160723.png",
+    "topic": "example_same_category",
+    "detail": "different_prior",
+    "summary": "Cuts prior=+0.22% vs Raises prior=+0.04% (delta=0.19%)",
+    "timestamp": "20261022_160723",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_example_same_category_different_prior_20261022_160723.png"
+  },
+  {
+    "filename": "stage3_prior_std_vs_sample_size_20261022_160723.png",
+    "topic": "prior_std",
+    "detail": "vs_sample_size",
+    "summary": "Confidence calibration: n=694, median N_eff=258.0, mean prior_std=40.85%",
+    "timestamp": "20261022_160723",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_std_vs_sample_size_20261022_160723.png"
+  },
+  {
+    "filename": "stage3_prior_distribution_h1_2_5_10_20261022_161705.png",
+    "topic": "prior_distribution",
+    "detail": "h1_2_5_10",
+    "summary": "h=1 mean=-0.09%; h=2 mean=-0.12%; h=5 mean=-0.20%; h=10 mean=-0.28%",
+    "timestamp": "20261022_161705",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_distribution_h1_2_5_10_20261022_161705.png"
+  },
+  {
+    "filename": "stage3_prior_vs_actual_h5_20261022_161706.png",
+    "topic": "prior_vs_actual",
+    "detail": "h5",
+    "summary": "IC=0.06, n=694, h=5d prior vs actual",
+    "timestamp": "20261022_161706",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_vs_actual_h5_20261022_161706.png"
+  },
+  {
+    "filename": "stage3_prior_vs_actual_h10_20261022_161706.png",
+    "topic": "prior_vs_actual",
+    "detail": "h10",
+    "summary": "IC=0.07, n=694, h=10d prior vs actual",
+    "timestamp": "20261022_161706",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_vs_actual_h10_20261022_161706.png"
+  },
+  {
+    "filename": "stage3_fallback_rate_by_category_20261022_161706.png",
+    "topic": "fallback_rate",
+    "detail": "by_category",
+    "summary": "h=5 fallback=0.0%, categories=9, max fallback=0.0%",
+    "timestamp": "20261022_161706",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_fallback_rate_by_category_20261022_161706.png"
+  },
+  {
+    "filename": "stage3_direction_accuracy_bar_20261022_161706.png",
+    "topic": "direction_accuracy",
+    "detail": "bar",
+    "summary": "Overall direction accuracy = 57.6% across 9 categories (vs 50% baseline)",
+    "timestamp": "20261022_161706",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_direction_accuracy_bar_20261022_161706.png"
+  },
+  {
+    "filename": "stage3_example_same_category_different_prior_20261022_161707.png",
+    "topic": "example_same_category",
+    "detail": "different_prior",
+    "summary": "Cuts prior=+0.22% vs Raises prior=+0.04% (delta=0.19%)",
+    "timestamp": "20261022_161707",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_example_same_category_different_prior_20261022_161707.png"
+  },
+  {
+    "filename": "stage3_prior_std_vs_sample_size_20261022_161707.png",
+    "topic": "prior_std",
+    "detail": "vs_sample_size",
+    "summary": "Confidence calibration: n=694, median N_eff=258.0, mean prior_std=41.15%",
+    "timestamp": "20261022_161707",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_std_vs_sample_size_20261022_161707.png"
+  },
+  {
+    "filename": "stage3_prior_distribution_h1_2_5_10_20261022_161845.png",
+    "topic": "prior_distribution",
+    "detail": "h1_2_5_10",
+    "summary": "h=1 mean=-0.09%; h=2 mean=-0.12%; h=5 mean=-0.20%; h=10 mean=-0.28%",
+    "timestamp": "20261022_161845",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_distribution_h1_2_5_10_20261022_161845.png"
+  },
+  {
+    "filename": "stage3_prior_vs_actual_h5_20261022_161846.png",
+    "topic": "prior_vs_actual",
+    "detail": "h5",
+    "summary": "IC=0.06, n=694, h=5d prior vs actual",
+    "timestamp": "20261022_161846",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_vs_actual_h5_20261022_161846.png"
+  },
+  {
+    "filename": "stage3_prior_vs_actual_h10_20261022_161846.png",
+    "topic": "prior_vs_actual",
+    "detail": "h10",
+    "summary": "IC=0.07, n=694, h=10d prior vs actual",
+    "timestamp": "20261022_161846",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_vs_actual_h10_20261022_161846.png"
+  },
+  {
+    "filename": "stage3_fallback_rate_by_category_20261022_161846.png",
+    "topic": "fallback_rate",
+    "detail": "by_category",
+    "summary": "h=5 fallback=0.0%, categories=9, max fallback=0.0%",
+    "timestamp": "20261022_161846",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_fallback_rate_by_category_20261022_161846.png"
+  },
+  {
+    "filename": "stage3_direction_accuracy_bar_20261022_161846.png",
+    "topic": "direction_accuracy",
+    "detail": "bar",
+    "summary": "Overall direction accuracy = 57.6% across 9 categories (vs 50% baseline)",
+    "timestamp": "20261022_161846",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_direction_accuracy_bar_20261022_161846.png"
+  },
+  {
+    "filename": "stage3_example_same_category_different_prior_20261022_161847.png",
+    "topic": "example_same_category",
+    "detail": "different_prior",
+    "summary": "Cuts prior=+0.22% vs Raises prior=+0.04% (delta=0.19%)",
+    "timestamp": "20261022_161847",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_example_same_category_different_prior_20261022_161847.png"
+  },
+  {
+    "filename": "stage3_prior_std_vs_sample_size_20261022_161847.png",
+    "topic": "prior_std",
+    "detail": "vs_sample_size",
+    "summary": "Confidence calibration: n=694, median N_eff=258.0, mean prior_std=41.09%",
+    "timestamp": "20261022_161847",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_std_vs_sample_size_20261022_161847.png"
+  },
+  {
+    "filename": "stage3_prior_distribution_h1_2_5_10_20261022_161930.png",
+    "topic": "prior_distribution",
+    "detail": "h1_2_5_10",
+    "summary": "h=1 mean=-0.09%; h=2 mean=-0.12%; h=5 mean=-0.20%; h=10 mean=-0.28%",
+    "timestamp": "20261022_161930",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_distribution_h1_2_5_10_20261022_161930.png"
+  },
+  {
+    "filename": "stage3_prior_vs_actual_h5_20261022_161931.png",
+    "topic": "prior_vs_actual",
+    "detail": "h5",
+    "summary": "IC=0.06, n=694, h=5d prior vs actual",
+    "timestamp": "20261022_161931",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_vs_actual_h5_20261022_161931.png"
+  },
+  {
+    "filename": "stage3_prior_vs_actual_h10_20261022_161931.png",
+    "topic": "prior_vs_actual",
+    "detail": "h10",
+    "summary": "IC=0.07, n=694, h=10d prior vs actual",
+    "timestamp": "20261022_161931",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_vs_actual_h10_20261022_161931.png"
+  },
+  {
+    "filename": "stage3_fallback_rate_by_category_20261022_161931.png",
+    "topic": "fallback_rate",
+    "detail": "by_category",
+    "summary": "h=5 fallback=0.0%, categories=9, max fallback=0.0%",
+    "timestamp": "20261022_161931",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_fallback_rate_by_category_20261022_161931.png"
+  },
+  {
+    "filename": "stage3_direction_accuracy_bar_20261022_161931.png",
+    "topic": "direction_accuracy",
+    "detail": "bar",
+    "summary": "Overall direction accuracy = 57.6% across 9 categories (vs 50% baseline)",
+    "timestamp": "20261022_161931",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_direction_accuracy_bar_20261022_161931.png"
+  },
+  {
+    "filename": "stage3_example_same_category_different_prior_20261022_161932.png",
+    "topic": "example_same_category",
+    "detail": "different_prior",
+    "summary": "Cuts prior=+0.22% vs Raises prior=+0.04% (delta=0.19%)",
+    "timestamp": "20261022_161932",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_example_same_category_different_prior_20261022_161932.png"
+  },
+  {
+    "filename": "stage3_prior_std_vs_sample_size_20261022_161932.png",
+    "topic": "prior_std",
+    "detail": "vs_sample_size",
+    "summary": "Confidence calibration: n=694, median N_eff=258.0, mean prior_std=41.02%",
+    "timestamp": "20261022_161932",
+    "stage": "stage3",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage3\\stage3_prior_std_vs_sample_size_20261022_161932.png"
+  }
+]

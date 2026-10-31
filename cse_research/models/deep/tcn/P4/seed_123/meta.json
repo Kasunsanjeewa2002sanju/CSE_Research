@@ -1,0 +1,29 @@
+{
+  "parameters": 14378,
+  "best_epoch": 1,
+  "best_val_loss": 0.32602076193683255,
+  "total_epochs": 1,
+  "seed": 123,
+  "hardware": {
+    "device": "cpu",
+    "cuda_available": false,
+    "cpu_threads": 4
+  },
+  "model_type": "tcn",
+  "model_tag": "tcn",
+  "feature_set": "C",
+  "horizon": 5,
+  "lookback": 120,
+  "use_revin": false,
+  "fit_summary": {
+    "total_epochs": 1,
+    "best_epoch": 1,
+    "best_val_loss": 0.32602076193683255,
+    "runtime_seconds": 14.874287605285645
+  },
+  "diagnostics": {
+    "pred_ret_std": 0.11748706306413417,
+    "pred_dir_mean": 0.49326599326599324,
+    "is_collapsed": false
+  }
+}

@@ -1,0 +1,218 @@
+[
+  {
+    "filename": "stage8_shap_importance_candidate_20261022_161438.png",
+    "topic": "shap_importance",
+    "detail": "candidate",
+    "summary": "Top-20 candidate features plotted: #1 is Shares Zscore 60D (34.0%), model=candidate_20261022.cbm",
+    "timestamp": "20261022_161438",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_shap_importance_candidate_20261022_161438.png"
+  },
+  {
+    "filename": "stage8_walkforward_curves_20261022_161439.png",
+    "topic": "walkforward",
+    "detail": "curves",
+    "summary": "Walk-forward: 3 folds, mean val MAE=2.28%, min=2.09%",
+    "timestamp": "20261022_161439",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_walkforward_curves_20261022_161439.png"
+  },
+  {
+    "filename": "stage8_model_comparison_mae_20261022_161439.png",
+    "topic": "model_comparison",
+    "detail": "mae",
+    "summary": "Frozen vs candidate MAE: h=5 frozen=2.45% vs candidate=2.28% (improvement=7.1%)",
+    "timestamp": "20261022_161439",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_model_comparison_mae_20261022_161439.png"
+  },
+  {
+    "filename": "stage8_feature_importance_frozen_vs_candidate_20261022_161440.png",
+    "topic": "feature_importance",
+    "detail": "frozen_vs_candidate",
+    "summary": "Feature importance: frozen #1=ret_1d (10.3%), candidate #1=shares_zscore_60d (34.0%)",
+    "timestamp": "20261022_161440",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_feature_importance_frozen_vs_candidate_20261022_161440.png"
+  },
+  {
+    "filename": "stage8_event_feature_weight_shift_20261022_161440.png",
+    "topic": "event_feature",
+    "detail": "weight_shift",
+    "summary": "Event weight shift: frozen=0.12% -> candidate=0.53% (gate=25.0%)",
+    "timestamp": "20261022_161440",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_event_feature_weight_shift_20261022_161440.png"
+  },
+  {
+    "filename": "stage8_promote_decision_20261022_161440.png",
+    "topic": "promote",
+    "detail": "decision",
+    "summary": "Promotion decision: REJECTED (event_imp=0.53% < 25%), MAE delta=+7.1%",
+    "timestamp": "20261022_161440",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_promote_decision_20261022_161440.png"
+  },
+  {
+    "filename": "stage8_shap_importance_candidate_20261022_161716.png",
+    "topic": "shap_importance",
+    "detail": "candidate",
+    "summary": "Top-20 candidate features plotted: #1 is Shares Zscore 60D (34.0%), model=candidate_20261022.cbm",
+    "timestamp": "20261022_161716",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_shap_importance_candidate_20261022_161716.png"
+  },
+  {
+    "filename": "stage8_walkforward_curves_20261022_161717.png",
+    "topic": "walkforward",
+    "detail": "curves",
+    "summary": "Walk-forward: 3 folds, mean val MAE=2.28%, min=2.09%",
+    "timestamp": "20261022_161717",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_walkforward_curves_20261022_161717.png"
+  },
+  {
+    "filename": "stage8_model_comparison_mae_20261022_161717.png",
+    "topic": "model_comparison",
+    "detail": "mae",
+    "summary": "Frozen vs candidate MAE: h=5 frozen=2.45% vs candidate=2.28% (improvement=7.1%)",
+    "timestamp": "20261022_161717",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_model_comparison_mae_20261022_161717.png"
+  },
+  {
+    "filename": "stage8_feature_importance_frozen_vs_candidate_20261022_161717.png",
+    "topic": "feature_importance",
+    "detail": "frozen_vs_candidate",
+    "summary": "Feature importance: frozen #1=ret_1d (10.3%), candidate #1=shares_zscore_60d (34.0%)",
+    "timestamp": "20261022_161717",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_feature_importance_frozen_vs_candidate_20261022_161717.png"
+  },
+  {
+    "filename": "stage8_event_feature_weight_shift_20261022_161718.png",
+    "topic": "event_feature",
+    "detail": "weight_shift",
+    "summary": "Event weight shift: frozen=0.12% -> candidate=0.53% (gate=25.0%)",
+    "timestamp": "20261022_161718",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_event_feature_weight_shift_20261022_161718.png"
+  },
+  {
+    "filename": "stage8_promote_decision_20261022_161718.png",
+    "topic": "promote",
+    "detail": "decision",
+    "summary": "Promotion decision: REJECTED (event_imp=0.53% < 25%), MAE delta=+7.1%",
+    "timestamp": "20261022_161718",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_promote_decision_20261022_161718.png"
+  },
+  {
+    "filename": "stage8_shap_importance_candidate_20261022_161857.png",
+    "topic": "shap_importance",
+    "detail": "candidate",
+    "summary": "Top-20 candidate features plotted: #1 is Shares Zscore 60D (34.0%), model=candidate_20261022.cbm",
+    "timestamp": "20261022_161857",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_shap_importance_candidate_20261022_161857.png"
+  },
+  {
+    "filename": "stage8_walkforward_curves_20261022_161857.png",
+    "topic": "walkforward",
+    "detail": "curves",
+    "summary": "Walk-forward: 3 folds, mean val MAE=2.28%, min=2.09%",
+    "timestamp": "20261022_161857",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_walkforward_curves_20261022_161857.png"
+  },
+  {
+    "filename": "stage8_model_comparison_mae_20261022_161857.png",
+    "topic": "model_comparison",
+    "detail": "mae",
+    "summary": "Frozen vs candidate MAE: h=5 frozen=2.45% vs candidate=2.28% (improvement=7.1%)",
+    "timestamp": "20261022_161857",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_model_comparison_mae_20261022_161857.png"
+  },
+  {
+    "filename": "stage8_feature_importance_frozen_vs_candidate_20261022_161858.png",
+    "topic": "feature_importance",
+    "detail": "frozen_vs_candidate",
+    "summary": "Feature importance: frozen #1=ret_1d (10.3%), candidate #1=shares_zscore_60d (34.0%)",
+    "timestamp": "20261022_161858",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_feature_importance_frozen_vs_candidate_20261022_161858.png"
+  },
+  {
+    "filename": "stage8_event_feature_weight_shift_20261022_161858.png",
+    "topic": "event_feature",
+    "detail": "weight_shift",
+    "summary": "Event weight shift: frozen=0.12% -> candidate=0.53% (gate=25.0%)",
+    "timestamp": "20261022_161858",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_event_feature_weight_shift_20261022_161858.png"
+  },
+  {
+    "filename": "stage8_promote_decision_20261022_161858.png",
+    "topic": "promote",
+    "detail": "decision",
+    "summary": "Promotion decision: REJECTED (event_imp=0.53% < 25%), MAE delta=+7.1%",
+    "timestamp": "20261022_161858",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_promote_decision_20261022_161858.png"
+  },
+  {
+    "filename": "stage8_shap_importance_candidate_20261022_161941.png",
+    "topic": "shap_importance",
+    "detail": "candidate",
+    "summary": "Top-20 candidate features plotted: #1 is Shares Zscore 60D (34.0%), model=candidate_20261022.cbm",
+    "timestamp": "20261022_161941",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_shap_importance_candidate_20261022_161941.png"
+  },
+  {
+    "filename": "stage8_walkforward_curves_20261022_161941.png",
+    "topic": "walkforward",
+    "detail": "curves",
+    "summary": "Walk-forward: 3 folds, mean val MAE=2.28%, min=2.09%",
+    "timestamp": "20261022_161941",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_walkforward_curves_20261022_161941.png"
+  },
+  {
+    "filename": "stage8_model_comparison_mae_20261022_161942.png",
+    "topic": "model_comparison",
+    "detail": "mae",
+    "summary": "Frozen vs candidate MAE: h=5 frozen=2.45% vs candidate=2.28% (improvement=7.1%)",
+    "timestamp": "20261022_161942",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_model_comparison_mae_20261022_161942.png"
+  },
+  {
+    "filename": "stage8_feature_importance_frozen_vs_candidate_20261022_161942.png",
+    "topic": "feature_importance",
+    "detail": "frozen_vs_candidate",
+    "summary": "Feature importance: frozen #1=ret_1d (10.3%), candidate #1=shares_zscore_60d (34.0%)",
+    "timestamp": "20261022_161942",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_feature_importance_frozen_vs_candidate_20261022_161942.png"
+  },
+  {
+    "filename": "stage8_event_feature_weight_shift_20261022_161942.png",
+    "topic": "event_feature",
+    "detail": "weight_shift",
+    "summary": "Event weight shift: frozen=0.12% -> candidate=0.53% (gate=25.0%)",
+    "timestamp": "20261022_161942",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_event_feature_weight_shift_20261022_161942.png"
+  },
+  {
+    "filename": "stage8_promote_decision_20261022_161942.png",
+    "topic": "promote",
+    "detail": "decision",
+    "summary": "Promotion decision: REJECTED (event_imp=0.53% < 25%), MAE delta=+7.1%",
+    "timestamp": "20261022_161942",
+    "stage": "stage8",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage8\\stage8_promote_decision_20261022_161942.png"
+  }
+]

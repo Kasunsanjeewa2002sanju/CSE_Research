@@ -1,0 +1,5 @@
+year,label,news_date,aspi_start,aspi_end,actual_log_return,actual_direction,horizon_used,predicted_direction,predicted_log_return,predicted_80_lower,predicted_80_upper,direction_hit,range_hit
+2015,2015 Presidential,2014-11-20,7530.3,7311.3,-0.0295,negative,10,positive,0.0128,-0.0275,0.0532,False,False
+2019,2019 Presidential,2019-09-25,5762.4,6149.57,0.065,positive,10,negative,-0.0034,-0.0437,0.037,False,False
+2020,2020 Parliamentary,2020-03-02,5614.29,6317.46,0.118,positive,10,negative,-0.0193,-0.0597,0.0211,False,False
+2024,2024 Presidential,2024-06-15,12310.83,12988.99,0.0536,positive,10,positive,0.0032,-0.0372,0.0436,True,False

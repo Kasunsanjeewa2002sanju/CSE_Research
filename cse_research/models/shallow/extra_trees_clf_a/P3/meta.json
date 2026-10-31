@@ -1,0 +1,73 @@
+{
+  "model": "extra_trees_clf_a",
+  "family": "shallow",
+  "phase": "P3",
+  "horizon": 5,
+  "seed": 42,
+  "train_date_range": [
+    "1994-01-03",
+    "2017-12-14"
+  ],
+  "embargo_date_range": [
+    "embargo_10d",
+    "embargo_10d"
+  ],
+  "val_date_range": [
+    "2018-01-02",
+    "2020-12-31"
+  ],
+  "embargo_days": 10,
+  "feature_set": "A",
+  "hyperparameters": {},
+  "raw_data_hash": "a9965aea016faf7cdd5836ac440818f082550906714cb82034c7f661be202c74",
+  "library_versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "statsmodels": "0.15.0"
+  },
+  "runtime_seconds": 0.5318264961242676,
+  "hardware": {
+    "device_type": "cpu",
+    "device_name": "CPU (torch not installed)",
+    "is_cuda_available": false,
+    "cuda_device_count": 0,
+    "total_memory_mb": null,
+    "cuda_version": null
+  },
+  "prediction_file": "results/predictions/shallow/extra_trees_clf_a_s42_P3_h5.parquet",
+  "extra_meta": {
+    "best_params": {
+      "n_estimators": 80,
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "budget": 3,
+    "feature_importances": {
+      "ret_1d": 0.021437423081681877,
+      "ret_2d": 0.06428911765147925,
+      "ret_3d": 0.037293842859178396,
+      "ret_5d": 0.0566085179745867,
+      "ret_10d": 0.07477144427755501,
+      "ret_20d": 0.03881023886589508,
+      "ret_lag_1": 0.0178012329211463,
+      "ret_lag_2": 0.013274508125591312,
+      "ret_lag_3": 0.013833526555218972,
+      "ret_lag_5": 0.006741588631067016,
+      "ret_lag_10": 0.0032397640133234964,
+      "ret_lag_20": 0.0021708781296048293,
+      "ret_mean_5d": 0.04972821994362893,
+      "ret_mean_10d": 0.10517326627802932,
+      "ret_mean_20d": 0.0645377018068144,
+      "ret_vol_5d": 0.005826550897552023,
+      "ret_vol_10d": 0.009028705122432592,
+      "ret_vol_20d": 0.013995500433279037,
+      "rsi_14": 0.16474063519917453,
+      "macd_line": 0.034621403707873984,
+      "macd_signal": 0.025759751106940697,
+      "macd_hist": 0.043059999839043156,
+      "dist_from_sma_20": 0.07937338315313351,
+      "dist_from_sma_50": 0.053882799424769486
+    }
+  }
+}

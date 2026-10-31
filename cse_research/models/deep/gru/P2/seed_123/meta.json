@@ -1,0 +1,29 @@
+{
+  "parameters": 6074,
+  "best_epoch": 9,
+  "best_val_loss": 0.291672692311882,
+  "total_epochs": 9,
+  "seed": 123,
+  "hardware": {
+    "device": "cpu",
+    "cuda_available": false,
+    "cpu_threads": 4
+  },
+  "model_type": "gru",
+  "model_tag": "gru",
+  "feature_set": "C",
+  "horizon": 5,
+  "lookback": 20,
+  "use_revin": false,
+  "fit_summary": {
+    "total_epochs": 9,
+    "best_epoch": 9,
+    "best_val_loss": 0.291672692311882,
+    "runtime_seconds": 5.50152325630188
+  },
+  "diagnostics": {
+    "pred_ret_std": 0.011172061598802744,
+    "pred_dir_mean": 0.7132667617689016,
+    "is_collapsed": false
+  }
+}

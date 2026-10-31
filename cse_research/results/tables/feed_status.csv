@@ -1,0 +1,15 @@
+feed_name,url,feed_type,status_code,is_active,entry_count,last_checked_utc,response_time_sec,error_message
+Ada Derana,http://www.adaderana.lk/rss.php,rss,200,True,25,2026-10-30T05:21:46.672806+00:00,1.314,
+The Island - Main,https://island.lk/feed/,rss,0,False,0,2026-10-30T05:21:48.039000+00:00,9.197,Connection timed out
+The Island - News,https://island.lk/category/news/feed/,rss,200,True,10,2026-10-30T05:21:57.236315+00:00,1.084,
+The Island - Business,https://island.lk/category/business/feed/,rss,200,True,10,2026-10-30T05:21:58.392932+00:00,0.627,
+NewsWire,https://www.newswire.lk/feed/,rss,0,False,0,2026-10-30T05:21:59.105087+00:00,6.434,"('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+Sunday Observer,https://www.sundayobserver.lk/feed/,rss,200,True,10,2026-10-30T05:22:05.540192+00:00,1.942,
+Google News - Sri Lanka Politics,https://news.google.com/rss/search?q=Sri+Lanka+politics&hl=en-LK&gl=LK&ceid=LK:en,query_rss,200,True,100,2026-10-30T05:22:07.574557+00:00,2.255,
+Google News - Sri Lanka Economy & CSE,https://news.google.com/rss/search?q=Sri+Lanka+economy+OR+CSE+OR+ASPI&hl=en-LK&gl=LK&ceid=LK:en,query_rss,200,True,100,2026-10-30T05:22:10.107162+00:00,1.879,
+Daily Mirror,https://www.dailymirror.lk/rss/breaking-news,rss,200,False,0,2026-10-30T05:22:12.247488+00:00,0.979,No RSS entries parsed (empty feed or HTML returned)
+Newsfirst,https://www.newsfirst.lk/feed/,rss,403,False,0,2026-10-30T05:22:13.475084+00:00,0.192,HTTP 403
+EconomyNext,https://economynext.com/feed/,rss,0,False,0,2026-10-30T05:22:13.670591+00:00,1.168,"HTTPSConnectionPool(host='economynext.com', port=443): Max retries exceeded with url: /feed/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))"
+Daily FT,https://www.ft.lk/rss/all,rss,404,False,0,2026-10-30T05:22:14.839816+00:00,1.347,HTTP 404
+Sunday Times,https://www.sundaytimes.lk/rss/news.xml,rss,404,False,0,2026-10-30T05:22:16.193025+00:00,0.249,HTTP 404
+Colombo Gazette,https://colombogazette.com/feed/,rss,200,False,0,2026-10-30T05:22:16.445226+00:00,3.911,No RSS entries parsed (empty feed or HTML returned)

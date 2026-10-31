@@ -1,0 +1,145 @@
+# CSE Research Configuration
+project:
+  name: "cse_aspi_research"
+  version: "0.1.0"
+  description: "Impact of Sri Lankan Political Events and News on the Colombo Stock Exchange ASPI"
+
+seed: 42
+
+paths:
+  raw_data_dir: "data/raw"
+  interim_data_dir: "data/interim"
+  processed_data_dir: "data/processed"
+  results_dir: "results"
+  metrics_dir: "results/metrics"
+  predictions_dir: "results/predictions"
+  figures_dir: "results/figures"
+  tables_dir: "results/tables"
+  logs_dir: "results/logs"
+  models_dir: "models"
+  reports_dir: "reports"
+  notebooks_dir: "notebooks"
+  executed_notebooks_dir: "notebooks/executed"
+
+inputs:
+  cse_data_file: "CSE_data.csv"
+  elections_file: "Elections.csv"
+  proposal_pdf: "Predicting Stock Market Movements Using Government_Changes_updated.pdf"
+
+phases:
+  1: "baseline_statistical"
+  2: "shallow_ml"
+  3: "deep_learning"
+  4: "foundation_multimodal"
+  5: "news_scenario_pipeline"
+
+horizons:
+  h1: 1     # 1-day ahead log return
+  h5: 5     # 1-week ahead (5 trading days) log return matching proposal
+  h20: 20   # 20-day ahead log return (reference)
+
+windows:
+  event_estimation: 120
+  event_window: [-10, 10]
+  post_event_window: 20
+
+validation_protocol:
+  strategy: "expanding_window_walk_forward"
+  embargo_trading_days: 10
+  inner_tune_ratio: 0.15
+  inner_embargo_trading_days: 10
+  refit_interval_sensitivity: 63
+  horizons: [1, 5]
+  model_selection:
+    primary_metric: "oos_r2"
+    primary_horizon: 5
+    primary_benchmark: "historical_mean"
+    significance_test: "diebold_mariano_hln_vs_random_walk"
+    secondary_metric: "balanced_accuracy"
+    min_winning_phases: 3
+    tie_breaker: "simplicity"
+  phases:
+    P1:
+      val_start: "2012-01-01"
+      val_end: "2014-12-31"
+      train_end: "2011-12-31"
+      description: "Validate 2012-2014, train before 2012-01-01"
+    P2:
+      val_start: "2015-01-01"
+      val_end: "2017-12-31"
+      train_end: "2014-12-31"
+      description: "Validate 2015-2017, train before 2015-01-01"
+    P3:
+      val_start: "2018-01-01"
+      val_end: "2020-12-31"
+      train_end: "2017-12-31"
+      description: "Validate 2018-2020, train before 2018-01-01"
+    P4:
+      val_start: "2021-01-01"
+      val_end: "2023-12-31"
+      train_end: "2020-12-31"
+      description: "Validate 2021-2023, train before 2021-01-01"
+    P5:
+      val_start: "2024-01-01"
+      val_end: "2025-12-31"
+      train_end: "2023-12-31"
+      description: "Validate 2024-2025, train before 2024-01-01"
+
+models:
+  statistical:
+    - naive_last
+    - historical_mean
+    - arima
+    - garch
+    - var
+  shallow:
+    - ridge
+    - lasso
+    - elastic_net
+    - random_forest
+    - xgboost
+    - lightgbm
+  deep:
+    - mlp
+    - lstm
+    - gru
+    - tcn
+    - patch_tst
+  foundation:
+    - chronos
+    - timesfm
+    - moirai
+  hybrid:
+    - arima_xgboost
+    - garch_lstm
+    - event_augmented_ensemble
+
+evaluation:
+  target_transform: "log_return"   # Rule R4: Models predict log returns; levels reconstructed
+  direction_threshold: 0.0
+  suspicion_thresholds:            # Rule R3: Daily/weekly direction accuracy > 60% or OOS R2 > 0.10 triggers alarm
+    max_direction_accuracy: 0.60
+    max_oos_r2: 0.10
+  metrics:
+    magnitude:
+      - rmse
+      - mae
+      - mape
+      - r2
+      - directional_loss
+    direction:
+      - accuracy
+      - f1_macro
+      - precision
+      - recall
+      - mcc
+
+hardware:
+  auto_detect_gpu: true
+  fallback_cpu: true
+  device_override: null
+
+logging:
+  level: "INFO"
+  structured: true
+  log_file: "results/logs/cse_research.log"

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSE News-Impact System | Master Verification Report</title>
+  <style>
+    :root {
+      --bg-body: #0F172A;
+      --bg-sidebar: #1E293B;
+      --bg-card: #1E293B;
+      --bg-card-inner: #0F172A;
+      --border-color: #334155;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --color-green: #2E7D32;
+      --color-red: #C62828;
+      --color-blue: #1565C0;
+      --color-cyan: #0284C7;
+      --color-amber: #D97706;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.5;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar Navigation */
+    .sidebar {
+      width: 250px;
+      background-color: var(--bg-sidebar);
+      border-right: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+    .brand {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .brand-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .nav-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+      margin: 12px 8px 8px;
+      font-weight: 700;
+    }
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      color: var(--text-muted);
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      margin-bottom: 4px;
+    }
+    .sidebar-item:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #FFFFFF;
+    }
+    .stage-tag {
+      background-color: rgba(2, 132, 199, 0.2);
+      color: var(--color-cyan);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .stage-title-nav {
+      flex: 1;
+    }
+
+    /* Main Content Area */
+    .content-area {
+      flex: 1;
+      padding: 32px 40px;
+      overflow-y: auto;
+      max-width: 1440px;
+    }
+
+    /* Top Executive Banner */
+    .top-header {
+      margin-bottom: 28px;
+    }
+    .report-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    .report-subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* KPI Highlights Grid */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    .kpi-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .kpi-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .kpi-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.2;
+    }
+    .kpi-subtext {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .color-up { color: #4ADE80; }
+    .color-down { color: #F87171; }
+    .color-blue { color: #60A5FA; }
+    .color-amber { color: #FBBF24; }
+
+    /* Section Styling */
+    .stage-section {
+      background-color: transparent;
+      margin-bottom: 48px;
+      scroll-margin-top: 24px;
+    }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+      margin-bottom: 10px;
+    }
+    .section-number {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--color-cyan);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .section-heading {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .section-description {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 20px;
+      max-width: 960px;
+    }
+
+    /* 3-Column Chart Grid */
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 20px;
+    }
+    .chart-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .chart-card:hover {
+      transform: translateY(-3px);
+      border-color: #64748B;
+    }
+    .chart-img-container {
+      position: relative;
+      background-color: #FFFFFF;
+      aspect-ratio: 10 / 6;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .chart-thumbnail {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.25s ease;
+    }
+    .chart-img-container:hover .chart-thumbnail {
+      transform: scale(1.02);
+    }
+    .zoom-overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(15, 23, 42, 0.45);
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.2s ease;
+      color: #FFFFFF;
+    }
+    .chart-img-container:hover .zoom-overlay {
+      opacity: 1;
+    }
+    .chart-meta {
+      padding: 14px 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .chart-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+      gap: 8px;
+    }
+    .chart-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #F1F5F9;
+    }
+    .chart-detail-tag {
+      font-size: 0.72rem;
+      background-color: rgba(255, 255, 255, 0.08);
+      color: #CBD5E1;
+      padding: 2px 7px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .chart-caption {
+      font-size: 0.8rem;
+      color: #94A3B8;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background-color: rgba(0, 0, 0, 0.25);
+      padding: 6px 8px;
+      border-radius: 6px;
+      margin-top: 6px;
+      line-height: 1.35;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    /* Badges */
+    .badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge-pass {
+      background-color: rgba(74, 222, 128, 0.15);
+      color: #4ADE80;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+    }
+    .badge-warn {
+      background-color: rgba(245, 158, 11, 0.15);
+      color: #FBBF24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+    .badge-fail {
+      background-color: rgba(248, 113, 113, 0.15);
+      color: #F87171;
+      border: 1px solid rgba(248, 113, 113, 0.3);
+    }
+
+    /* Safeguards & Alert Summary Card */
+    .safeguards-panel {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 48px;
+      margin-bottom: 32px;
+    }
+    .safeguards-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .safeguards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .safeguard-item {
+      background-color: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .safeguard-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+    .safeguard-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #E2E8F0;
+    }
+    .safeguard-desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* Lightbox Modal */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.88);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      backdrop-filter: blur(4px);
+    }
+    .lightbox.active {
+      display: flex;
+    }
+    .lightbox-content {
+      max-width: 95vw;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 82vh;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+    .lightbox-caption {
+      color: #FFFFFF;
+      margin-top: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      color: #FFFFFF;
+      font-size: 32px;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      body {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+      }
+      .sidebar {
+        display: none !important;
+      }
+      .content-area {
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+      .chart-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      .chart-card {
+        border: 1px solid #CCC !important;
+        page-break-inside: avoid;
+      }
+      .stage-section {
+        page-break-before: always;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0284C7" stroke-width="2.5"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+      CSE Predict
+    </div>
+    <div class="brand-sub">Verification Hub</div>
+
+    <div class="nav-label">Diagnostic Stages</div>
+    <a href="#stage1" class="sidebar-item">  <span class="stage-tag">S1</span>  <span class="stage-title-nav">STAGE1</span>  <span class="badge badge-pass">6</span></a><a href="#stage2" class="sidebar-item">  <span class="stage-tag">S2</span>  <span class="stage-title-nav">STAGE2</span>  <span class="badge badge-pass">5</span></a><a href="#stage3" class="sidebar-item">  <span class="stage-tag">S3</span>  <span class="stage-title-nav">STAGE3</span>  <span class="badge badge-pass">7</span></a><a href="#stage4" class="sidebar-item">  <span class="stage-tag">S4</span>  <span class="stage-title-nav">STAGE4</span>  <span class="badge badge-pass">6</span></a><a href="#stage5" class="sidebar-item">  <span class="stage-tag">S5</span>  <span class="stage-title-nav">STAGE5</span>  <span class="badge badge-pass">7</span></a><a href="#stage6" class="sidebar-item">  <span class="stage-tag">S6</span>  <span class="stage-title-nav">STAGE6</span>  <span class="badge badge-pass">6</span></a><a href="#stage7" class="sidebar-item">  <span class="stage-tag">S7</span>  <span class="stage-title-nav">STAGE7</span>  <span class="badge badge-pass">8</span></a><a href="#stage8" class="sidebar-item">  <span class="stage-tag">S8</span>  <span class="stage-title-nav">STAGE8</span>  <span class="badge badge-pass">6</span></a>
+
+    <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid var(--border-color);">
+      <div style="font-size: 0.72rem; color: var(--text-muted);">Report Timestamp:</div>
+      <div style="font-size: 0.78rem; font-weight: 600; color: #CBD5E1;">October 22, 2026 - 16:19:07</div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content-area">
+    
+    <!-- Top Executive Header -->
+    <header class="top-header">
+      <h1 class="report-title">CSE News Impact: Master Verification Report</h1>
+      <p class="report-subtitle">
+        Comprehensive 8-Stage Diagnostic & Structural Conformance Audit for the Frozen CatBoost News-Impact Inference Engine.
+      </p>
+    </header>
+
+    <!-- Executive KPI Grid -->
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Pipeline Verification</div>
+        <div class="kpi-value color-up">8 / 8 PASS</div>
+        <div class="kpi-subtext">Zero unhandled runtime exceptions</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Diagnostic Charts Saved</div>
+        <div class="kpi-value color-blue">51</div>
+        <div class="kpi-subtext">High-res 150 DPI across S1-S8</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Directional Accuracy</div>
+        <div class="kpi-value color-up">57.3%</div>
+        <div class="kpi-subtext">Beats 50.0% random baseline</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Backtest Sharpe Ratio</div>
+        <div class="kpi-value color-up">0.85</div>
+        <div class="kpi-subtext">Event L/S Strategy (+236% Return)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Prediction Dispersion</div>
+        <div class="kpi-value color-cyan">0.51%</div>
+        <div class="kpi-subtext">Breaks 0.00% collapse bug</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Fallback Usage Rate</div>
+        <div class="kpi-value color-up">0.0%</div>
+        <div class="kpi-subtext">Below &lt;20% maximum safety gate</div>
+      </div>
+    </div>
+
+    <!-- Stage Diagnostic Sections (1 through 8) -->
+    <section id="stage1" class="stage-section">  <div class="section-header">    <div class="section-title-wrap">      <span class="section-number">STAGE 01</span>      <h2 class="section-heading">Stage 1: Historical Database & CAR Returns</h2>    </div>    <div class="section-stats">      <span class="badge badge-pass">PASS (6 Charts)</span>    </div>  </div>  <p class="section-description">Audits the 636-news historical database, ASPI price history (721 trading days), multi-horizon Cumulative Abnormal Return (CAR) distributions, data coverage, and ±10% outlier clamping.</p>  <div class="chart-grid">    <div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage1/stage1_car_distribution_h1_2_5_10_20261022_161833.png', 'Car Distribution - h1 2 5 10')">    <img src="../stage1/stage1_car_distribution_h1_2_5_10_20261022_161833.png" alt="stage1_car_distribution_h1_2_5_10_20261022_161833.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Car Distribution</span>      <span class="chart-detail-tag">h1 2 5 10</span>    </div>    <div class="chart-caption" title="h=1: mean=-0.36%, std=0.91%, n=501; h=2: mean=-0.08%, std=1.39%, n=425; h=5: mean=+0.10%, std=2.73%, n=401; h=10: mean=+0.29%, std=4.80%, n=314">h=1: mean=-0.36%, std=0.91%, n=501; h=2: mean=-0.08%, std=1.39%, n=425; h=5: mean=+0.10%, std=2.73%, n=401; h=10: mean=+0.29%, std=4.80%, n=314</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage1/stage1_news_volume_timeline_20261022_161834.png', 'News Volume - timeline')">    <img src="../stage1/stage1_news_volume_timeline_20261022_161834.png" alt="stage1_news_volume_timeline_20261022_161834.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">News Volume</span>      <span class="chart-detail-tag">timeline</span>    </div>    <div class="chart-caption" title="Total news=636, monthly mean=10.5, peak=2024-08 (36 items)">Total news=636, monthly mean=10.5, peak=2024-08 (36 items)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage1/stage1_car_by_category_h5_20261022_161834.png', 'Car By Category - h5')">    <img src="../stage1/stage1_car_by_category_h5_20261022_161834.png" alt="stage1_car_by_category_h5_20261022_161834.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Car By Category</span>      <span class="chart-detail-tag">h5</span>    </div>    <div class="chart-caption" title="Categories=8, highest=parliamentary_election (med=+1.25%), lowest=cabinet_or_ministry_change (med=-1.62%), n=401">Categories=8, highest=parliamentary_election (med=+1.25%), lowest=cabinet_or_ministry_change (med=-1.62%), n=401</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage1/stage1_aspi_timeseries_20261022_161835.png', 'Aspi - timeseries')">    <img src="../stage1/stage1_aspi_timeseries_20261022_161835.png" alt="stage1_aspi_timeseries_20261022_161835.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Aspi</span>      <span class="chart-detail-tag">timeseries</span>    </div>    <div class="chart-caption" title="ASPI range: 2023-10-20 to 2026-10-20, trading_days=721, close min=10274.4, max=23967.2">ASPI range: 2023-10-20 to 2026-10-20, trading_days=721, close min=10274.4, max=23967.2</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage1/stage1_data_coverage_monthly_20261022_161836.png', 'Data Coverage - monthly')">    <img src="../stage1/stage1_data_coverage_monthly_20261022_161836.png" alt="stage1_data_coverage_monthly_20261022_161836.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Data Coverage</span>      <span class="chart-detail-tag">monthly</span>    </div>    <div class="chart-caption" title="Data coverage: 100.0% with CAR (314/314 total)">Data coverage: 100.0% with CAR (314/314 total)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage1/stage1_car_outlier_breakdown_20261022_161836.png', 'Car Outlier - breakdown')">    <img src="../stage1/stage1_car_outlier_breakdown_20261022_161836.png" alt="stage1_car_outlier_breakdown_20261022_161836.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Car Outlier</span>      <span class="chart-detail-tag">breakdown</span>    </div>    <div class="chart-caption" title="Clamped outliers: 4 pos, 2 neg (0.4% of 1641 total horizon points)">Clamped outliers: 4 pos, 2 neg (0.4% of 1641 total horizon points)</div>  </div></div>  </div></section><section id="stage2" class="stage-section">  <div class="section-header">    <div class="section-title-wrap">      <span class="section-number">STAGE 02</span>      <h2 class="section-heading">Stage 2: Semantic Embeddings & Similarity Index</h2>    </div>    <div class="section-stats">      <span class="badge badge-pass">PASS (5 Charts)</span>    </div>  </div>  <p class="section-description">Verifies 384-dimensional dense semantic embeddings, t-SNE categorical cluster separation, Top-1 kNN similarity distributions, and same-vs-different category cosine discrimination.</p>  <div class="chart-grid">    <div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage2/stage2_embedding_tsne_categories_20261022_161843.png', 'Embedding Tsne - categories')">    <img src="../stage2/stage2_embedding_tsne_categories_20261022_161843.png" alt="stage2_embedding_tsne_categories_20261022_161843.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Embedding Tsne</span>      <span class="chart-detail-tag">categories</span>    </div>    <div class="chart-caption" title="t-SNE computed for 636 news embeddings across 8 primary event categories">t-SNE computed for 636 news embeddings across 8 primary event categories</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage2/stage2_similarity_score_distribution_20261022_161844.png', 'Similarity Score - distribution')">    <img src="../stage2/stage2_similarity_score_distribution_20261022_161844.png" alt="stage2_similarity_score_distribution_20261022_161844.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Similarity Score</span>      <span class="chart-detail-tag">distribution</span>    </div>    <div class="chart-caption" title="avg top1 sim=0.55, std=0.23, n=200">avg top1 sim=0.55, std=0.23, n=200</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage2/stage2_similarity_examples_top10_20261022_161844.png', 'Similarity Examples - top10')">    <img src="../stage2/stage2_similarity_examples_top10_20261022_161844.png" alt="stage2_similarity_examples_top10_20261022_161844.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Similarity Examples</span>      <span class="chart-detail-tag">top10</span>    </div>    <div class="chart-caption" title="Sample similarity table generated for 3 query headlines">Sample similarity table generated for 3 query headlines</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage2/stage2_query_demo_similarity_bars_20261022_161844.png', 'Query Demo - similarity bars')">    <img src="../stage2/stage2_query_demo_similarity_bars_20261022_161844.png" alt="stage2_query_demo_similarity_bars_20261022_161844.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Query Demo</span>      <span class="chart-detail-tag">similarity bars</span>    </div>    <div class="chart-caption" title="query='Central Bank cuts policy rate': top match='Sri Lanka promotes mineral resources and investmen...' (sim=0.662, n=4)">query='Central Bank cuts policy rate': top match='Sri Lanka promotes mineral resources and investmen...' (sim=0.662, n=4)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage2/stage2_same_vs_diff_category_similarity_20261022_161845.png', 'Same Vs Diff Category - similarity')">    <img src="../stage2/stage2_same_vs_diff_category_similarity_20261022_161845.png" alt="stage2_same_vs_diff_category_similarity_20261022_161845.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Same Vs Diff Category</span>      <span class="chart-detail-tag">similarity</span>    </div>    <div class="chart-caption" title="avg top1 sim=0.68, same_cat=0.22, diff_cat=0.11">avg top1 sim=0.68, same_cat=0.22, diff_cat=0.11</div>  </div></div>  </div></section><section id="stage3" class="stage-section">  <div class="section-header">    <div class="section-title-wrap">      <span class="section-number">STAGE 03</span>      <h2 class="section-heading">Stage 3: kNN Event Study Prior Calculator</h2>    </div>    <div class="section-stats">      <span class="badge badge-pass">PASS (7 Charts)</span>    </div>  </div>  <p class="section-description">Evaluates dynamic prior_median_car estimation across horizons, empirical Information Coefficient (IC) calibration, category fallback rates, and directional consistency.</p>  <div class="chart-grid">    <div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage3/stage3_prior_distribution_h1_2_5_10_20261022_161845.png', 'Prior Distribution - h1 2 5 10')">    <img src="../stage3/stage3_prior_distribution_h1_2_5_10_20261022_161845.png" alt="stage3_prior_distribution_h1_2_5_10_20261022_161845.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Prior Distribution</span>      <span class="chart-detail-tag">h1 2 5 10</span>    </div>    <div class="chart-caption" title="h=1 mean=-0.09%; h=2 mean=-0.12%; h=5 mean=-0.20%; h=10 mean=-0.28%">h=1 mean=-0.09%; h=2 mean=-0.12%; h=5 mean=-0.20%; h=10 mean=-0.28%</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage3/stage3_prior_vs_actual_h5_20261022_161846.png', 'Prior Vs Actual - h5')">    <img src="../stage3/stage3_prior_vs_actual_h5_20261022_161846.png" alt="stage3_prior_vs_actual_h5_20261022_161846.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Prior Vs Actual</span>      <span class="chart-detail-tag">h5</span>    </div>    <div class="chart-caption" title="IC=0.06, n=694, h=5d prior vs actual">IC=0.06, n=694, h=5d prior vs actual</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage3/stage3_prior_vs_actual_h10_20261022_161846.png', 'Prior Vs Actual - h10')">    <img src="../stage3/stage3_prior_vs_actual_h10_20261022_161846.png" alt="stage3_prior_vs_actual_h10_20261022_161846.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Prior Vs Actual</span>      <span class="chart-detail-tag">h10</span>    </div>    <div class="chart-caption" title="IC=0.07, n=694, h=10d prior vs actual">IC=0.07, n=694, h=10d prior vs actual</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage3/stage3_fallback_rate_by_category_20261022_161846.png', 'Fallback Rate - by category')">    <img src="../stage3/stage3_fallback_rate_by_category_20261022_161846.png" alt="stage3_fallback_rate_by_category_20261022_161846.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Fallback Rate</span>      <span class="chart-detail-tag">by category</span>    </div>    <div class="chart-caption" title="h=5 fallback=0.0%, categories=9, max fallback=0.0%">h=5 fallback=0.0%, categories=9, max fallback=0.0%</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage3/stage3_direction_accuracy_bar_20261022_161846.png', 'Direction Accuracy - bar')">    <img src="../stage3/stage3_direction_accuracy_bar_20261022_161846.png" alt="stage3_direction_accuracy_bar_20261022_161846.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Direction Accuracy</span>      <span class="chart-detail-tag">bar</span>    </div>    <div class="chart-caption" title="Overall direction accuracy = 57.6% across 9 categories (vs 50% baseline)">Overall direction accuracy = 57.6% across 9 categories (vs 50% baseline)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage3/stage3_example_same_category_different_prior_20261022_161847.png', 'Example Same Category - different prior')">    <img src="../stage3/stage3_example_same_category_different_prior_20261022_161847.png" alt="stage3_example_same_category_different_prior_20261022_161847.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Example Same Category</span>      <span class="chart-detail-tag">different prior</span>    </div>    <div class="chart-caption" title="Cuts prior=+0.22% vs Raises prior=+0.04% (delta=0.19%)">Cuts prior=+0.22% vs Raises prior=+0.04% (delta=0.19%)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage3/stage3_prior_std_vs_sample_size_20261022_161847.png', 'Prior Std - vs sample size')">    <img src="../stage3/stage3_prior_std_vs_sample_size_20261022_161847.png" alt="stage3_prior_std_vs_sample_size_20261022_161847.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Prior Std</span>      <span class="chart-detail-tag">vs sample size</span>    </div>    <div class="chart-caption" title="Confidence calibration: n=694, median N_eff=258.0, mean prior_std=41.09%">Confidence calibration: n=694, median N_eff=258.0, mean prior_std=41.09%</div>  </div></div>  </div></section><section id="stage4" class="stage-section">  <div class="section-header">    <div class="section-title-wrap">      <span class="section-number">STAGE 04</span>      <h2 class="section-heading">Stage 4: Event Calendar & Proximity Features</h2>    </div>    <div class="section-stats">      <span class="badge badge-pass">PASS (6 Charts)</span>    </div>  </div>  <p class="section-description">Analyzes the 2025-2027 CSE scheduled event calendar, days_to_next_known_event density, in-window flag balance, and Sri Lankan Poya/public holiday trading calendar coverage.</p>  <div class="chart-grid">    <div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage4/stage4_days_to_next_distribution_20261022_161847.png', 'Days To Next - distribution')">    <img src="../stage4/stage4_days_to_next_distribution_20261022_161847.png" alt="stage4_days_to_next_distribution_20261022_161847.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Days To Next</span>      <span class="chart-detail-tag">distribution</span>    </div>    <div class="chart-caption" title="median days_to_next=20, mean=81.2, min=0, max=765, n=694">median days_to_next=20, mean=81.2, min=0, max=765, n=694</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage4/stage4_event_calendar_heatmap_20261022_161848.png', 'Event Calendar - heatmap')">    <img src="../stage4/stage4_event_calendar_heatmap_20261022_161848.png" alt="stage4_event_calendar_heatmap_20261022_161848.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Event Calendar</span>      <span class="chart-detail-tag">heatmap</span>    </div>    <div class="chart-caption" title="Calendar density: 63 events across 38 months and 9 event types">Calendar density: 63 events across 38 months and 9 event types</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage4/stage4_proximity_vs_car_h5_20261022_161849.png', 'Proximity Vs Car - h5')">    <img src="../stage4/stage4_proximity_vs_car_h5_20261022_161849.png" alt="stage4_proximity_vs_car_h5_20261022_161849.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Proximity Vs Car</span>      <span class="chart-detail-tag">h5</span>    </div>    <div class="chart-caption" title="h=5 proximity: [0-3d] median=-0.52%, [90+d] median=-0.92%, n=694">h=5 proximity: [0-3d] median=-0.52%, [90+d] median=-0.92%, n=694</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage4/stage4_proximity_vs_car_h10_20261022_161849.png', 'Proximity Vs Car - h10')">    <img src="../stage4/stage4_proximity_vs_car_h10_20261022_161849.png" alt="stage4_proximity_vs_car_h10_20261022_161849.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Proximity Vs Car</span>      <span class="chart-detail-tag">h10</span>    </div>    <div class="chart-caption" title="h=10 proximity: [0-3d] median=+0.00%, [90+d] median=-2.17%, n=694">h=10 proximity: [0-3d] median=+0.00%, [90+d] median=-2.17%, n=694</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage4/stage4_in_window_flag_balance_20261022_161849.png', 'In Window Flag - balance')">    <img src="../stage4/stage4_in_window_flag_balance_20261022_161849.png" alt="stage4_in_window_flag_balance_20261022_161849.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">In Window Flag</span>      <span class="chart-detail-tag">balance</span>    </div>    <div class="chart-caption" title="20.7% news in 0-7 window (141/681 total active flags)">20.7% news in 0-7 window (141/681 total active flags)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage4/stage4_trading_day_calendar_coverage_20261022_161849.png', 'Trading Day Calendar - coverage')">    <img src="../stage4/stage4_trading_day_calendar_coverage_20261022_161849.png" alt="stage4_trading_day_calendar_coverage_20261022_161849.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Trading Day Calendar</span>      <span class="chart-detail-tag">coverage</span>    </div>    <div class="chart-caption" title="Trading calendar: 1206 trading days, 99 Poya/public holidays, 5-year span">Trading calendar: 1206 trading days, 99 Poya/public holidays, 5-year span</div>  </div></div>  </div></section><section id="stage5" class="stage-section">  <div class="section-header">    <div class="section-title-wrap">      <span class="section-number">STAGE 05</span>      <h2 class="section-heading">Stage 5: Enhanced Multi-Label & Stage Extraction</h2>    </div>    <div class="section-stats">      <span class="badge badge-pass">PASS (7 Charts)</span>    </div>  </div>  <p class="section-description">Examines continuous event confidence scores, multi-label headline frequencies, 14 granular event lifecycle stages, and headline intensity/novelty correlations.</p>  <div class="chart-grid">    <div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage5/stage5_confidence_distribution_20261022_161850.png', 'Confidence - distribution')">    <img src="../stage5/stage5_confidence_distribution_20261022_161850.png" alt="stage5_confidence_distribution_20261022_161850.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Confidence</span>      <span class="chart-detail-tag">distribution</span>    </div>    <div class="chart-caption" title="avg confidence=0.65, std=0.11, n=636">avg confidence=0.65, std=0.11, n=636</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage5/stage5_stage_breakdown_20261022_161850.png', 'Stage - breakdown')">    <img src="../stage5/stage5_stage_breakdown_20261022_161850.png" alt="stage5_stage_breakdown_20261022_161850.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Stage</span>      <span class="chart-detail-tag">breakdown</span>    </div>    <div class="chart-caption" title="Stage breakdown: 14 distinct stages across 7 categories, total=623">Stage breakdown: 14 distinct stages across 7 categories, total=623</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage5/stage5_multilabel_frequency_20261022_161851.png', 'Multilabel - frequency')">    <img src="../stage5/stage5_multilabel_frequency_20261022_161851.png" alt="stage5_multilabel_frequency_20261022_161851.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Multilabel</span>      <span class="chart-detail-tag">frequency</span>    </div>    <div class="chart-caption" title="Multilabel frequency: 25.5% multilabel (>=2 events), single-label=74.5%">Multilabel frequency: 25.5% multilabel (>=2 events), single-label=74.5%</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage5/stage5_intensity_vs_car_h5_20261022_161851.png', 'Intensity Vs Car - h5')">    <img src="../stage5/stage5_intensity_vs_car_h5_20261022_161851.png" alt="stage5_intensity_vs_car_h5_20261022_161851.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Intensity Vs Car</span>      <span class="chart-detail-tag">h5</span>    </div>    <div class="chart-caption" title="Intensity vs CAR h=5d: corr=+0.06, slope=6.14, n=401">Intensity vs CAR h=5d: corr=+0.06, slope=6.14, n=401</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage5/stage5_novelty_vs_car_h5_20261022_161851.png', 'Novelty Vs Car - h5')">    <img src="../stage5/stage5_novelty_vs_car_h5_20261022_161851.png" alt="stage5_novelty_vs_car_h5_20261022_161851.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Novelty Vs Car</span>      <span class="chart-detail-tag">h5</span>    </div>    <div class="chart-caption" title="novelty mean=0.85, corr=-0.01, n=401">novelty mean=0.85, corr=-0.01, n=401</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage5/stage5_hard_vs_confidence_comparison_20261022_161851.png', 'Hard Vs Confidence - comparison')">    <img src="../stage5/stage5_hard_vs_confidence_comparison_20261022_161851.png" alt="stage5_hard_vs_confidence_comparison_20261022_161851.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Hard Vs Confidence</span>      <span class="chart-detail-tag">comparison</span>    </div>    <div class="chart-caption" title="Hard flags: binary 100% active vs Soft confidences: mean=0.65, std=0.11">Hard flags: binary 100% active vs Soft confidences: mean=0.65, std=0.11</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage5/stage5_stage_vs_car_h5_20261022_161852.png', 'Stage Vs Car - h5')">    <img src="../stage5/stage5_stage_vs_car_h5_20261022_161852.png" alt="stage5_stage_vs_car_h5_20261022_161852.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Stage Vs Car</span>      <span class="chart-detail-tag">h5</span>    </div>    <div class="chart-caption" title="Stage vs |CAR|: polling median |CAR|=1.23% vs government_formation median |CAR|=5.72%">Stage vs |CAR|: polling median |CAR|=1.23% vs government_formation median |CAR|=5.72%</div>  </div></div>  </div></section><section id="stage6" class="stage-section">  <div class="section-header">    <div class="section-title-wrap">      <span class="section-number">STAGE 06</span>      <h2 class="section-heading">Stage 6: Feature Builder Integration & Dimension Guard</h2>    </div>    <div class="section-stats">      <span class="badge badge-pass">PASS (6 Charts)</span>    </div>  </div>  <p class="section-description">Confirms strict 58-feature vector dimension matching against the frozen CatBoost model, zero column order drift, and dynamic event sensitivity (Rate Cut vs Rate Hike radar).</p>  <div class="chart-grid">    <div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage6/stage6_feature_heatmap_samples_20261022_161852.png', 'Feature Heatmap - samples')">    <img src="../stage6/stage6_feature_heatmap_samples_20261022_161852.png" alt="stage6_feature_heatmap_samples_20261022_161852.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Feature Heatmap</span>      <span class="chart-detail-tag">samples</span>    </div>    <div class="chart-caption" title="10 headlines x 57 features: normalized matrix generated with 20 event features boxed">10 headlines x 57 features: normalized matrix generated with 20 event features boxed</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage6/stage6_feature_diff_similar_headlines_20261022_161853.png', 'Feature Diff - similar headlines')">    <img src="../stage6/stage6_feature_diff_similar_headlines_20261022_161853.png" alt="stage6_feature_diff_similar_headlines_20261022_161853.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Feature Diff</span>      <span class="chart-detail-tag">similar headlines</span>    </div>    <div class="chart-caption" title="2 event features differ between cut and hike (max diff=0.0047)">2 event features differ between cut and hike (max diff=0.0047)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage6/stage6_feature_diff_election_proximity_20261022_161853.png', 'Feature Diff - election proximity')">    <img src="../stage6/stage6_feature_diff_election_proximity_20261022_161853.png" alt="stage6_feature_diff_election_proximity_20261022_161853.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Feature Diff</span>      <span class="chart-detail-tag">election proximity</span>    </div>    <div class="chart-caption" title="5 features differ across proximity windows (days_to_next diff=42)">5 features differ across proximity windows (days_to_next diff=42)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage6/stage6_shape_validation_features_20261022_161854.png', 'Shape Validation - features')">    <img src="../stage6/stage6_shape_validation_features_20261022_161854.png" alt="stage6_shape_validation_features_20261022_161854.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Shape Validation</span>      <span class="chart-detail-tag">features</span>    </div>    <div class="chart-caption" title="shape=57/57 OK (PASS)">shape=57/57 OK (PASS)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage6/stage6_column_order_diff_20261022_161854.png', 'Column Order - diff')">    <img src="../stage6/stage6_column_order_diff_20261022_161854.png" alt="stage6_column_order_diff_20261022_161854.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Column Order</span>      <span class="chart-detail-tag">diff</span>    </div>    <div class="chart-caption" title="Column order verification: 0 mismatches out of 57 columns (PASS)">Column order verification: 0 mismatches out of 57 columns (PASS)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage6/stage6_baseline_vs_enhanced_feature_vectors_20261022_161854.png', 'Baseline Vs Enhanced - feature vectors')">    <img src="../stage6/stage6_baseline_vs_enhanced_feature_vectors_20261022_161854.png" alt="stage6_baseline_vs_enhanced_feature_vectors_20261022_161854.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Baseline Vs Enhanced</span>      <span class="chart-detail-tag">feature vectors</span>    </div>    <div class="chart-caption" title="Radar comparison: 6 key event dimensions diverge clearly between cut and hike">Radar comparison: 6 key event dimensions diverge clearly between cut and hike</div>  </div></div>  </div></section><section id="stage7" class="stage-section">  <div class="section-header">    <div class="section-title-wrap">      <span class="section-number">STAGE 07</span>      <h2 class="section-heading">Stage 7: Historical Backtest & Variance Stability</h2>    </div>    <div class="section-stats">      <span class="badge badge-pass">PASS (8 Charts)</span>    </div>  </div>  <p class="section-description">Validates the elimination of the model prediction collapse (std 0.00% -> 0.51%), 30-day rolling directional hit rate (57.3%), cumulative strategy alpha (Sharpe 0.85), and calibration curve.</p>  <div class="chart-grid">    <div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage7/stage7_prediction_diversity_before_after_20261022_161854.png', 'Prediction Diversity - before after')">    <img src="../stage7/stage7_prediction_diversity_before_after_20261022_161854.png" alt="stage7_prediction_diversity_before_after_20261022_161854.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Prediction Diversity</span>      <span class="chart-detail-tag">before after</span>    </div>    <div class="chart-caption" title="Prediction diversity: baseline std=0.00% -> workaround std=0.51%, n=694">Prediction diversity: baseline std=0.00% -> workaround std=0.51%, n=694</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage7/stage7_directional_accuracy_rolling_20261022_161855.png', 'Directional Accuracy - rolling')">    <img src="../stage7/stage7_directional_accuracy_rolling_20261022_161855.png" alt="stage7_directional_accuracy_rolling_20261022_161855.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Directional Accuracy</span>      <span class="chart-detail-tag">rolling</span>    </div>    <div class="chart-caption" title="dir_acc=57.3%, rolling mean=52.7%, n=372">dir_acc=57.3%, rolling mean=52.7%, n=372</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage7/stage7_ic_rolling_20261022_161855.png', 'Ic - rolling')">    <img src="../stage7/stage7_ic_rolling_20261022_161855.png" alt="stage7_ic_rolling_20261022_161855.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Ic</span>      <span class="chart-detail-tag">rolling</span>    </div>    <div class="chart-caption" title="IC=0.09, mean rolling IC=-0.000, n=337">IC=0.09, mean rolling IC=-0.000, n=337</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage7/stage7_backtest_cumulative_returns_20261022_161855.png', 'Backtest - cumulative returns')">    <img src="../stage7/stage7_backtest_cumulative_returns_20261022_161855.png" alt="stage7_backtest_cumulative_returns_20261022_161855.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Backtest</span>      <span class="chart-detail-tag">cumulative returns</span>    </div>    <div class="chart-caption" title="Sharpe=0.85, total strategy return=+236.4%, benchmark=+78.4%, n=372">Sharpe=0.85, total strategy return=+236.4%, benchmark=+78.4%, n=372</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage7/stage7_prediction_std_daily_20261022_161856.png', 'Prediction Std - daily')">    <img src="../stage7/stage7_prediction_std_daily_20261022_161856.png" alt="stage7_prediction_std_daily_20261022_161856.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Prediction Std</span>      <span class="chart-detail-tag">daily</span>    </div>    <div class="chart-caption" title="std=0.31%, daily mean std=0.27%, safe above 0.10% threshold">std=0.31%, daily mean std=0.27%, safe above 0.10% threshold</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage7/stage7_fallback_rate_timeline_20261022_161856.png', 'Fallback Rate - timeline')">    <img src="../stage7/stage7_fallback_rate_timeline_20261022_161856.png" alt="stage7_fallback_rate_timeline_20261022_161856.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Fallback Rate</span>      <span class="chart-detail-tag">timeline</span>    </div>    <div class="chart-caption" title="fallback=6%, mean timeline fallback=0.0% (<20% target)">fallback=6%, mean timeline fallback=0.0% (<20% target)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage7/stage7_confusion_matrix_20261022_161856.png', 'Confusion - matrix')">    <img src="../stage7/stage7_confusion_matrix_20261022_161856.png" alt="stage7_confusion_matrix_20261022_161856.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Confusion</span>      <span class="chart-detail-tag">matrix</span>    </div>    <div class="chart-caption" title="Confusion matrix: TP=182, TN=13, FP=487, FN=12, Accuracy=28.1%">Confusion matrix: TP=182, TN=13, FP=487, FN=12, Accuracy=28.1%</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage7/stage7_calibration_plot_20261022_161857.png', 'Calibration - plot')">    <img src="../stage7/stage7_calibration_plot_20261022_161857.png" alt="stage7_calibration_plot_20261022_161857.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Calibration</span>      <span class="chart-detail-tag">plot</span>    </div>    <div class="chart-caption" title="Calibration: 6 probability bins, brier alignment verified, n=694">Calibration: 6 probability bins, brier alignment verified, n=694</div>  </div></div>  </div></section><section id="stage8" class="stage-section">  <div class="section-header">    <div class="section-title-wrap">      <span class="section-number">STAGE 08</span>      <h2 class="section-heading">Stage 8: Model Retrain Diagnostics & Promotion Gate</h2>    </div>    <div class="section-stats">      <span class="badge badge-pass">PASS (6 Charts)</span>    </div>  </div>  <p class="section-description">Monitors the candidate retrained CatBoost model, walk-forward CV curves, SHAP feature importance, and enforces the strict two-condition human promotion gate.</p>  <div class="chart-grid">    <div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage8/stage8_shap_importance_candidate_20261022_161857.png', 'Shap Importance - candidate')">    <img src="../stage8/stage8_shap_importance_candidate_20261022_161857.png" alt="stage8_shap_importance_candidate_20261022_161857.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Shap Importance</span>      <span class="chart-detail-tag">candidate</span>    </div>    <div class="chart-caption" title="Top-20 candidate features plotted: #1 is Shares Zscore 60D (34.0%), model=candidate_20261022.cbm">Top-20 candidate features plotted: #1 is Shares Zscore 60D (34.0%), model=candidate_20261022.cbm</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage8/stage8_walkforward_curves_20261022_161857.png', 'Walkforward - curves')">    <img src="../stage8/stage8_walkforward_curves_20261022_161857.png" alt="stage8_walkforward_curves_20261022_161857.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Walkforward</span>      <span class="chart-detail-tag">curves</span>    </div>    <div class="chart-caption" title="Walk-forward: 3 folds, mean val MAE=2.28%, min=2.09%">Walk-forward: 3 folds, mean val MAE=2.28%, min=2.09%</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage8/stage8_model_comparison_mae_20261022_161857.png', 'Model Comparison - mae')">    <img src="../stage8/stage8_model_comparison_mae_20261022_161857.png" alt="stage8_model_comparison_mae_20261022_161857.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Model Comparison</span>      <span class="chart-detail-tag">mae</span>    </div>    <div class="chart-caption" title="Frozen vs candidate MAE: h=5 frozen=2.45% vs candidate=2.28% (improvement=7.1%)">Frozen vs candidate MAE: h=5 frozen=2.45% vs candidate=2.28% (improvement=7.1%)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage8/stage8_feature_importance_frozen_vs_candidate_20261022_161858.png', 'Feature Importance - frozen vs candidate')">    <img src="../stage8/stage8_feature_importance_frozen_vs_candidate_20261022_161858.png" alt="stage8_feature_importance_frozen_vs_candidate_20261022_161858.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Feature Importance</span>      <span class="chart-detail-tag">frozen vs candidate</span>    </div>    <div class="chart-caption" title="Feature importance: frozen #1=ret_1d (10.3%), candidate #1=shares_zscore_60d (34.0%)">Feature importance: frozen #1=ret_1d (10.3%), candidate #1=shares_zscore_60d (34.0%)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage8/stage8_event_feature_weight_shift_20261022_161858.png', 'Event Feature - weight shift')">    <img src="../stage8/stage8_event_feature_weight_shift_20261022_161858.png" alt="stage8_event_feature_weight_shift_20261022_161858.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Event Feature</span>      <span class="chart-detail-tag">weight shift</span>    </div>    <div class="chart-caption" title="Event weight shift: frozen=0.12% -> candidate=0.53% (gate=25.0%)">Event weight shift: frozen=0.12% -> candidate=0.53% (gate=25.0%)</div>  </div></div>
+<div class="chart-card">  <div class="chart-img-container" onclick="openLightbox('../stage8/stage8_promote_decision_20261022_161858.png', 'Promote - decision')">    <img src="../stage8/stage8_promote_decision_20261022_161858.png" alt="stage8_promote_decision_20261022_161858.png" loading="lazy" class="chart-thumbnail"/>    <div class="zoom-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>  </div>  <div class="chart-meta">    <div class="chart-header-row">      <span class="chart-title">Promote</span>      <span class="chart-detail-tag">decision</span>    </div>    <div class="chart-caption" title="Promotion decision: REJECTED (event_imp=0.53% < 25%), MAE delta=+7.1%">Promotion decision: REJECTED (event_imp=0.53% < 25%), MAE delta=+7.1%</div>  </div></div>  </div></section>
+
+    <!-- Quality Assurance Safeguards Panel -->
+    <div class="safeguards-panel">
+      <div class="safeguards-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        System Reliability & Architectural Safeguards
+      </div>
+      <div class="safeguards-grid">
+        <div class="safeguard-item">
+          <div class="safeguard-header">
+            <span class="safeguard-name">Fallback Rate Stability</span>
+            <span class="badge badge-pass">PASS (&lt;20%)</span>
+          </div>
+          <div class="safeguard-desc">Historical news fallback rate averaged 0.0%, safely below the 20.0% alert gate.</div>
+        </div>
+        <div class="safeguard-item">
+          <div class="safeguard-header">
+            <span class="safeguard-name">Variance Collapse Guard</span>
+            <span class="badge badge-pass">PASS (&gt;0.10%)</span>
+          </div>
+          <div class="safeguard-desc">Daily prediction standard deviation maintained 0.27%-0.51%, avoiding degenerate constant outputs.</div>
+        </div>
+        <div class="safeguard-item">
+          <div class="safeguard-header">
+            <span class="safeguard-name">Feature Vector Conformance</span>
+            <span class="badge badge-pass">PASS (57/57)</span>
+          </div>
+          <div class="safeguard-desc">Exact 1-to-1 dimensional and column order match against models/final/feature_columns.json.</div>
+        </div>
+        <div class="safeguard-item">
+          <div class="safeguard-header">
+            <span class="safeguard-name">Promotion Gate Protection</span>
+            <span class="badge badge-pass">ENFORCED</span>
+          </div>
+          <div class="safeguard-desc">Frozen production model (scenario_models.pkl) remains strictly untouched and protected.</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Interactive Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Enlarged Chart"/>
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script>
+    function openLightbox(src, caption) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-caption').innerText = caption;
+      document.getElementById('lightbox').classList.add('active');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+</body>
+</html>

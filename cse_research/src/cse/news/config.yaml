@@ -1,0 +1,10 @@
+# Stage 10 News Event Extraction Configuration
+# Provider options: "offline" (default, 0 API calls), "gemini", "openai"
+provider: "gemini"
+api_key_env: "GEMINI_API_KEY"
+model: "gemini-flash-lite-latest"
+temperature: 0.0
+offline_fallback: true
+max_retries: 3
+timeout_seconds: 15
+cache_file: "data/processed/news_cache.json"

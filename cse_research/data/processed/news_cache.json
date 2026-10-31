@@ -1,0 +1,5334 @@
+{
+  "cdd2386b2bcc77ea89bf68e8bad11d93882e3240514050218ad9ab2175f1bd69": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-07-26",
+    "entities": [
+      "Election Commission"
+    ],
+    "confidence": 0.95,
+    "language": "en"
+  },
+  "f7f901756b7d1501c8d643658b036c3dee3a0352de683aa9e55dc7c8c9b08d75": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "results",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Decisive electoral outcome removes political uncertainty and enables policy momentum.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2024-11-15",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.94,
+    "language": "en"
+  },
+  "0347cc5806b9306c3dba1fe51e1cb0e6c9a29078c0daf096eb202c9c8bc2a1d2": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "positive",
+    "expected_direction_reason": "IMF agreement or creditor deal reduces sovereign default risk and bolsters market liquidity.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2023-10-19",
+    "entities": [
+      "IMF"
+    ],
+    "confidence": 0.95,
+    "language": "en"
+  },
+  "d78e8f4ed94ad818ece4eefdb551b1096b298d1b6c949222e364d70a4ce28309": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2022-03-04",
+    "entities": [
+      "CBSL"
+    ],
+    "confidence": 0.95,
+    "language": "en"
+  },
+  "5d817ce81ad9045071052fa16ca52a11d86a66861baf070e75fbfb309b4ef2d7": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2023-12-13",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "349c7da1c6f09e34bfede62ea2ad4b5883f814a5274331711887650fbef4bb5c": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [
+      "Tourism & Hospitality",
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2022-04-01",
+    "entities": [],
+    "confidence": 0.66,
+    "language": "en"
+  },
+  "e00aafd126d595af4a69c6fd2e3e6b97dc0ca3c0e1c5247fe9991f52677a4014": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2024-11-18",
+    "entities": [
+      "President",
+      "Cabinet"
+    ],
+    "confidence": 0.55,
+    "language": "en"
+  },
+  "268c0a58f4148025ac21c56ec27bbbd934f9a58dda2c217c4f903b96da34b7f7": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-02-02",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.67,
+    "language": "en"
+  },
+  "0dbf3ef06eb47fb44afdce2c546cee7cd82c5365411d265e6d6413fd959b844c": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2024-09-23",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "2e0eaf633a439a368683e2852f57d2906045bfc3580df07c3efaaafe5ae4fd49": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-10-01",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "3415556362a6c9fc4983cc9dc51b0404afa7ba2db6cefcee0e62eb24a1b64e27": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-06-15",
+    "entities": [
+      "President",
+      "Ranil Wickremesinghe"
+    ],
+    "confidence": 0.67,
+    "language": "en"
+  },
+  "82837dc502c5dc03d77c866236eea8e91c9cafc973bb729eefa14f28a5aee0e1": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-07-10",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "cba4c8f0e15414fc12b17eb59d0a7c10a7f62501f912d64a0fa495a8117ef625": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2000-08-18",
+    "entities": [
+      "President",
+      "Parliament"
+    ],
+    "confidence": 0.94,
+    "language": "en"
+  },
+  "d723cae8470b43b516d264a185b97b530c4adb9bd8755fff15023889648f58dd": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "nominations",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2000-09-04",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "56582bc181b84b651d50150dad4f309142f102c3f489497e2206fa1f028049e2": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "campaign",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2000-10-07",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "38d70452682e3dea17795c00d6666d7c0f3d85f4dbbb61d7a83df1bb9a019636": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "voting",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2000-10-10",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "a237730e66411d863d25af4484271883f3277c02ebd6642a6843a697abf43f4a": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "results",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Fragmented electoral outcome risks political paralysis and delayed economic reforms.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2000-10-11",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.68,
+    "language": "en"
+  },
+  "0cc7773be82ebdea6674c48b9637d6f5d604e458653208a2c5dc82ad67ce5a23": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2000-10-18",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.84,
+    "language": "en"
+  },
+  "a7207dadb916e686294c4e4fce462b078bca4fe3e27a417a5635df8f2e046cde": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2001-10-10",
+    "entities": [
+      "President",
+      "Parliament"
+    ],
+    "confidence": 0.88,
+    "language": "en"
+  },
+  "fddca66e849eb53172f262a20c5053a1c6950eea5944efa19f83f77f6c3fab48": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "nominations",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2001-10-27",
+    "entities": [],
+    "confidence": 0.51,
+    "language": "en"
+  },
+  "cdc22df5380ebcb57edf1dc239e9ec6ea62a4a50fa585393cddffaddcd3fc303": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2001-12-02",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "f30a186d87ae1b82b1100a5dcfb9b41527b90cbc12e8c36db26d86d52850ab2a": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "voting",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2001-12-05",
+    "entities": [],
+    "confidence": 0.61,
+    "language": "en"
+  },
+  "25ff1afb129b1bd1ca09810d50258a7126b72ed5689f757a5d8b5afc1ef7abe1": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "results",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Decisive electoral outcome removes political uncertainty and enables policy momentum.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2001-12-06",
+    "entities": [
+      "Ranil Wickremesinghe"
+    ],
+    "confidence": 0.95,
+    "language": "en"
+  },
+  "a1ba01874aeef3e0e59787dc2b08b832762f7af74cd28ebfc8325640ad4eb98a": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2001-12-19",
+    "entities": [
+      "President",
+      "Prime Minister",
+      "Ranil Wickremesinghe"
+    ],
+    "confidence": 0.82,
+    "language": "en"
+  },
+  "3052536cc2932d8c8c05baae5dd0fe0603049a58c6513e3d3b360c16ea5c9a7b": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2004-02-07",
+    "entities": [
+      "President",
+      "Cabinet",
+      "Parliament"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "6b4141fc62d8e1c9652e88ab757cbfc9a6b99bd9155fe455711b57406e7af000": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "nominations",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2004-02-24",
+    "entities": [],
+    "confidence": 0.77,
+    "language": "en"
+  },
+  "30546d08df011f353951d5c4d5e24eef3bba8e79a58b8a41e6560ea20b578c74": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "campaign",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2004-03-20",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "203a10452ce791aaeca52aabe7d0ad1ceeeca7e0c0623361d078b272568c526f": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "voting",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2004-04-02",
+    "entities": [],
+    "confidence": 0.7,
+    "language": "en"
+  },
+  "003e822d3f522358b642536da81998f04e50f2524bd6661a26c58eb90a134279": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "results",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Market assessing policy direction and stability of new parliamentary configuration.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2004-04-03",
+    "entities": [
+      "Mahinda Rajapaksa"
+    ],
+    "confidence": 0.9,
+    "language": "en"
+  },
+  "7193971a75df29e24b080ac7a1466a59758faeb620fe8c78c5c9910a8be3ab12": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2004-04-22",
+    "entities": [
+      "Prime Minister",
+      "Cabinet",
+      "Mahinda Rajapaksa"
+    ],
+    "confidence": 0.95,
+    "language": "en"
+  },
+  "38d06f00b26d3d4b4d72f6f65e35fdf8a53eccadf2653d332cdceb1c3859ece9": {
+    "is_relevant": true,
+    "event_category": "provincial_council_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2004-02-16",
+    "entities": [
+      "Election Commission"
+    ],
+    "confidence": 0.9,
+    "language": "en"
+  },
+  "20b6b2e2c59b6ebc2952a11847c808c833291cbeb7ade52700f326838d6c98f2": {
+    "is_relevant": true,
+    "event_category": "provincial_council_election",
+    "stage": "voting",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2004-04-25",
+    "entities": [],
+    "confidence": 0.95,
+    "language": "en"
+  },
+  "101f43333124e4ec277f0e6ef998a8235d400df968f5d212711f932ba9bba5f2": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "voting",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2015-01-08",
+    "entities": [],
+    "confidence": 0.9,
+    "language": "en"
+  },
+  "3e1b149e787dd1970a94587c837652ffc7270725766418e686e8f4fc06c9f5d4": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "voting",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2015-08-17",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.77,
+    "language": "en"
+  },
+  "6ed9813d56f577846e081a8d588d020018ccd2e730a08eb44eb0ccb1ab5ce5d5": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2019-11-15",
+    "entities": [
+      "Election Commission"
+    ],
+    "confidence": 0.93,
+    "language": "en"
+  },
+  "324a2409f27cdb61bb621b319c627263eb6555682d279b890e35e787c07d7b23": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "voting",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2020-08-05",
+    "entities": [],
+    "confidence": 0.8,
+    "language": "en"
+  },
+  "149cc960100d2cb86e1ec42927f20e7b26f794169aa5fa9aace2bd0822d62e88": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "voting",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-09-20",
+    "entities": [],
+    "confidence": 0.82,
+    "language": "en"
+  },
+  "1b07e0854c537146e7bc2df4953bf60e2377e9f8a87b4be245c6739ef4abaf80": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2024-05-15",
+    "entities": [],
+    "confidence": 0.56,
+    "language": "en"
+  },
+  "e2724b0a423e5267cf2f533e08682e9043a0d802f7ce943219f8e17acaa5dbcd": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-07-26",
+    "entities": [
+      "Election Commission",
+      "President"
+    ],
+    "confidence": 0.85,
+    "language": "en"
+  },
+  "60699831ef00b66dfd73b3dc4a51643393ffe3dd698e7ee3fdccd7bdcff8b661": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Monetary tightening raises discount rates and compresses corporate equity margins.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2022-04-08",
+    "entities": [
+      "CBSL",
+      "Central Bank"
+    ],
+    "confidence": 0.94,
+    "language": "en"
+  },
+  "b94227f652eb7e97207b07cf5ad7b2987aba37918df25bc12bc4520478dc7bca": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-15",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.52,
+    "language": "en"
+  },
+  "1534ed3d5db736a9dfca4ee3633e57b9e69db972819fb9735b3d2abbc821b6c8": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "positive",
+    "expected_direction_reason": "IMF agreement or creditor deal reduces sovereign default risk and bolsters market liquidity.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2023-12-12",
+    "entities": [
+      "IMF"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "59055b1073d167e1a54e2cc35c37cb008ce473f53cf7adda99a99df632cffa82": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-06-15",
+    "entities": [],
+    "confidence": 0.67,
+    "language": "en"
+  },
+  "d20f4ae161c9d50b414879715ce08e876da6c3b2e9b0cac3dc861d851051d331": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-06-15",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.71,
+    "language": "en"
+  },
+  "225a7c4be69229f5355afb4b2fb445f85b479e665286e3b696a13ea9656beb2d": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2022-09-11",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "dbd0a3d41d94f2023a034ea02b48ce9c82f9069cb475f82edecf1ce0bb2ea749": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2022-09-11",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "8dd97709a9cbc52fc1d5841c903a15506c552b495af817bc7305b099e3f8c5a9": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-06-15",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.78,
+    "language": "en"
+  },
+  "41224ccfcb0becc1eeb278356af3a5a0951393bd9f2dec6f5b13fff0f53f43cf": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-06-15",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.67,
+    "language": "en"
+  },
+  "fd10330f7ad15475c96cc77327932c2571377de5846a941e22218e91ffd4273e": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2022-09-11",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "b4a67846a450c7c12e215118cbd9a23a9607e07125e3fac5d24c9b3c2e4eff73": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [
+      "Tourism & Hospitality"
+    ],
+    "event_date_mentioned": "2022-04-05",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "04b284438f0119b3ba0e08d6fea5633e9409986d816133171f487c5b4b25bf06": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2014-11-20",
+    "entities": [
+      "President",
+      "Mahinda Rajapaksa"
+    ],
+    "confidence": 0.82,
+    "language": "en"
+  },
+  "10eb10d3a5af02106ed2943265f038ac91fcff362f31f13e50c199e39621be20": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2019-09-25",
+    "entities": [],
+    "confidence": 0.85,
+    "language": "en"
+  },
+  "0e9bfe3139fe6cf9922e26b7cc194493ea07a620a08d4cdc06ed09a1f04d1267": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2020-03-02",
+    "entities": [
+      "President",
+      "Parliament",
+      "Gotabaya Rajapaksa"
+    ],
+    "confidence": 0.91,
+    "language": "en"
+  },
+  "cb145e34b4a6ca14b26a8fe380d72b844d4b830b538967a537234c52ae045fc9": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-06-15",
+    "entities": [],
+    "confidence": 0.79,
+    "language": "en"
+  },
+  "fffd9e94d02e1477b4da4c84a45b63be1ea1fcec01f0fc2c21e773284a95e3ae": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-06-15",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.64,
+    "language": "en"
+  },
+  "5bab7e8ffe631c12db1d95ddf5bab2262729894d75a9f55885257b9c0ce80825": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "8de4a1fb03e3e99741f6074b5b54858dc75ef885995cdcc170e12f3697eadaad": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.57,
+    "language": "en"
+  },
+  "b84c4d0a9aa5f14e181672bcb6f69de3e89538b3d017709ad4da85bf242f2246": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "848e4fa6fd90c82413b330f1c92aaef45da29a28ceab6d43fb69b3e01dadbb88": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.63,
+    "language": "en"
+  },
+  "5da720f95e62733a8102f25348e06358fcdba29b57c8f12f52fa4c8bc8570cf9": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-12",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "fc0fdb7dc1c438eedf9660213db570ecb904c4734fd7bc08b0682dc6723dc468": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "IMF"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "fdaa2657531ee88fb2434bda1416e1595552e65a54c9e5eeb8e60320cba7bb7a": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-12",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "90d2b9071a2a34f3df34b629adf28be0ef6dd6d0986deb022040da13e6c28a05": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-12",
+    "entities": [
+      "Central Bank"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "dcd16fe38da4e0bfafc409e6ed36bbec92898d0e7db74a8c9c4d9b093964f3ae": {
+    "is_relevant": true,
+    "event_category": "other_political",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-12",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "596ddd2061d21e12e2804629e5dddeb5b2cc36e02b140a87d15ed80b3e5c90ef": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-06-15",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c4ebc9c0bfd210cec615b55fc9488cf869721bebd95ac2ac1c9cab9ccf06147f": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-07-26",
+    "entities": [
+      "Election Commission"
+    ],
+    "confidence": 0.95,
+    "language": "en"
+  },
+  "34e07bc56e70a8644bbc826fdaec3ab11aa4c2293960e632e7f71786b958d217": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "nominations",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-09-02",
+    "entities": [],
+    "confidence": 0.68,
+    "language": "en"
+  },
+  "da12efa9d51ef3975ea46039310fd27ec15586c2a7914284fa6887ed242e9c5f": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "voting",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2024-09-20",
+    "entities": [],
+    "confidence": 0.86,
+    "language": "en"
+  },
+  "04d7eefe663aadc2298f166e66b0908e45900e93752c2faf7d785236a1223c04": {
+    "is_relevant": true,
+    "event_category": "provincial_council_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "Election Commission"
+    ],
+    "confidence": 0.68,
+    "language": "en"
+  },
+  "b60ab385596b72eddcfbed0336b422f042707fa58d4705171d8f46a2db7930bf": {
+    "is_relevant": true,
+    "event_category": "provincial_council_election",
+    "stage": "nominations",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.68,
+    "language": "en"
+  },
+  "6ceb9b80dd8ae8a28573f64927d1ae1c71ee90e1bb1571bd5d44754a7f1738b6": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "voting",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "Election Commission"
+    ],
+    "confidence": 0.58,
+    "language": "en"
+  },
+  "255bc483e5586beb280ff3fe65015f9698d4fffe5fe22d113f516d84f62463b9": {
+    "is_relevant": true,
+    "event_category": "provincial_council_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "Election Commission"
+    ],
+    "confidence": 0.68,
+    "language": "en"
+  },
+  "00fc8892508a2bf36d62f8ef16be1b7234cfc4ce95767d60176470414c9a79f4": {
+    "is_relevant": true,
+    "event_category": "provincial_council_election",
+    "stage": "nominations",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.68,
+    "language": "en"
+  },
+  "b3b9c9fc1729bc2432086c46b655687205967272f2d4c38acfc20763553fa608": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "voting",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "Election Commission"
+    ],
+    "confidence": 0.58,
+    "language": "en"
+  },
+  "64771fe0815ca02c4b831487d6b2fbc93d80917797a305f57cc0c6062651c323": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "IMF"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "b01247054ba9eff5420b6683f975d2af12d4ce7df811e966341afe3d0be2e164": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "acd4aa968b5fd49b3b5b0efa01b92a4aaa6e0c44b5d9724aff34d925d7ce30ac": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "Supreme Court",
+      "Cabinet"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "091faea35fe1f0009e99d448fbfe29296064b700460ac81b18ba2fd4c4f111aa": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "President",
+      "Mahinda Rajapaksa"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "32f0ff121ae819ef246c4b09b0a4dc6276cab94fb1e81311e8a22f7dd4f793a9": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "f5a04314faead05ea302a8616bbfd5adca77f231d3fa8187b4b65435d4b8047a": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake",
+      "Maithripala Sirisena"
+    ],
+    "confidence": 0.59,
+    "language": "en"
+  },
+  "a52ed967a77509bc8a9c143cef804c4bc5b7f7f560fc52b3d85aea01d0bc9020": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.73,
+    "language": "en"
+  },
+  "02304addca82e2d3ed2a86223fcb37c523f8a96f5b0fb5c78802df61a0288dc3": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "CBSL",
+      "Central Bank"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "0216112ccc1308436958429be7adb476675256e1d0b6ec0a36d9016f58f0b7f8": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "Central Bank"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "519c5c503721a7ba7fdb92a62cbc8ca9991250f728eb0586ba240f20fc272102": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Fiscal incentives enhance corporate cash flows and stimulate capital formation.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "adfc49e9a9f692d097a2228b47f97f4ba0459a67ed2b096b1d96b0e40b8e69c5": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "ce0cfbbb7932ec974593c68a2c589df6783469c5796e593f75744ebc03964bcb": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "ce37929a7c3ce63269f47a6d6116882fad6ab0596d12a7be80b34b0647e99f35": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "IMF"
+    ],
+    "confidence": 0.52,
+    "language": "en"
+  },
+  "3754defc1b0a70b04ccc9399d6627858dad502515d0dea5bf565b9938d27f331": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Consumer & Retail",
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "3b78669002380e994bd292985d9d691efe6949f246331e620e9feef71f096908": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "CBSL"
+    ],
+    "confidence": 0.54,
+    "language": "en"
+  },
+  "65c94a8fa4bf2b5409407e6e079771d2b7e2e9cf12ae915d7ba8264f477808b2": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.6,
+    "language": "en"
+  },
+  "bc0e199aa7f415544af0e9140e3819cd1332d6fbcdc3ed2011cdd29c540ff58d": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "IMF"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "4a56cb41387b7e2993a31e4a049b5e0661c556367167c764ab0c4ab29158d56c": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.6,
+    "language": "en"
+  },
+  "63fbe7129f7334cb0b1f8b9c0ac2cf0faf723e7ff245635d7f882306671ecbd3": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "edcadb13121e690c008e6feabbf5b28414e62d03d96eec09b18095175d28194e": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.51,
+    "language": "en"
+  },
+  "bc95622a3ee5f426167ef18d6697f605ebdae2a352392685c57cdf0ce5f49a56": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "Sajith Premadasa"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "ef8e611680b7fd58c211654a68859672621945cccb72ecb79c6c6ca73570668a": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "cb15872244e42bc1d7ff1683c8f4b4c20c65694ec725ae6cd1bef1e87814863a": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "0263cf161940134aa413981ab1038bcc62f046053fde509297e588923caf2331": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "IMF"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "329bde9e1dfe91b6d8fcac07d3f7cfed18f74fb891b58113a39786c3b3e16e0d": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "IMF",
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "0ad74c275aa00d396377e818b252efc9703de733952d95f1c25a3c78eaac2fe9": {
+    "is_relevant": true,
+    "event_category": "provincial_council_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "Election Commission"
+    ],
+    "confidence": 0.73,
+    "language": "en"
+  },
+  "763bc14e31a2754441340515221646c8e2d6032beac7e2af36cecb6ae73f143f": {
+    "is_relevant": true,
+    "event_category": "other_political",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "a4f77fd254dd34199a2874fee7c768d17688a859ca0a20f4e7cf92c4fa1c41b8": {
+    "is_relevant": true,
+    "event_category": "provincial_council_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "Election Commission"
+    ],
+    "confidence": 0.73,
+    "language": "en"
+  },
+  "5422f6508f46917cbe6ed91c6d9e3b9723e56193ad2ff7f1304b55ccbe2dc1e4": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "positive",
+    "expected_direction_reason": "IMF agreement or creditor deal reduces sovereign default risk and bolsters market liquidity.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "IMF"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "8f06c69add96acb9539069932ce398ebd0fa98a0dc5c769a01a9e2e96f658b39": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "CBSL",
+      "Central Bank"
+    ],
+    "confidence": 0.95,
+    "language": "en"
+  },
+  "d07423ffbee60b0b1b6c6c4c42569f497b5564148b0cdb185d38092a277dfb07": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "President",
+      "Cabinet"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "40596abdcfa60b1966f494503a3cc1ef46a152e709e50d43d04cc5277b2308a2": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "541a7b74f493ef8c37db16a43ca87dc2d020cf8a5e38f6ea5285a9c3453c486c": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "2fed31ab34fd4549e6fdf8b475ab00455454cae61ff7e6b0ab2b7b38a851a830": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c0c6dfd95e3e1ed23bb8c931c44c7ea0fbf851e3e4a1c630d14be42f396c511e": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "2ed1e2a25524e3abe15d7872bb14372b08d0a152bc54c94aebc388bca4cf1348": {
+    "is_relevant": true,
+    "event_category": "provincial_council_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-13",
+    "entities": [
+      "Election Commission"
+    ],
+    "confidence": 0.68,
+    "language": "en"
+  },
+  "1375d71287a99dc291f62d6ab2c1bb5f9b651ec41c22a6102cc01c2d7be2e77b": {
+    "is_relevant": true,
+    "event_category": "provincial_council_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-12-18",
+    "entities": [
+      "Election Commission"
+    ],
+    "confidence": 0.68,
+    "language": "en"
+  },
+  "8ddd6b110ada708262ed7a3020e8b2039482e7b620b8cd7b2ce470d75a02505c": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "7fb7aeb61c6697fbf0939e6b527be9fe38ef9461e9488e5943bd2e3c07743e23": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.69,
+    "language": "en"
+  },
+  "3b6bd4dec8f595363829f80f0e7ebf9b2d4a02f8ff3b807c56d2164d97983843": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "7bb94c503af34a519f94b2c6e260d2ca2e212e4ce75a449a0098531998770d61": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.78,
+    "language": "en"
+  },
+  "1f22a71146ea1e54fdbdfc695fdfce66729d2bd37be299e04832742bfff6110d": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.81,
+    "language": "en"
+  },
+  "f5b557e5bf501b9e3cb45149707f1be0177140d927eef4fe08597af9268e5077": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.66,
+    "language": "en"
+  },
+  "62c3b7af77cf86cb3cb522990ef1d25f642a653661e93878a8353051cc22a432": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "Cabinet",
+      "Treasury"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "a189b912b60c219d2d905e3788bc22c5587b11131b988e1f1671b403393399fe": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [
+      "Manufacturing & Industry"
+    ],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "5f770b9db434b15f3f61cf700bcec3db242f5b96482c86508f7552429f3fd536": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "campaign",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "1f96fa23e7e386684780fbd54e3bb57aea89c2d4fc92bce5a5fb6c3551e90ca8": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "President",
+      "Mahinda Rajapaksa"
+    ],
+    "confidence": 0.57,
+    "language": "en"
+  },
+  "1a8205426b6b71878cffe6f257afef5406bde83fb79474220b1cc3f089ec859b": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "877b38f63f1a41e74e058a7453e6f3099bab2c1e704c1ee2c8e828a2bc8a9ac7": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "IMF"
+    ],
+    "confidence": 0.54,
+    "language": "en"
+  },
+  "34fc5934472b19b952d01ffbee3c8e9e9ffadf42f1173f439894b32fac6534d5": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "3f4c57023995fe1b806f6bc7aedcd19b10e3f23525091fe1bf2fa1cc8f0d4bb4": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Tourism & Hospitality"
+    ],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "8d2da17cb93811e137576a0ba61987421d57db88d23f233a12e0c231ec7de724": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Consumer & Retail",
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "11b40a5fd14f43377689b7b3a98a5bbddc6a2d380e91873bd7b1093e555f99cd": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "8087ba4be21b215f7b51f6186644ad6d0dc69cbc6b1c3792f8a34706f91618b0": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "Sajith Premadasa"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "ecc70d3fc419d552cb17c1f4198d90f256dfc39fd61b9e61e13ad277f5cc7e60": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "f415981352ec80e8f246b990540deff22859c3d07bba2042df930f5babffff52": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.92,
+    "language": "en"
+  },
+  "d848ae5b099a54c511d411bff150e81c87e2a9519aea54610affef1f518bd4d9": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [
+      "Tourism & Hospitality"
+    ],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "President",
+      "Gotabaya Rajapaksa"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "e9c2f377ed123fc2387ca69268e42848c4e155dca510ae1a7ccee65d41952b98": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "cb0a10c7a8b53ec0a12865963d92ef80451c34f5d374a531c13a0deca7020f53": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.54,
+    "language": "en"
+  },
+  "910606384419574ad510aee34041b28bc023016b39752c5ec11749bc875b200b": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [
+      "Sajith Premadasa"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c222fbfc3a2c01ab078c44e8b84e156096415207d1d5c754af9c0fdd4a3f34cb": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "ffeafa483e1dc24da4cc59bfc427a774ab6649063a66006da7354b355247d719": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-16",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "fc934766aa2e92d3480f03d007b782893be387a42165e7a32031491135191957": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.73,
+    "language": "en"
+  },
+  "dde17c90d1b5d7fcc6e3f0bbfdd03e992bfebae6465178f8d52ac134c6061981": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "f750ad4f838f99af0324ee03b3c033428e64b4854acadf67de36dcadec3dad51": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c463e1886e7de9afbae740527b06864fd84c30083bac3410c38c1cf483544d05": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "424527c7fb2c129d927a56f9c60d1214090b1693e58b7decbb7fb85d264d4365": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "ffe28f5934ae95f9102fa8cf06a4980010c59a7df8920b3a290efb37ea4232b1": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.69,
+    "language": "en"
+  },
+  "192d79576bc7f673d2687f13d41ca6a9a5ca61015f72bbdb4b5c1a3ef5319278": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "e01bfad4cac8f47905eaa9b337ac4dc0fc38d733baa8a40f0ab4e6e3b9ddff36": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "02dd62017fa7415ea7b1ccc161cc666e97e447cbb9c2d27108b605cd59ec2fed": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake",
+      "Sajith Premadasa"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "fe267c698efdbac4dab60ae578c891efd34c327efbb49b1416e696ef02980d2a": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "8db56d82e24a0b88227b853f44cc334220a6ae8f3a0e1d75ea6e0040458ba669": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [
+      "Supreme Court"
+    ],
+    "confidence": 0.69,
+    "language": "en"
+  },
+  "271a4e9e0f1aa8893e8ed3113ab2c33e1f16bb822b6ad7104aae470b6224631a": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "voting",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "341ddf74769ba849908e1acc0a2fee8ff779c604e1106b7d6d369bb439173d65": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "e230f346d1184a75ca65ecb5c6b12c36b05d9a769c82f463922074585407283f": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c499c4ac79de141efde7f284710aaf23880bb4a1f61e42104e28c1c5b599aaef": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "b37c8fa824513e3ae45d7d18771a240a33c3bbc731f644e5cb1913d7cf292d1d": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "66d75e4d158506238ef69471aa033224d1ac508beb7928b9da4e7c83a61a2301": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "64fae6905c2ec97515523c88296b87f4ebec0fa8d6a2d660f23a464246abbed3": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "91cbbde065283e72ec8a7c050abf284dcd25f6f7d26dddc3656c6db7ba34bcf4": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-18",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "49519cbe4d17d14c7df3a67c6acdb09e62a32ef9b3b83ee29af8d8307e4057b1": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "7a6740e858ada231251d9c46274fb9eebee1b6f1870df0835bcbd9114d2ba2d4": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-19",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "ad5a30efb8b4709db85ac245a963e8f1e548b02d3a4d8a07a4849b157f09e4f3": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Tourism & Hospitality"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c6fc57317a67acb506248323ad8958562f5100e5921b1028d4e278762ed30448": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "d54f051372eb7ecb237a3e5430a9ab19fb6bf0aeede74d093bc2406e7e5d34cd": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "5b82d498d38f7b3162b99a14433d4929929048c640e431d1dcfd527b823faa62": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [
+      "Treasury"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "f87e410c287d689e55b3ab932bedd12a3c42171e07767455536bea7c3857fb96": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "a88c22bfb81ee54903739f35c8c6ec15499eb9c3da63139749052cfeb3a2127c": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [
+      "Manufacturing & Industry",
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "b595824e3efdc9759d6a0b41d8cfec33c41f4dd1f7983071dc2d53f128abae96": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "6c541b3158d0954119209ed6ba740986396ca3cc1302ae8cdef9d579b9ac2702": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.59,
+    "language": "en"
+  },
+  "40ee0dfdf035dafa5531dc6f0754bf4227a3c49387d3ed2e3a081d94c13b718e": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "campaign",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.59,
+    "language": "en"
+  },
+  "93bbfd3636c86b1cbb98d059da56fd1cf99abe4a9f495e6655eeb56c1850c75e": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake"
+    ],
+    "confidence": 0.62,
+    "language": "en"
+  },
+  "1f5fe5e460eb888e625db5d5bc355cbf952fdb2c21d54dc7ac9fa9fde68778ba": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Consumer & Retail",
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "a3db69dc23a9e9cd71961e5a7bf3f70e9a9139acf8468bfab302b525297146d3": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.57,
+    "language": "en"
+  },
+  "3e047d4a62156b89232b10bf82176d35055b17d91a277fd090555cd3c08c4010": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "88dffc9bbeb5a19d4d7126259091dd80955ba4036bef56c00071abcbd1dacc4a": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "1121c0219ceb863c59e1212b0385a35f93cbeecd15117df2ddcfe4628998e1f5": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Tourism & Hospitality",
+      "Energy & Utilities",
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "913fdb3ec7448eadb11d019b2c745294ae2f440f374d9eef5376365c89445b52": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Consumer & Retail",
+      "Tourism & Hospitality"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "e720531a4a10d2804733555dd261b335c6ed0c48be6ff2baf4b2a5e7363d0d6c": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "d9631846388b3ec059dce20850bd301c508b5877740da89a42e97f7ade426f00": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Tourism & Hospitality"
+    ],
+    "event_date_mentioned": "2026-10-21",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "1b12d7ddc85ac8067c9926458b1890c3526932f0af52bc45a123e204535e91c7": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-21",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.63,
+    "language": "en"
+  },
+  "231ef3164d05ef03d0eadc59d8282c311d8e03df2513e96d90066dc2e97c5763": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Consumer & Retail",
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-21",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c59df3f11dc590e79928c875dbb3a4bce7fb40175be7faffdbc59bbeb7a8ff8a": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-21",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "aa16a45422ab994a3077ce8c3e7e98fd3ca621beb7dfa6e86317f13c69a3587a": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-21",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "24a95a2136915ccb41967c223cb2067e7c1b723779248e467fdd6a34494632df": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-21",
+    "entities": [],
+    "confidence": 0.81,
+    "language": "en"
+  },
+  "5521deff453c8f3b10eac50b485fc559219ab58f3187e708c892d8b2727d0f61": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-21",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c7f9fa9837e388f86224540c6780b06712a7c185551618345f28cf57548f94a6": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-21",
+    "entities": [],
+    "confidence": 0.81,
+    "language": "en"
+  },
+  "7b05fd790d23e521d738993b151740d06655cab1c8270c915624d53969693721": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.81,
+    "language": "en"
+  },
+  "e10a75518791d0a47ff5a337ab55903cd0d5d9cd27356c8f4c6258c1e02c2303": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [
+      "Consumer & Retail",
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-21",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "eb20e2a03184e1dccd406a3c16276d76cf43b5b605ceaae7132ee6da562df198": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-21",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "bbb792d57a72e29b9229168fb01122989dbcc1a0384590423081471641212202": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c01e02187007435649fea3891fdcc40efa00be428ccead9207968691572c7fae": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-21",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "b8b74c8db58ffecfa0388173dc53fb732af4a18d2f0ee9e0970db4122e11e4be": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "e7629312b59aae606e89f5d30e238f96f431272532a2c8fa175eaf9b983d0a83": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "556c8ca076dbcc999ff1dd087df9e2763bfeeaa365ed3e769438eb9a8ae728f3": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-21",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "4f87fe17f7aab84cad3770be4ce817149d57ea174c282848d88df6366eb8b06a": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "92ce4d83b3a732b508935275b94ccca87d01378ef935cc4b0558121e3b7bed26": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "7ab4186956b29b7d4d2dd39c546dc677809cbd3e18def3fbcef35a5f8c8ac39b": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.93,
+    "language": "en"
+  },
+  "2b45876038e5efeb52e2985b2a9c89f8dc314fa3d21ef75f8f9c41f29fae293a": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Tourism & Hospitality"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c15dd78971bd56be05e7bf7dccdf08e254194ca09d6daeffcd45e1444e3bf4df": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "nominations",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "872b3fd86b464a8727bac429ebcf87b113c6e82fa2c33e7e5914e4c5a5811672": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Tourism & Hospitality"
+    ],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "3ea8d1a289c32ccf8ad4630430e48db8ece1310ee19e4e8b0f55fdc72bc0978f": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "9dd1419e3d9d94548c4f83a1791c2ecd5919ecf397cb163aa027f99dd722b821": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "1c901a491a8ddd524a945e62d2c77caa4c29a14801c9e3062a1ca875d6f99635": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-22",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "e0c715be41776b2999c7931ee9cd9d411f8894cc20c1b93fd10a882e144d63f6": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "0c1fc06aaeba16e213612ec71f8b9ca5778aa955f422a78b92bf2eadac711e4a": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [
+      "Manufacturing & Industry"
+    ],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "e87870f2d8a7eb858190b57e0ee32d6a9f067ec0190cd433bb7b82cbe1563331": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.59,
+    "language": "en"
+  },
+  "5a6bbd2f34617cd533e51926ca436e5fe68f73e7aee87093162fe5264d39bd90": {
+    "is_relevant": true,
+    "event_category": "other_political",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.66,
+    "language": "en"
+  },
+  "e98665d06257189117787d0c9d77a762465c4696174b7d8186bf4024a5144ca4": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "f102d0f4549846fa6b560d5d0184c4cfd4be980c763672c224cef2d198c4de34": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "ec60a84c053fe5084bc4b3d8d1a5e5651acd2102aa22afcb47ecc5be6f7dc869": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "869d58345e7869b14ec14343349a8abf02f28861e4ef27787f1a3b5512dc7f6a": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-23",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "7051cdb28ae43753d126bbbe90ab485dcf99178d1be8874c31f2fb2760eb7b2b": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-23",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "1c0bed1f42dcfc86c025cbd4858033c515a9fe3ae8eafa237d3aa631f290b51a": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "0ae795871496d1d58c35baa22cc5c3c26edadd6e0b1216d135dee909a2f7f98f": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "a06499c4cfc104fdf208bf5ca7bc135a7692510f4a350e0bfe5c2f3ecf08ee76": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "80b942a85a973c7f5569cd60888f84c6dde014bc3a51c9c428787bf9e5674f22": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "b41ba5fbd51e079ca5c1d9401e23d5cfe78fa215d8f4d4de683c063f12ce1c4b": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-25",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "3d75ff5a456cd609c9a46bb0b5f499f22c74b6e4a83e9c3a69f29c6f61f9f338": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-25",
+    "entities": [],
+    "confidence": 0.62,
+    "language": "en"
+  },
+  "905eaef442c3c341de4869887e063fcc40f4246865ee3590e280746cad6df5b5": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-25",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "96f96a12b25d26ad07e704475e09d530e5d3b4641fcbf4632bcac6fee4507c50": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-25",
+    "entities": [
+      "CBSL",
+      "Central Bank",
+      "IMF"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "546558ad3a7952d7e2936aa1d8026cb63a4e14fa7c3e60b1f898edaccc72ca32": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-25",
+    "entities": [],
+    "confidence": 0.53,
+    "language": "en"
+  },
+  "26b1085b013493253ca9a1de0eb245c5806a0c1dc549a2c76c7405feca3077ea": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-25",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "63fe551dee8fd9dfed6ef4b7977c95f57ef664332c10ffd72b9487d9b33a9e45": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "campaign",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-25",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "59819d6b2fd58189c92cbfc2b0e18bb52e8807e236e423a955db795f0670c218": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-25",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "3cf11fa2998bf1216bd1328a15879b54531cf0c079db13626afcefba3ae60e76": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "8fa1756d521a8cd7e534708086f7ab635d5578d4669b61317f36ea120f1cacac": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "7de7fab96e00566d38f4041895da6984391ab2bff7ec99b1513e6a89b6d6a1cd": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "209b6184235f50c35dfd8847fa3d73b6490a1e23ae076b603f8943637b92477a": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "d07a94349efed954a58825f3de220cd7a9fcb4fd336063b6baa225cc6dd29442": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.81,
+    "language": "en"
+  },
+  "f1822840a823887e8047cc9c354fd124c4a24b2f3d84323046c5c5158cfb6c0d": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "346aa0b682ecf2f4f9ec1be75a85d6419fa8afc6928516364bf450a30f9fad74": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "9dc7599879d749097aa14115b1dc11c5b60751641ffd3cf7ca2f3d0a9a433acc": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Telecom & IT"
+    ],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.93,
+    "language": "en"
+  },
+  "86fb9caa62b0548f335f36c7b2f0aa9c4d32ad6d9346e334316c0d8074f55865": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-25",
+    "entities": [
+      "Supreme Court"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "3914cf8058cd91002ab10ff54ef04e51680d9b05bb4d922906bd9b887770d44e": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "positive",
+    "expected_direction_reason": "IMF agreement or creditor deal reduces sovereign default risk and bolsters market liquidity.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-25",
+    "entities": [
+      "IMF"
+    ],
+    "confidence": 0.79,
+    "language": "en"
+  },
+  "0f95a7a49ba9e636fabce49ca33a276e06186f4fc75133fd77fca119c838f1e6": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-25",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "8c24ad4630062d941251d6f191f452f68722ca6d35fc305234047a6777c54c6f": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-24",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "88e6e8ce747e16433f5213f827c640c1b858d19271edb017f93b723fa86e5ec7": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-25",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "f1cb46ae246a39fa05f9df962af5937da20503ede454e49c077904acd8b9dfd7": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "results",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Market assessing policy direction and stability of new parliamentary configuration.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.82,
+    "language": "en"
+  },
+  "9111bc545fec42341260b738aab4831637d6339fb27d04c85db4748e7600212b": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "8ae8b8844bd65ffa744a0a6d715c10986fedb8047aaf61eefffd0694225314b3": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "a3616105a3a17b7e5536e30b8cf0efc4a40d5c5e44eef0f21c6770cb82a4c811": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "CBSL",
+      "Central Bank",
+      "IMF"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "03352e35c9111cedfe087c864c942bd2b4a5e7344c7c81e6da563cc4c5631e1e": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Consumer & Retail",
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "240f9b5b3f0311fcd5f374189971663a2776c7b297901a8f1edfea429aedc055": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [
+      "Consumer & Retail",
+      "Energy & Utilities",
+      "Telecom & IT"
+    ],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "20cd3f41e27ccee6e6e8166bf728bc610ae1b80fa8b908e8aff95d498c76fa05": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "CBSL",
+      "Central Bank"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "350f2ff8e24eea2e2f494fcd707075a204b54430d8b03d73f9a1b6c7c6c80726": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Consumer & Retail",
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "892336dd616e272b8c19dda0809ef7398e0898dac7c231cf1fbe7f4759addba5": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "40c2563c4df0a2247b4b273b8f38465b37a2abb2bbf58cf543f98577bc4f2757": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "0938531d410778f2d2a1bb54b1dc1b52dae014c44e4d9038bf668349124112b9": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "819f24a186294593b2aa28e1d488a414b0395e2ea775a7c16eeb9a0c474bc06f": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "Sajith Premadasa"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "3c5def39252003d5dd08df0dd04af3ece4241c89d9dd569fb60cb5723d93fb4a": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.84,
+    "language": "en"
+  },
+  "c661eb1237eaca0c7669a0f3bb1238df8313ca451e4570a8430caa5809a4f138": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "da2976c9291932e0e425d0502de4da7fd650bdfd627b2547b810ece332c9fe42": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "37e8b152b29c404f9fc5ac33e553ea84b3824c44e73f916a501d7e3f1c455585": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "results",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Market assessing policy direction and stability of new parliamentary configuration.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.93,
+    "language": "en"
+  },
+  "1976bf8335b400a9eb4b9e46d7c16e61b479e789d3e7bde3b74b137bb576c263": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "results",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Market assessing policy direction and stability of new parliamentary configuration.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "400974a56e2fffec194218b0a828545b4cb6e86c4730eec710b2ed94eae585bb": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.51,
+    "language": "en"
+  },
+  "87b430eb1649ce9fc569845430cbf1e676f773f335df4c703d4a7e1d0448334a": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "Supreme Court",
+      "President",
+      "Ranil Wickremesinghe"
+    ],
+    "confidence": 0.51,
+    "language": "en"
+  },
+  "ad3e6c25815439d7207bb0a0844b1d3c12c5965af8abb101d32153d01989898e": {
+    "is_relevant": true,
+    "event_category": "other_political",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "Sajith Premadasa"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "3fc3a9bfbd2e7cc3e52a11c4c5a9b3a17ac9f8125a577777d2cea727a5610bd1": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [
+      "Tourism & Hospitality"
+    ],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "Supreme Court"
+    ],
+    "confidence": 0.59,
+    "language": "en"
+  },
+  "89715b941c7c2aae3e88e2f482a2747344cb8ea5b2d1430b0c9f5765faff299b": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "f68357300b025f777de9618d12dc46fb60244166afadca6f56644283a916b471": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "Ceylon Chamber of Commerce"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "6727ca6dd9075439fac388f81f5bb5b4a3ad31f557d72334c18e4f6396bcad15": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.59,
+    "language": "en"
+  },
+  "93be5c721c8a920fdb7efe3012ae05fca833399790d9abce916f28c12ded7214": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "6cb5604193077c288506b9b41616defc9ee692b482535b99214a5c8d62ab3720": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "a43d1621864aeaa4c3e83af6757ca07ac7afaabe42c065ad7c4abc0f043394f5": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "a1809a1887981c73c0f77e3996736c0dd2820674caba65a5c30a1e90fb65559c": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "06c31f460bbe572a42824672f13d82cddfb56a92158352faf53093e13de4cc74": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.93,
+    "language": "en"
+  },
+  "7457b244fa26e8b1616846a5c8d4ba58b60e92f7c815addba36dfe2b2b527690": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.87,
+    "language": "en"
+  },
+  "78fcfa5b8bf9951f0b2ebe754d956239b85f5769c716c7501f6e36fbafb0348e": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.93,
+    "language": "en"
+  },
+  "0492bc4f4a963442994fb2ff7816225c77c716e96189bb54385bd68daa7758ef": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "6518dac941e141ea62553c5f51c85933a2f1a3baf9a27895bda0bc8edf30a676": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-26",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "5c4f4e69165312484faed7fa49f3dbee2f849de22b13f936c39a8c78c3f29936": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.67,
+    "language": "en"
+  },
+  "76d6409045004fc855245a2c4f8a9192f315ee8bcebea4bfe231eeea2eb4d33e": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "35293016e8a9991ccf2bd0d4f28ab111bf949a7a5c45cae8976b8795783c6a3b": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Tourism & Hospitality"
+    ],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.64,
+    "language": "en"
+  },
+  "9950af2120b691ed0b852acc9d107b7b5f54416e75dd50498b6c7e0c48fa94b8": {
+    "is_relevant": true,
+    "event_category": "other_political",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Sajith Premadasa"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "f3980e987c8ed2feb03c6835657db668c139c919f46c9b2904bb3cbc4d6a18b8": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Supreme Court",
+      "President",
+      "Ranil Wickremesinghe"
+    ],
+    "confidence": 0.51,
+    "language": "en"
+  },
+  "40e3fcbd1d785592ac0ff45081665ac73a847be6ba23b377e139f1e0c11d9990": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "campaign",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "38ad1fee11deed5b4de72fb1b26c07652c74fb71ae67a483a1b326b537ad40d5": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Supreme Court"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "1e6c29dbea3e6c66c0a8d676639484206785fa1f1abfba4a7de59a5363b9a7d6": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "515b7f34ef7dfc496f5f994ce34840ee42fe75a2f638de2606f249627a1a2f87": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Supreme Court"
+    ],
+    "confidence": 0.65,
+    "language": "en"
+  },
+  "04c26b78086225a81862c23f0d693457d9ef1ba7d3bd6d8e882744658e5c0104": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Manufacturing & Industry"
+    ],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "e678c3e22620eefb3297a3417947eb2c55ef172205f5b40340a878e1fa00240f": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "80963e30ce4310593ccf450bd48226a9dac8351d49f080cd9c0d9e5135b0c6da": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Manufacturing & Industry"
+    ],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "30d7944c89886a6f6c6980a1b86948f383b04768cf54a7fd66cd8352043b15cb": {
+    "is_relevant": true,
+    "event_category": "other_political",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "cae864bd94020d19c3f415c8681904dafd34bc728a3b91bb773612236d0b1229": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "1465e2113ae58b2a7f8f77af80f68d5c023c2bfedaaf217d6cba48c7f5923e3b": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "ea5a6d0554bb8317495c045b1bd73c474309f293852776a1b050e8f883c2872e": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "5f3a329e3a09ccb8028781016fe079ff8e9cdc5998bfe4261604067e8d4b152b": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "62aa3fed416449aa78d93a60a216fc4ed884a3ff17369a32fba5717307276a48": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.75,
+    "language": "en"
+  },
+  "12696048735e53c1515e33160d9a2415a513ba36a5c368fb2d81e2a2e44dda99": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "a4701757d627c47791b2a76ce21e78a0e686f85153741a9e458230f04c8de232": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "03b0b5b93a0023c609f371b807601bbeaefbc789b1e64d580daca0b7036b2f81": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "3291b16afc7bb30d41731a0c1e1cfa29a77e93ef5994d780f6da33b95189a0c1": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.65,
+    "language": "en"
+  },
+  "ba0654f92a607ea81254de37d16faef16401201a90439830c944d43755b2c85d": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "results",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Market assessing policy direction and stability of new parliamentary configuration.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "d1b90cc29e7601796569b6995e6a226e061d4063ffc35c30b8701babff76ba83": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "a563f9659f1af8a8a9ffcbcc141b580cea72dde9a1373274e55451ada47cab4c": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "CBSL"
+    ],
+    "confidence": 0.54,
+    "language": "en"
+  },
+  "bac4cd1a596047645673cf04517aac491ce80c4989aed6e468e65d1405147cf0": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Sajith Premadasa"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "2271c711f38471747749986bffaa5c314c6c6898e99b33cc58687444464154dc": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "President",
+      "Ranil Wickremesinghe"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "dd369e087fe3573e544a7894591b6cbef6ac53af612dfe90e9869da5618d4a0a": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "66ddce05cb0197d8347b4d06d80de04a82cef7fc3c46637fd97300d7c5db97a4": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.81,
+    "language": "en"
+  },
+  "11b22c508505b25966411457da7d395149eb04438bc8b1300c9a3f4e3dc08a87": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [
+      "Consumer & Retail",
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "de6906e48b7029556fe2a3e8852b53fdf6daf81e2289512d111a5bd1707a6d31": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "3ad90edc31bbf7eec95943153aabb957355494b2b7f83c57fc84a3bf4ddcc103": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.51,
+    "language": "en"
+  },
+  "866c0243d307ba406dc287af4c860badab33463fe32e6d5fa1fd2e963a7fd830": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.69,
+    "language": "en"
+  },
+  "e4a92ec5dfb5ea9ce13cf68df6b0900b06cf7ee9397a344324e9e8a643a4ec17": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "b62b0edfd7b9e9bf2093b05005f44a8a80519837fdffe1a2fd7005d7c95858e6": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "results",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Market assessing policy direction and stability of new parliamentary configuration.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "President",
+      "Ranil Wickremesinghe"
+    ],
+    "confidence": 0.64,
+    "language": "en"
+  },
+  "4be5de6b65752095ab43142170ac280f9fdecd98c50e4e060c08eec6a817ee55": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "bae8395dddc21f03992b8ac452899278f7947ea0256340df1865777da5f4a663": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "a34dfbf79a5152fc2b232c73daf9f0cdcb953a5222c6cd7027bc8ed50becec5d": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "dcf4695b6cce0d54e6e34a53b70fb8bf6d13655f866d44ec6a70375cd645d18d": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "4b5553541138c56d7b0ac1cdfa415b0e665fa663100b9910f7587ebfde3b7e68": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.57,
+    "language": "en"
+  },
+  "5f23a23f593b3bd016ee8787d3e3181a4693b569045fb4993ef0b23af59ed130": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "23200a9bec1d8cac9599274ee52c74a5defdb654c45564975a75b9f2d6153493": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c3c68d9fc6b3fcb29650df7afff1870d539b7207270a0a9bf050d4fc0a3ca984": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "4079d0bc986548a7beeff1378cedca0cc95b19cb6998bf12522bc2fb0009f17b": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "3c569ab8a7ae98d6c5acd3bf0034ef2e4406ed41b3b263b8858688cb79d73cd1": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "44f12da7b0dc2c44ed3c23b527b74e60e36cb4f0080eb8f73c0f421a1d07eb11": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c27b2666c000000a5fcb086b81465321011ab4f6a8194c3beb582c96d7482e49": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.53,
+    "language": "en"
+  },
+  "db71f58eac861bf39c8bcdab4559ed4cb5beb418924c20580de19dd42be53af4": {
+    "is_relevant": true,
+    "event_category": "provincial_council_election",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "08c28f45fc103e6303b0901636cde1693b766e562e14c69dda67e6b94250f4b3": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.61,
+    "language": "en"
+  },
+  "0118f407dff7356705f7921aaa10b03dfe786c816ccf3b2023a655fb7dbc73d6": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.72,
+    "language": "en"
+  },
+  "687e693bf80714e47d9c10edf71d566dc37c1cd5e0cad6f49ff0e43d724c9b86": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "d4c6e57fb8ab0f4bf8d88e1c951d9ba15f2c1500e177f1bb1477590924998e92": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "513f39552ad5f792acafc50a1c4cb009470433cf3b0987c5b60264ad4373c24e": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "38d0378f3e0d5702dcecacb754e692f05f3a3d1ee01f10a098d4a1326bb71e6b": {
+    "is_relevant": true,
+    "event_category": "provincial_council_election",
+    "stage": "nominations",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.8,
+    "language": "en"
+  },
+  "c51304722f72cb662da1b0dfa908a5049fdc05f6790dc4876c982337a906bc39": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "45cecdeb87c4e22ed4714ff68214c629e0a608efa189b87015e430e93ab75a15": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.62,
+    "language": "en"
+  },
+  "fa1d9b5cd221e359be0aa1a20b5707e1cb38d1cb36d22912fe455a68b2e62d6d": {
+    "is_relevant": true,
+    "event_category": "other_political",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Manufacturing & Industry"
+    ],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "1fcded6848cdb8107c5c7f079387b4dc17f1bbb404e606ee18fe0c5ea6786a97": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Banking & Finance",
+      "Consumer & Retail",
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.93,
+    "language": "en"
+  },
+  "a529fd408b48d910f0f6830655fa62fc14472fc4c396c6abaef2a843c4268ebf": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Manufacturing & Industry"
+    ],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "5b9825828cfe7dd98aa857a2de5d77ec141c6ee3adc2787884362a738f6e82ba": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [
+      "President",
+      "Ranil Wickremesinghe"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "4cff71f5333b51fbcccfddf5c75b6ff37a6bebec885be1783298ff6c59803c6b": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "b3829cb81f1db6e8da147f4ee90ab34b694ac1e9e8991ef40b06516d0753a894": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-27",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "40ed5ee8c539a7dcc651ac13203ba13f840bdda99db2a7da6935fcb16ceff789": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "58f080fd78a8a4217174870220d822e3192020569b4a851265f015ac9dd9d152": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "6e5d2da8f2527f0e01bb7e9bb07aaeaa61feee821f46cd1a55901e03e888b434": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "0bdc4f05fad6e72c32ac0b93d620d6f3833d416b9128f69c4171540bac5f803b": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.57,
+    "language": "en"
+  },
+  "2105ad4ff497cb22827072a6742a6d9e8197b079b9692f1bf5d7b5e30626a574": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [
+      "Manufacturing & Industry",
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "79cc8738c8ee83907eee31d161a62fb365741b12790815f51ce6fef04b94f6b0": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [
+      "Tourism & Hospitality"
+    ],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c1622d291287c2b3aee8c5e05de26dd6805e47133279895ec662fd8addf67b83": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "positive",
+    "expected_direction_reason": "IMF agreement or creditor deal reduces sovereign default risk and bolsters market liquidity.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "3b1dd77f5d50ec20f5f95b6ce86a509c56a50dd790effee3f4fe9dc6b6fb58b3": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.52,
+    "language": "en"
+  },
+  "e6761cdddcc2fc0445fed7893b51026b7a01ec603b6271b0c4ff2363b662ed8f": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.93,
+    "language": "en"
+  },
+  "9da454b940e182778166f8f1ebda5b4964f93725d11df9a29c5780ac857eaeeb": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [
+      "Tourism & Hospitality"
+    ],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "2e01be2b376d85d035ed06adbb3bb18c8d4b6183815102d8106dd567d5851eac": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "173c9051faf9d8b5739351648def385c5b2a2087f18952257ec0275b79c65cc4": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "e50807d951531b0bba125760cbad95798b755a675d9591bdc69ef3f085d628c1": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "results",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Market assessing policy direction and stability of new parliamentary configuration.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [],
+    "confidence": 0.67,
+    "language": "en"
+  },
+  "48c1508c01c0645a4052877dc797c06efa804ea1f10c5e72e0c235f01eebe80d": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "263b7e7b4f8e468eeef5f0f464c538959e83a2c81a34177e2ec00b13434fc2a9": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "69499f843afc7de6f2659de28d9278d9cb9cd6ab85548a2810fe30ed9012fb3b": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-28",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "ab3bb6ae256b66511516588ad14465e5ce1c9eb5c30bf486fc4b97913e95d515": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "b38ce2dc8686e7198e85f6ea32c3dca91e66bf515b4c40f44948998fcaa1bc0d": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "697c9c652c72b58f3aef0e90ab3ab5c4f3f7648a9b205939d926b169e8a68f63": {
+    "is_relevant": true,
+    "event_category": "other_political",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "77e00020b6729b13fbad90a4478fda61421dedd92e578789dd93cd2f45526f8a": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "fb023c75d69e5eb63ffa84e3c4f994b359e331ec6ad86a359fae477b9ddd2071": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "4fdc6b9bb78eee9e3342f06a46750e976d8cf3c5f1f011642906d51a5549851b": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "19cc8302732b08845780d1aa9b23594ba2b18b69681958b3052b2d6d65f5ed96": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [
+      "Supreme Court"
+    ],
+    "confidence": 0.62,
+    "language": "en"
+  },
+  "b81079cc283bce43b92a5126140d0cdb9b91d2c0e92319e32f6d953baea3d1d8": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "56fa6bc205fafd62c0877138abbc64fdd550d386fc81399d3dc1efd54071e2aa": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "40801a8ad79eaaa15f346aceaf2935d748c502a1419a61b567e998717b797fdb": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.75,
+    "language": "en"
+  },
+  "5200b7b68256dcdca545c5d13023a0e0fe772eae0fddc5c507766e4ff7b21c78": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "d79f969b5cdd16ff57a399595a4d0e1dd1f4b1cf1e2f87b114db18a5a693ffdc": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Manufacturing & Industry"
+    ],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.81,
+    "language": "en"
+  },
+  "580997820e86a9f5accd1deafbbece5dfce300bd56532952b184c53ce1f4f85b": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "1499c6d9c6c6223f5a8d0db855751fc8adc9f4cdb5fb391f4acc89f04f85dea0": {
+    "is_relevant": true,
+    "event_category": "political_arrest_or_imprisonment",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "High-profile political detentions elevate perceived governance risk and political tension.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "b7ace86477aa54480b392cedd596ffdf6ddb79cb61feca713a5907b9df9174ec": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "d033b06c88a8d6b07fe3990625a129a5b570d4ead69074d3411a8093585e9fab": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Consumer & Retail",
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "79d22983df7ea8744df7775b70b34be20756c82bdb2efbf371ac52895b751c75": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Plantations & Agriculture"
+    ],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.59,
+    "language": "en"
+  },
+  "5a91940cb4aa788b4489226e02e63a9994e610d4253d9b057832f3871648d876": {
+    "is_relevant": true,
+    "event_category": "other_political",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "bd0f7785d15bba301451646d96ab625d8734a3c5c84a17b3d226f38b4f940872": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "e968babd3d9514ea5f105be45dbdbad572210027ff6e773e1f3adfb8deef67d9": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [
+      "President"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "d58479770ffefbeadf2d2d2dcf228958717363b67be7d390e93691411fb1eac9": {
+    "is_relevant": true,
+    "event_category": "central_bank_or_monetary_policy",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Monetary policy stance depends on forthcoming inflation expectations.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "fda0420b0bdfdd68ae876db09e0f10761abd084c5cd851996b56feb59f1d59c8": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "f702b78d1f1fdb24adc591e9fe89a3b620a04d9ed887c0a81021abcaad5e8cba": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "0e739e1598a53a93b0cd7a2a334d301411d59b6b21bc2fa764be416c1a6ea5f5": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "010aff07e1ce4cc1041f31038ef0df0fc785f21f84b9aab135070e36ee3a39f1": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.81,
+    "language": "en"
+  },
+  "b8e717260293bba5a4eb74d5dd0208a0be5a8bda0b6bdd85d13b23a834fd20dd": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [
+      "Sajith Premadasa"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "ea633855957369561ba26e45ac701ae7a47b605a180cc7ff7645f20f4f6b8dc0": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [
+      "Prime Minister"
+    ],
+    "confidence": 0.81,
+    "language": "en"
+  },
+  "668b906ae8e9c4d3f13f16dbd4273d2927ea9e3f21c7e49b90ec6d1005dc4375": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [
+      "Treasury"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "9ad41a6e40d79b55560db3ee098bb9e7cf8102c1e69c131e6ff572cb78a1aff6": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [
+      "Banking & Finance"
+    ],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c38465f6c7d405c9b7505c5348cadc258d3dfaba9623ba37dcb4d4485e316815": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-30",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "ffc98ebbe7f382abb195d46ff737a7c1f22de15df74faaf938f2c4dba77e3267": {
+    "is_relevant": true,
+    "event_category": "presidential_election",
+    "stage": "announcement",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-30",
+    "entities": [],
+    "confidence": 0.67,
+    "language": "en"
+  },
+  "3589923a940c28011d55bc55b065385a25561ced272cde08183c192d1e748b73": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "campaign",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-30",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "0a33f6205941df10ea7b44b02761214a3ff9488f3766b08e9f53369d47eb7517": {
+    "is_relevant": true,
+    "event_category": "protest_or_unrest",
+    "stage": "none",
+    "expected_direction": "negative",
+    "expected_direction_reason": "Civil unrest and emergency measures disrupt business continuity and investor sentiment.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-30",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake",
+      "Sajith Premadasa"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "694816b5c42437ab1a8a1259333c910c92eea7dd53071d775f374458a046c202": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-30",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "718e88826cff97a8a5cd829b7b0b85b6ed30004cc01f92b82e95c9f7682a2db0": {
+    "is_relevant": true,
+    "event_category": "parliamentary_election",
+    "stage": "campaign",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Pre-election uncertainty typically leads institutional capital to defer commitments.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-30",
+    "entities": [
+      "Parliament"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "599602dc7f31d50a8e691790438dd52061344d4d678a2f2bb463d7918d123edb": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [
+      "Consumer & Retail"
+    ],
+    "event_date_mentioned": "2026-10-30",
+    "entities": [
+      "Ceylon Chamber of Commerce"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "0c95d97260ecee45d1a84f543e0d863bb666d724f9aeec4cbeca14cb243f5397": {
+    "is_relevant": true,
+    "event_category": "cabinet_or_ministry_change",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Impact on equity market indices is contingent on broader policy execution.",
+    "affected_sectors": [
+      "Tourism & Hospitality"
+    ],
+    "event_date_mentioned": "2026-10-30",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "66420b386181950ff7f23ff78fda584b9c7b413a48bb656e7a390543d1dc973b": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-30",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "c50ccda92ba5fb9150754cb6d2d6226a57290282a76e72a69c22a1ef8bfd8d4d": {
+    "is_relevant": true,
+    "event_category": "debt_restructuring_or_IMF",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Outcome of complex sovereign creditor negotiations remains pending.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "840d1cb0cc7edfaea49f18e3a2598118551fd68cb969a58047422b62d04a5bd4": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-29",
+    "entities": [
+      "President",
+      "Anura Kumara Dissanayake"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "7100a1c4b324528d6bb53f32b50492f27581f0ef095c200bee769227fb383b6a": {
+    "is_relevant": true,
+    "event_category": "government_policy_or_budget_or_tax",
+    "stage": "none",
+    "expected_direction": "uncertain",
+    "expected_direction_reason": "Net impact of fiscal proposals depends on sector-specific implementation details.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-30",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "7a11c885212bc08db9733802f0eb41d6c98ead6fd8c6757b924de12c29b0baef": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-30",
+    "entities": [
+      "Cabinet"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "4c594bf38bf86f90bf7b4a50b7b319e2d2fb19df6d6bb42dafe760ed984ffbb9": {
+    "is_relevant": false,
+    "event_category": "not_relevant",
+    "stage": "none",
+    "expected_direction": "neutral",
+    "expected_direction_reason": "Article content has negligible macroeconomic relevance to Colombo equities.",
+    "affected_sectors": [],
+    "event_date_mentioned": "2026-10-30",
+    "entities": [],
+    "confidence": 0.5,
+    "language": "en"
+  },
+  "ee1ed18989c1212e360e1d3ba7f12b633cfa3e8417f567509a38487adfd36461": {
+    "is_relevant": true,
+    "event_category": "local_government_election",
+    "stage": "formation",
+    "expected_direction": "positive",
+    "expected_direction_reason": "Formal swearing in of government signals political transition completion and cabinet stability.",
+    "affected_sectors": [
+      "Energy & Utilities"
+    ],
+    "event_date_mentioned": "2026-10-30",
+    "entities": [
+      "Sajith Premadasa"
+    ],
+    "confidence": 0.5,
+    "language": "en"
+  }
+}

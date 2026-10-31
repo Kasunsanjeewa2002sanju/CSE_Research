@@ -1,0 +1,29 @@
+{
+  "parameters": 450010,
+  "best_epoch": 10,
+  "best_val_loss": 0.11698288173757047,
+  "total_epochs": 10,
+  "seed": 777,
+  "hardware": {
+    "device": "cpu",
+    "cuda_available": false,
+    "cpu_threads": 4
+  },
+  "model_type": "nbeats",
+  "model_tag": "nbeats",
+  "feature_set": "C",
+  "horizon": 5,
+  "lookback": 60,
+  "use_revin": false,
+  "fit_summary": {
+    "total_epochs": 10,
+    "best_epoch": 10,
+    "best_val_loss": 0.11698288173757047,
+    "runtime_seconds": 5.337482929229736
+  },
+  "diagnostics": {
+    "pred_ret_std": 0.04606462834676025,
+    "pred_dir_mean": 0.6306306306306306,
+    "is_collapsed": false
+  }
+}

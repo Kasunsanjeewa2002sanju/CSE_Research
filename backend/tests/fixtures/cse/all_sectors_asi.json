@@ -1,0 +1,19 @@
+[
+  {
+    "id": 105832,
+    "sectorId": 1,
+    "symbol": "ASI",
+    "indexCode": null,
+    "indexCodeSp": "ASI",
+    "indexName": "ALL SHARE PRICE INDEX",
+    "name": "ALL SHARE PRICE INDEX",
+    "indexValue": 20059.42,
+    "change": 0.0,
+    "percentage": 0.0,
+    "sectorTradeToday": null,
+    "sectorVolumeToday": null,
+    "sectorTurnoverToday": null,
+    "sectorPreviousClose": 20059.42,
+    "transactionTime": 1792464360914
+  }
+]

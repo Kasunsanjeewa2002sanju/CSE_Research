@@ -1,0 +1,218 @@
+[
+  {
+    "filename": "stage4_days_to_next_distribution_20261022_160831.png",
+    "topic": "days_to_next",
+    "detail": "distribution",
+    "summary": "median days_to_next=20, mean=81.2, min=0, max=765, n=694",
+    "timestamp": "20261022_160831",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_days_to_next_distribution_20261022_160831.png"
+  },
+  {
+    "filename": "stage4_event_calendar_heatmap_20261022_160832.png",
+    "topic": "event_calendar",
+    "detail": "heatmap",
+    "summary": "Calendar density: 63 events across 38 months and 9 event types",
+    "timestamp": "20261022_160832",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_event_calendar_heatmap_20261022_160832.png"
+  },
+  {
+    "filename": "stage4_proximity_vs_car_h5_20261022_160833.png",
+    "topic": "proximity_vs_car",
+    "detail": "h5",
+    "summary": "h=5 proximity: [0-3d] median=-0.52%, [90+d] median=-0.92%, n=694",
+    "timestamp": "20261022_160833",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_proximity_vs_car_h5_20261022_160833.png"
+  },
+  {
+    "filename": "stage4_proximity_vs_car_h10_20261022_160833.png",
+    "topic": "proximity_vs_car",
+    "detail": "h10",
+    "summary": "h=10 proximity: [0-3d] median=+0.00%, [90+d] median=-2.17%, n=694",
+    "timestamp": "20261022_160833",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_proximity_vs_car_h10_20261022_160833.png"
+  },
+  {
+    "filename": "stage4_in_window_flag_balance_20261022_160834.png",
+    "topic": "in_window_flag",
+    "detail": "balance",
+    "summary": "20.7% news in 0-7 window (141/681 total active flags)",
+    "timestamp": "20261022_160834",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_in_window_flag_balance_20261022_160834.png"
+  },
+  {
+    "filename": "stage4_trading_day_calendar_coverage_20261022_160834.png",
+    "topic": "trading_day_calendar",
+    "detail": "coverage",
+    "summary": "Trading calendar: 1305 trading days, 0 Poya/public holidays, 5-year span",
+    "timestamp": "20261022_160834",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_trading_day_calendar_coverage_20261022_160834.png"
+  },
+  {
+    "filename": "stage4_days_to_next_distribution_20261022_161707.png",
+    "topic": "days_to_next",
+    "detail": "distribution",
+    "summary": "median days_to_next=20, mean=81.2, min=0, max=765, n=694",
+    "timestamp": "20261022_161707",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_days_to_next_distribution_20261022_161707.png"
+  },
+  {
+    "filename": "stage4_event_calendar_heatmap_20261022_161708.png",
+    "topic": "event_calendar",
+    "detail": "heatmap",
+    "summary": "Calendar density: 63 events across 38 months and 9 event types",
+    "timestamp": "20261022_161708",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_event_calendar_heatmap_20261022_161708.png"
+  },
+  {
+    "filename": "stage4_proximity_vs_car_h5_20261022_161708.png",
+    "topic": "proximity_vs_car",
+    "detail": "h5",
+    "summary": "h=5 proximity: [0-3d] median=-0.52%, [90+d] median=-0.92%, n=694",
+    "timestamp": "20261022_161708",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_proximity_vs_car_h5_20261022_161708.png"
+  },
+  {
+    "filename": "stage4_proximity_vs_car_h10_20261022_161709.png",
+    "topic": "proximity_vs_car",
+    "detail": "h10",
+    "summary": "h=10 proximity: [0-3d] median=+0.00%, [90+d] median=-2.17%, n=694",
+    "timestamp": "20261022_161709",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_proximity_vs_car_h10_20261022_161709.png"
+  },
+  {
+    "filename": "stage4_in_window_flag_balance_20261022_161709.png",
+    "topic": "in_window_flag",
+    "detail": "balance",
+    "summary": "20.7% news in 0-7 window (141/681 total active flags)",
+    "timestamp": "20261022_161709",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_in_window_flag_balance_20261022_161709.png"
+  },
+  {
+    "filename": "stage4_trading_day_calendar_coverage_20261022_161709.png",
+    "topic": "trading_day_calendar",
+    "detail": "coverage",
+    "summary": "Trading calendar: 1206 trading days, 99 Poya/public holidays, 5-year span",
+    "timestamp": "20261022_161709",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_trading_day_calendar_coverage_20261022_161709.png"
+  },
+  {
+    "filename": "stage4_days_to_next_distribution_20261022_161847.png",
+    "topic": "days_to_next",
+    "detail": "distribution",
+    "summary": "median days_to_next=20, mean=81.2, min=0, max=765, n=694",
+    "timestamp": "20261022_161847",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_days_to_next_distribution_20261022_161847.png"
+  },
+  {
+    "filename": "stage4_event_calendar_heatmap_20261022_161848.png",
+    "topic": "event_calendar",
+    "detail": "heatmap",
+    "summary": "Calendar density: 63 events across 38 months and 9 event types",
+    "timestamp": "20261022_161848",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_event_calendar_heatmap_20261022_161848.png"
+  },
+  {
+    "filename": "stage4_proximity_vs_car_h5_20261022_161849.png",
+    "topic": "proximity_vs_car",
+    "detail": "h5",
+    "summary": "h=5 proximity: [0-3d] median=-0.52%, [90+d] median=-0.92%, n=694",
+    "timestamp": "20261022_161849",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_proximity_vs_car_h5_20261022_161849.png"
+  },
+  {
+    "filename": "stage4_proximity_vs_car_h10_20261022_161849.png",
+    "topic": "proximity_vs_car",
+    "detail": "h10",
+    "summary": "h=10 proximity: [0-3d] median=+0.00%, [90+d] median=-2.17%, n=694",
+    "timestamp": "20261022_161849",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_proximity_vs_car_h10_20261022_161849.png"
+  },
+  {
+    "filename": "stage4_in_window_flag_balance_20261022_161849.png",
+    "topic": "in_window_flag",
+    "detail": "balance",
+    "summary": "20.7% news in 0-7 window (141/681 total active flags)",
+    "timestamp": "20261022_161849",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_in_window_flag_balance_20261022_161849.png"
+  },
+  {
+    "filename": "stage4_trading_day_calendar_coverage_20261022_161849.png",
+    "topic": "trading_day_calendar",
+    "detail": "coverage",
+    "summary": "Trading calendar: 1206 trading days, 99 Poya/public holidays, 5-year span",
+    "timestamp": "20261022_161849",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_trading_day_calendar_coverage_20261022_161849.png"
+  },
+  {
+    "filename": "stage4_days_to_next_distribution_20261022_161932.png",
+    "topic": "days_to_next",
+    "detail": "distribution",
+    "summary": "median days_to_next=20, mean=81.2, min=0, max=765, n=694",
+    "timestamp": "20261022_161932",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_days_to_next_distribution_20261022_161932.png"
+  },
+  {
+    "filename": "stage4_event_calendar_heatmap_20261022_161933.png",
+    "topic": "event_calendar",
+    "detail": "heatmap",
+    "summary": "Calendar density: 63 events across 38 months and 9 event types",
+    "timestamp": "20261022_161933",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_event_calendar_heatmap_20261022_161933.png"
+  },
+  {
+    "filename": "stage4_proximity_vs_car_h5_20261022_161934.png",
+    "topic": "proximity_vs_car",
+    "detail": "h5",
+    "summary": "h=5 proximity: [0-3d] median=-0.52%, [90+d] median=-0.92%, n=694",
+    "timestamp": "20261022_161934",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_proximity_vs_car_h5_20261022_161934.png"
+  },
+  {
+    "filename": "stage4_proximity_vs_car_h10_20261022_161934.png",
+    "topic": "proximity_vs_car",
+    "detail": "h10",
+    "summary": "h=10 proximity: [0-3d] median=+0.00%, [90+d] median=-2.17%, n=694",
+    "timestamp": "20261022_161934",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_proximity_vs_car_h10_20261022_161934.png"
+  },
+  {
+    "filename": "stage4_in_window_flag_balance_20261022_161934.png",
+    "topic": "in_window_flag",
+    "detail": "balance",
+    "summary": "20.7% news in 0-7 window (141/681 total active flags)",
+    "timestamp": "20261022_161934",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_in_window_flag_balance_20261022_161934.png"
+  },
+  {
+    "filename": "stage4_trading_day_calendar_coverage_20261022_161934.png",
+    "topic": "trading_day_calendar",
+    "detail": "coverage",
+    "summary": "Trading calendar: 1206 trading days, 99 Poya/public holidays, 5-year span",
+    "timestamp": "20261022_161934",
+    "stage": "stage4",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage4\\stage4_trading_day_calendar_coverage_20261022_161934.png"
+  }
+]

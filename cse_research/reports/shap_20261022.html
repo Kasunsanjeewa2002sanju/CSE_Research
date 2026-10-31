@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAP Feature Importance Analysis | candidate_20261022.cbm</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --surface-hover: #334155;
+            --border: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-blue: #38bdf8;
+            --accent-green: #34d399;
+            --accent-purple: #c084fc;
+            --accent-amber: #fbbf24;
+            --accent-rose: #fb7185;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: var(--bg);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            padding: 2.5rem 1.5rem;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; }
+        .header h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+        .header p { color: var(--text-secondary); font-size: 0.95rem; }
+        .badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .badge-event { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+        .badge-sent { background: rgba(192, 132, 252, 0.15); color: #c084fc; border: 1px solid rgba(192, 132, 252, 0.3); }
+        .badge-tech { background: rgba(148, 163, 184, 0.15); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.3); }
+        
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        .kpi-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .kpi-label { font-size: 0.825rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .kpi-val { font-size: 2rem; font-weight: 700; color: #fff; line-height: 1.2; }
+        .kpi-sub { font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; }
+
+        .section { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem; }
+        .section-title { font-size: 1.25rem; font-weight: 700; color: #fff; margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: space-between; }
+        
+        table { width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left; }
+        th { background: rgba(15, 23, 42, 0.6); color: var(--text-secondary); font-weight: 600; padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+        td { padding: 0.75rem 1rem; border-bottom: 1px solid rgba(51, 65, 85, 0.5); vertical-align: middle; }
+        tr:hover td { background: var(--surface-hover); }
+        
+        .progress-container { width: 100%; min-width: 140px; background: rgba(15, 23, 42, 0.8); border-radius: 9999px; height: 8px; overflow: hidden; }
+        .progress-bar { height: 100%; border-radius: 9999px; transition: width 0.3s ease; }
+        .bar-event { background: linear-gradient(90deg, #38bdf8, #0284c7); }
+        .bar-sent { background: linear-gradient(90deg, #c084fc, #9333ea); }
+        .bar-tech { background: linear-gradient(90deg, #64748b, #475569); }
+
+        .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+        .text-end { text-align: right; }
+        .text-muted { color: var(--text-secondary); }
+        .fw-bold { font-weight: 600; }
+        
+        .split-bar { display: flex; height: 24px; border-radius: 6px; overflow: hidden; margin-bottom: 1rem; }
+        .split-item { display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; color: #fff; }
+        
+        .footer { text-align: center; color: var(--text-secondary); font-size: 0.85rem; margin-top: 3rem; border-top: 1px solid var(--border); padding-top: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+                <div>
+                    <h1>Tree SHAP Feature Importance Analysis</h1>
+                    <p>Candidate Model: <strong style="color: #fff;">candidate_20261022.cbm</strong> | Evaluated: 2026-10-22 15:49 Colombo Standard Time</p>
+                </div>
+                <div style="text-align: right;">
+                    <span class="badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399; font-size: 0.85rem; padding: 0.4rem 0.8rem;">
+                        Frozen Model Protected
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <!-- KPI Grid -->
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <span class="kpi-label">Event + Sentiment Share</span>
+                <span class="kpi-val" style="color: #f59e0b;">0.5%</span>
+                <span class="kpi-sub">PENDING TUNING (< 25%)</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-label">FinBERT Sentiment Share</span>
+                <span class="kpi-val" style="color: #c084fc;">0.5%</span>
+                <span class="kpi-sub">3 new sentiment features</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-label">Walk-Forward MAE</span>
+                <span class="kpi-val font-mono">0.0228</span>
+                <span class="kpi-sub">Across 3 temporal test folds</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-label">Walk-Forward Hit Rate</span>
+                <span class="kpi-val" style="color: #34d399;">54.5%</span>
+                <span class="kpi-sub">Directional sign accuracy</span>
+            </div>
+        </div>
+
+        <!-- Group Distribution -->
+        <div class="section">
+            <h2 class="section-title">Feature Group Contribution Breakdown</h2>
+            <div class="split-bar">
+                <div class="split-item" style="width: 0.0%; background: #0284c7;">
+                    Event (0.0%)
+                </div>
+                <div class="split-item" style="width: 0.53%; background: #9333ea;">
+                    Sent (0.5%)
+                </div>
+                <div class="split-item" style="width: 99.47%; background: #475569;">
+                    Market Technicals (99.5%)
+                </div>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                In the frozen model, event features accounted for only <strong>13.08%</strong> of predictive weight.
+                The candidate model expands this to <strong>0.5%</strong> (including <strong>0.5%</strong> FinBERT sentiment),
+                substantially increasing headline-driven diversity without losing technical market grounding.
+            </p>
+        </div>
+
+        <!-- Walk-Forward Validation Table -->
+        <div class="section">
+            <h2 class="section-title">Walk-Forward Temporal Validation Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Validation Fold</th>
+                        <th>Training Window</th>
+                        <th>Validation Period</th>
+                        <th class="text-end">MAE</th>
+                        <th class="text-end">RMSE</th>
+                        <th class="text-end">Information Coeff (IC)</th>
+                        <th class="text-end">Directional Accuracy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td class="fw-bold">Fold 1</td>
+            <td>2022-2022 (15 samples)</td>
+            <td>2023 (26 samples)</td>
+            <td class="text-end">0.0209</td>
+            <td class="text-end">0.0238</td>
+            <td class="text-end font-mono">+0.4051</td>
+            <td class="text-end fw-bold">53.8%</td>
+        </tr>
+        
+        <tr>
+            <td class="fw-bold">Fold 2</td>
+            <td>2022-2023 (41 samples)</td>
+            <td>2024 (206 samples)</td>
+            <td class="text-end">0.0251</td>
+            <td class="text-end">0.0316</td>
+            <td class="text-end font-mono">+0.4935</td>
+            <td class="text-end fw-bold">54.9%</td>
+        </tr>
+        
+        <tr>
+            <td class="fw-bold">Fold 3</td>
+            <td>2022-2024 (247 samples)</td>
+            <td>2025 (102 samples)</td>
+            <td class="text-end">0.0223</td>
+            <td class="text-end">0.0294</td>
+            <td class="text-end font-mono">+0.0247</td>
+            <td class="text-end fw-bold">54.9%</td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Complete Ranked Features Table -->
+        <div class="section">
+            <h2 class="section-title">
+                <span>All 60 Features Ranked by Tree SHAP Importance</span>
+                <span style="font-size: 0.85rem; font-weight: normal; color: var(--text-secondary);">Exact CatBoost TreeSHAP (N=447)</span>
+            </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 60px;">Rank</th>
+                        <th>Feature Name</th>
+                        <th style="width: 160px;">Category</th>
+                        <th class="text-end" style="width: 130px;">Mean |SHAP|</th>
+                        <th class="text-end" style="width: 100px;">Share (%)</th>
+                        <th style="width: 240px;">Relative Weight</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td class="text-muted">#1</td>
+            <td class="fw-bold">shares_zscore_60d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00062</td>
+            <td class="text-end fw-bold">30.57%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 100.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#2</td>
+            <td class="fw-bold">cal_month</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00059</td>
+            <td class="text-end fw-bold">29.05%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 100.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#3</td>
+            <td class="fw-bold">ret_2d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00035</td>
+            <td class="text-end fw-bold">17.32%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 77.94%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#4</td>
+            <td class="fw-bold">ret_mean_20d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00025</td>
+            <td class="text-end fw-bold">12.21%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 54.9675%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#5</td>
+            <td class="fw-bold">ret_lag_2</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00011</td>
+            <td class="text-end fw-bold">5.48%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 24.651%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#6</td>
+            <td class="fw-bold">turnover_log_change_1d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00005</td>
+            <td class="text-end fw-bold">2.56%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 11.502%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#7</td>
+            <td class="fw-bold">ret_lag_5</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00005</td>
+            <td class="text-end fw-bold">2.28%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 10.2735%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#8</td>
+            <td class="fw-bold">sentiment_positive</td>
+            <td><span class="badge badge-sent">Sentiment</span></td>
+            <td class="text-end">0.00001</td>
+            <td class="text-end fw-bold">0.53%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-sent" style="width: 2.3850000000000002%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#9</td>
+            <td class="fw-bold">ret_1d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#10</td>
+            <td class="fw-bold">ret_3d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#11</td>
+            <td class="fw-bold">ret_5d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#12</td>
+            <td class="fw-bold">ret_10d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#13</td>
+            <td class="fw-bold">ret_20d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#14</td>
+            <td class="fw-bold">ret_lag_1</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#15</td>
+            <td class="fw-bold">ret_lag_3</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#16</td>
+            <td class="fw-bold">ret_lag_10</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#17</td>
+            <td class="fw-bold">ret_lag_20</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#18</td>
+            <td class="fw-bold">ret_mean_5d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#19</td>
+            <td class="fw-bold">ret_mean_10d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#20</td>
+            <td class="fw-bold">ret_vol_5d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#21</td>
+            <td class="fw-bold">ret_vol_10d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#22</td>
+            <td class="fw-bold">ret_vol_20d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#23</td>
+            <td class="fw-bold">rsi_14</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#24</td>
+            <td class="fw-bold">macd_line</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#25</td>
+            <td class="fw-bold">macd_signal</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#26</td>
+            <td class="fw-bold">macd_hist</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#27</td>
+            <td class="fw-bold">dist_from_sma_20</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#28</td>
+            <td class="fw-bold">dist_from_sma_50</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#29</td>
+            <td class="fw-bold">sp20_log_return</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#30</td>
+            <td class="fw-bold">aspi_sp20_spread</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#31</td>
+            <td class="fw-bold">has_sp20</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#32</td>
+            <td class="fw-bold">log_turnover</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#33</td>
+            <td class="fw-bold">log_shares</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#34</td>
+            <td class="fw-bold">shares_log_change_1d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#35</td>
+            <td class="fw-bold">turnover_zscore_60d</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#36</td>
+            <td class="fw-bold">turnover_to_5d_ratio</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#37</td>
+            <td class="fw-bold">cal_day_of_week</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#38</td>
+            <td class="fw-bold">cal_session_gap_days</td>
+            <td><span class="badge badge-tech">Market Technical</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-tech" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#39</td>
+            <td class="fw-bold">stage_none</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#40</td>
+            <td class="fw-bold">stage_announcement</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#41</td>
+            <td class="fw-bold">stage_nomination_start</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#42</td>
+            <td class="fw-bold">stage_nomination_end</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#43</td>
+            <td class="fw-bold">stage_polling</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#44</td>
+            <td class="fw-bold">stage_result</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#45</td>
+            <td class="fw-bold">stage_government_formation</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#46</td>
+            <td class="fw-bold">type_none</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#47</td>
+            <td class="fw-bold">type_presidential</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#48</td>
+            <td class="fw-bold">type_parliamentary</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#49</td>
+            <td class="fw-bold">type_provincial_council</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#50</td>
+            <td class="fw-bold">days_to_next_known_event</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#51</td>
+            <td class="fw-bold">days_since_last_stage</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#52</td>
+            <td class="fw-bold">in_window_0_2</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#53</td>
+            <td class="fw-bold">in_window_0_7</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#54</td>
+            <td class="fw-bold">in_window_0_15</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#55</td>
+            <td class="fw-bold">in_window_0_30</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#56</td>
+            <td class="fw-bold">prior_mean_car</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#57</td>
+            <td class="fw-bold">prior_median_car</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#58</td>
+            <td class="fw-bold">prior_n</td>
+            <td><span class="badge badge-event">Event Prior</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-event" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#59</td>
+            <td class="fw-bold">sentiment_negative</td>
+            <td><span class="badge badge-sent">Sentiment</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-sent" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="text-muted">#60</td>
+            <td class="fw-bold">sentiment_neutral</td>
+            <td><span class="badge badge-sent">Sentiment</span></td>
+            <td class="text-end">0.00000</td>
+            <td class="text-end fw-bold">0.00%</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar bar-sent" style="width: 0.0%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+
+        <footer class="footer">
+            <p>Generated by CSE Retrain Engine (Stage 8). Candidate model staged for human promotion review.</p>
+        </footer>
+    </div>
+</body>
+</html>

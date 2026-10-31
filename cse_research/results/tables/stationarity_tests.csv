@@ -1,0 +1,5 @@
+Series,Observations,ADF Statistic,ADF p-value,ADF 5% Critical,ADF Conclusion,KPSS Statistic,KPSS p-value,KPSS 5% Critical,KPSS Conclusion,Joint Determination
+ASPI Level,7635,2.4701,0.999,-2.8619,Unit Root (Fail to Reject),10.7471,0.01,0.463,Non-Stationary (Reject H0),Non-Stationary Unit Root (I(1))
+ASPI Log Return,7634,-15.3734,0.0,-2.8619,Stationary (Reject H0),0.235,0.1,0.463,Stationary (Fail to Reject),Strictly Stationary (I(0))
+Log Equity Turnover,7635,-2.5354,0.1071,-2.8619,Unit Root (Fail to Reject),10.8046,0.01,0.463,Non-Stationary (Reject H0),Non-Stationary Unit Root (I(1))
+Log Shares Traded,7635,-2.892,0.0463,-2.8619,Stationary (Reject H0),11.3395,0.01,0.463,Non-Stationary (Reject H0),Trend / Structural Break Stationary

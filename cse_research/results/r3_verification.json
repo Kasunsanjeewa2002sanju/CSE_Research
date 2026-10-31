@@ -1,0 +1,11 @@
+{
+  "triggered": true,
+  "n_combos_over_60": 11,
+  "leakage_tests_passed": "13/13",
+  "shuffled_target_acc": 0.4859,
+  "future_perturbation_cells_changed": 0,
+  "truncate_rebuild_passed": true,
+  "conclusion": "no_leakage_regime_signal",
+  "cause": "P5 phase majority class = 0.6143 (bull market)",
+  "action": "report lift over majority class"
+}

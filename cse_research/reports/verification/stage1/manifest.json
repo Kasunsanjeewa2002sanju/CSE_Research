@@ -1,0 +1,236 @@
+[
+  {
+    "filename": "stage1_car_distribution_h1_2_5_10_20261022_155753.png",
+    "topic": "car_distribution",
+    "detail": "h1_2_5_10",
+    "summary": "h=1: mean=-0.36%, std=0.91%, n=501; h=2: mean=-0.08%, std=1.39%, n=425; h=5: mean=+0.10%, std=2.73%, n=401; h=10: mean=+0.29%, std=4.80%, n=314",
+    "timestamp": "20261022_155753",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_car_distribution_h1_2_5_10_20261022_155753.png"
+  },
+  {
+    "filename": "stage1_news_volume_timeline_20261022_155754.png",
+    "topic": "news_volume",
+    "detail": "timeline",
+    "summary": "Total news=636, monthly mean=10.5, peak=2024-08 (36 items)",
+    "timestamp": "20261022_155754",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_news_volume_timeline_20261022_155754.png"
+  },
+  {
+    "filename": "stage1_car_distribution_h1_2_5_10_20261022_155826.png",
+    "topic": "car_distribution",
+    "detail": "h1_2_5_10",
+    "summary": "h=1: mean=-0.36%, std=0.91%, n=501; h=2: mean=-0.08%, std=1.39%, n=425; h=5: mean=+0.10%, std=2.73%, n=401; h=10: mean=+0.29%, std=4.80%, n=314",
+    "timestamp": "20261022_155826",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_car_distribution_h1_2_5_10_20261022_155826.png"
+  },
+  {
+    "filename": "stage1_news_volume_timeline_20261022_155827.png",
+    "topic": "news_volume",
+    "detail": "timeline",
+    "summary": "Total news=636, monthly mean=10.5, peak=2024-08 (36 items)",
+    "timestamp": "20261022_155827",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_news_volume_timeline_20261022_155827.png"
+  },
+  {
+    "filename": "stage1_car_by_category_h5_20261022_155828.png",
+    "topic": "car_by_category",
+    "detail": "h5",
+    "summary": "Categories=8, highest=parliamentary_election (med=+1.25%), lowest=cabinet_or_ministry_change (med=-1.62%), n=401",
+    "timestamp": "20261022_155828",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_car_by_category_h5_20261022_155828.png"
+  },
+  {
+    "filename": "stage1_aspi_timeseries_20261022_155828.png",
+    "topic": "aspi",
+    "detail": "timeseries",
+    "summary": "ASPI range: 2023-10-20 to 2026-10-20, trading_days=721, close min=10274.4, max=23967.2",
+    "timestamp": "20261022_155828",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_aspi_timeseries_20261022_155828.png"
+  },
+  {
+    "filename": "stage1_data_coverage_monthly_20261022_155829.png",
+    "topic": "data_coverage",
+    "detail": "monthly",
+    "summary": "Data coverage: 100.0% with CAR (314/314 total)",
+    "timestamp": "20261022_155829",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_data_coverage_monthly_20261022_155829.png"
+  },
+  {
+    "filename": "stage1_car_outlier_breakdown_20261022_155830.png",
+    "topic": "car_outlier",
+    "detail": "breakdown",
+    "summary": "Clamped outliers: 4 pos, 2 neg (0.4% of 1641 total horizon points)",
+    "timestamp": "20261022_155830",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_car_outlier_breakdown_20261022_155830.png"
+  },
+  {
+    "filename": "stage1_car_distribution_h1_2_5_10_20261022_161652.png",
+    "topic": "car_distribution",
+    "detail": "h1_2_5_10",
+    "summary": "h=1: mean=-0.36%, std=0.91%, n=501; h=2: mean=-0.08%, std=1.39%, n=425; h=5: mean=+0.10%, std=2.73%, n=401; h=10: mean=+0.29%, std=4.80%, n=314",
+    "timestamp": "20261022_161652",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_car_distribution_h1_2_5_10_20261022_161652.png"
+  },
+  {
+    "filename": "stage1_news_volume_timeline_20261022_161653.png",
+    "topic": "news_volume",
+    "detail": "timeline",
+    "summary": "Total news=636, monthly mean=10.5, peak=2024-08 (36 items)",
+    "timestamp": "20261022_161653",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_news_volume_timeline_20261022_161653.png"
+  },
+  {
+    "filename": "stage1_car_by_category_h5_20261022_161654.png",
+    "topic": "car_by_category",
+    "detail": "h5",
+    "summary": "Categories=8, highest=parliamentary_election (med=+1.25%), lowest=cabinet_or_ministry_change (med=-1.62%), n=401",
+    "timestamp": "20261022_161654",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_car_by_category_h5_20261022_161654.png"
+  },
+  {
+    "filename": "stage1_aspi_timeseries_20261022_161654.png",
+    "topic": "aspi",
+    "detail": "timeseries",
+    "summary": "ASPI range: 2023-10-20 to 2026-10-20, trading_days=721, close min=10274.4, max=23967.2",
+    "timestamp": "20261022_161654",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_aspi_timeseries_20261022_161654.png"
+  },
+  {
+    "filename": "stage1_data_coverage_monthly_20261022_161655.png",
+    "topic": "data_coverage",
+    "detail": "monthly",
+    "summary": "Data coverage: 100.0% with CAR (314/314 total)",
+    "timestamp": "20261022_161655",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_data_coverage_monthly_20261022_161655.png"
+  },
+  {
+    "filename": "stage1_car_outlier_breakdown_20261022_161656.png",
+    "topic": "car_outlier",
+    "detail": "breakdown",
+    "summary": "Clamped outliers: 4 pos, 2 neg (0.4% of 1641 total horizon points)",
+    "timestamp": "20261022_161656",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_car_outlier_breakdown_20261022_161656.png"
+  },
+  {
+    "filename": "stage1_car_distribution_h1_2_5_10_20261022_161833.png",
+    "topic": "car_distribution",
+    "detail": "h1_2_5_10",
+    "summary": "h=1: mean=-0.36%, std=0.91%, n=501; h=2: mean=-0.08%, std=1.39%, n=425; h=5: mean=+0.10%, std=2.73%, n=401; h=10: mean=+0.29%, std=4.80%, n=314",
+    "timestamp": "20261022_161833",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_car_distribution_h1_2_5_10_20261022_161833.png"
+  },
+  {
+    "filename": "stage1_news_volume_timeline_20261022_161834.png",
+    "topic": "news_volume",
+    "detail": "timeline",
+    "summary": "Total news=636, monthly mean=10.5, peak=2024-08 (36 items)",
+    "timestamp": "20261022_161834",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_news_volume_timeline_20261022_161834.png"
+  },
+  {
+    "filename": "stage1_car_by_category_h5_20261022_161834.png",
+    "topic": "car_by_category",
+    "detail": "h5",
+    "summary": "Categories=8, highest=parliamentary_election (med=+1.25%), lowest=cabinet_or_ministry_change (med=-1.62%), n=401",
+    "timestamp": "20261022_161834",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_car_by_category_h5_20261022_161834.png"
+  },
+  {
+    "filename": "stage1_aspi_timeseries_20261022_161835.png",
+    "topic": "aspi",
+    "detail": "timeseries",
+    "summary": "ASPI range: 2023-10-20 to 2026-10-20, trading_days=721, close min=10274.4, max=23967.2",
+    "timestamp": "20261022_161835",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_aspi_timeseries_20261022_161835.png"
+  },
+  {
+    "filename": "stage1_data_coverage_monthly_20261022_161836.png",
+    "topic": "data_coverage",
+    "detail": "monthly",
+    "summary": "Data coverage: 100.0% with CAR (314/314 total)",
+    "timestamp": "20261022_161836",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_data_coverage_monthly_20261022_161836.png"
+  },
+  {
+    "filename": "stage1_car_outlier_breakdown_20261022_161836.png",
+    "topic": "car_outlier",
+    "detail": "breakdown",
+    "summary": "Clamped outliers: 4 pos, 2 neg (0.4% of 1641 total horizon points)",
+    "timestamp": "20261022_161836",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_car_outlier_breakdown_20261022_161836.png"
+  },
+  {
+    "filename": "stage1_car_distribution_h1_2_5_10_20261022_161918.png",
+    "topic": "car_distribution",
+    "detail": "h1_2_5_10",
+    "summary": "h=1: mean=-0.36%, std=0.91%, n=501; h=2: mean=-0.08%, std=1.39%, n=425; h=5: mean=+0.10%, std=2.73%, n=401; h=10: mean=+0.29%, std=4.80%, n=314",
+    "timestamp": "20261022_161918",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_car_distribution_h1_2_5_10_20261022_161918.png"
+  },
+  {
+    "filename": "stage1_news_volume_timeline_20261022_161919.png",
+    "topic": "news_volume",
+    "detail": "timeline",
+    "summary": "Total news=636, monthly mean=10.5, peak=2024-08 (36 items)",
+    "timestamp": "20261022_161919",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_news_volume_timeline_20261022_161919.png"
+  },
+  {
+    "filename": "stage1_car_by_category_h5_20261022_161919.png",
+    "topic": "car_by_category",
+    "detail": "h5",
+    "summary": "Categories=8, highest=parliamentary_election (med=+1.25%), lowest=cabinet_or_ministry_change (med=-1.62%), n=401",
+    "timestamp": "20261022_161919",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_car_by_category_h5_20261022_161919.png"
+  },
+  {
+    "filename": "stage1_aspi_timeseries_20261022_161920.png",
+    "topic": "aspi",
+    "detail": "timeseries",
+    "summary": "ASPI range: 2023-10-20 to 2026-10-20, trading_days=721, close min=10274.4, max=23967.2",
+    "timestamp": "20261022_161920",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_aspi_timeseries_20261022_161920.png"
+  },
+  {
+    "filename": "stage1_data_coverage_monthly_20261022_161920.png",
+    "topic": "data_coverage",
+    "detail": "monthly",
+    "summary": "Data coverage: 100.0% with CAR (314/314 total)",
+    "timestamp": "20261022_161920",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_data_coverage_monthly_20261022_161920.png"
+  },
+  {
+    "filename": "stage1_car_outlier_breakdown_20261022_161921.png",
+    "topic": "car_outlier",
+    "detail": "breakdown",
+    "summary": "Clamped outliers: 4 pos, 2 neg (0.4% of 1641 total horizon points)",
+    "timestamp": "20261022_161921",
+    "stage": "stage1",
+    "path": "D:\\SLIIT\\YEAR 04\\Research\\NEW Dev\\cse_research\\reports\\verification\\stage1\\stage1_car_outlier_breakdown_20261022_161921.png"
+  }
+]
